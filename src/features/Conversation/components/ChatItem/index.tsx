@@ -100,7 +100,7 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
     );
   });
 
-  const placement = (type === 'chat' ? (item.role === 'user' ? 'right' : 'left') : 'left')
+  const placement = (item && type === 'chat' ? (item.role === 'user' ? 'right' : 'left') : 'left')
 
   return (
     item && (

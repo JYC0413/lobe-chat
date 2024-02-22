@@ -34,7 +34,7 @@ const Left = memo(() => {
       />
     </Flexbox>
   ) : (
-    <Flexbox align='flex-start' gap={12} horizontal>
+    <Flexbox align={'center'} gap={12} horizontal>
       <AvatarWithUpload
         id={displayTitle}
         size={40}

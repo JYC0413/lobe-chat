@@ -16,7 +16,7 @@ const AppLayoutDesktop = memo<PropsWithChildren>(({ children }) => {
       style={isPWA ? { borderTop: `1px solid ${theme.colorBorder}` } : {}}
       width={'100%'}
     >
-      <SideBar />
+      {/*<SideBar />*/}
       {children}
     </Flexbox>
   );

@@ -64,6 +64,7 @@ export interface ChatMessageAction {
   fetchAIChatMessage: (
     messages: ChatMessage[],
     assistantMessageId: string,
+    assistantMessage: any
   ) => Promise<{
     content: string;
     functionCallAtEnd: boolean;
@@ -92,18 +93,16 @@ const preventLeavingFn = (e: BeforeUnloadEvent) => {
   e.returnValue = '你有正在生成中的请求，确定要离开吗？';
 };
 
-export const chatMessage: StateCreator<
-  ChatStore,
+export const chatMessage: StateCreator<ChatStore,
   [['zustand/devtools', never]],
   [],
-  ChatMessageAction
-> = (set, get) => ({
+  ChatMessageAction> = (set, get) => ({
   deleteMessage: async (id) => {
     await messageService.removeMessage(id);
     await get().refreshMessages();
   },
   clearMessage: async () => {
-    const { activeId, activeTopicId, refreshMessages, refreshTopic, switchTopic } = get();
+    const {activeId, activeTopicId, refreshMessages, refreshTopic, switchTopic} = get();
 
     await messageService.removeMessages(activeId, activeTopicId);
 
@@ -117,7 +116,7 @@ export const chatMessage: StateCreator<
     switchTopic();
   },
   clearAllMessages: async () => {
-    const { refreshMessages } = get();
+    const {refreshMessages} = get();
     await messageService.clearAllMessage();
     await refreshMessages();
   },
@@ -150,7 +149,7 @@ export const chatMessage: StateCreator<
 
     if (contextMessages.length <= 0) return;
 
-    const { coreProcessMessage } = get();
+    const {coreProcessMessage} = get();
 
     const latestMsg = contextMessages.filter((s) => s.role === 'user').at(-1);
 
@@ -158,8 +157,8 @@ export const chatMessage: StateCreator<
 
     await coreProcessMessage(contextMessages, latestMsg.id);
   },
-  sendMessage: async ({ message, files, onlyAddUserMessage }) => {
-    const { coreProcessMessage, activeTopicId, activeId } = get();
+  sendMessage: async ({message, files, onlyAddUserMessage}) => {
+    const {coreProcessMessage, activeTopicId, activeId} = get();
     if (!activeId) return;
 
     const fileIdList = files?.map((f) => f.id);
@@ -196,14 +195,14 @@ export const chatMessage: StateCreator<
     if (!agentConfig.enableAutoCreateTopic) return;
 
     if (!activeTopicId && chats.length >= agentConfig.autoCreateTopicThreshold) {
-      const { saveToTopic, switchTopic } = get();
+      const {saveToTopic, switchTopic} = get();
       const id = await saveToTopic();
       if (id) switchTopic(id);
     }
   },
 
   stopGenerateMessage: () => {
-    const { abortController, toggleChatLoading } = get();
+    const {abortController, toggleChatLoading} = get();
     if (!abortController) return;
 
     abortController.abort();
@@ -211,17 +210,17 @@ export const chatMessage: StateCreator<
     toggleChatLoading(false, undefined, n('stopGenerateMessage') as string);
   },
   updateInputMessage: (message) => {
-    set({ inputMessage: message }, false, n('updateInputMessage', message));
+    set({inputMessage: message}, false, n('updateInputMessage', message));
   },
   updateMessageContent: async (id, content) => {
-    const { dispatchMessage, refreshMessages } = get();
+    const {dispatchMessage, refreshMessages} = get();
 
     // Due to the async update method and refresh need about 100ms
     // we need to update the message content at the frontend to avoid the update flick
     // refs: https://medium.com/@kyledeguzmanx/what-are-optimistic-updates-483662c3e171
-    dispatchMessage({ id, key: 'content', type: 'updateMessage', value: content });
+    dispatchMessage({id, key: 'content', type: 'updateMessage', value: content});
 
-    await messageService.updateMessage(id, { content });
+    await messageService.updateMessage(id, {content});
     await refreshMessages();
   },
   useFetchMessages: (sessionId, activeTopicId) =>
@@ -232,7 +231,7 @@ export const chatMessage: StateCreator<
       {
         onSuccess: (messages, key) => {
           set(
-            { activeId: sessionId, messages, messagesInit: true },
+            {activeId: sessionId, messages, messagesInit: true},
             false,
             n('useFetchMessages', {
               messages,
@@ -252,9 +251,9 @@ export const chatMessage: StateCreator<
 
   // the internal process method of the AI message
   coreProcessMessage: async (messages, userMessageId) => {
-    const { fetchAIChatMessage, triggerFunctionCall, refreshMessages, activeTopicId } = get();
+    const {fetchAIChatMessage, triggerFunctionCall, refreshMessages, activeTopicId} = get();
 
-    const { model, provider } = getAgentConfig();
+    const {model, provider} = getAgentConfig();
 
     // 1. Add an empty message to place the AI response
     const assistantMessage: CreateMessageParams = {
@@ -272,8 +271,8 @@ export const chatMessage: StateCreator<
     await refreshMessages();
 
     // 2. fetch the AI response
-    const { isFunctionCall, content, functionCallAtEnd, functionCallContent } =
-      await fetchAIChatMessage(messages, mid);
+    const {isFunctionCall, content, functionCallAtEnd, functionCallContent} =
+      await fetchAIChatMessage(messages, mid, assistantMessage);
 
     // 3. if it's the function call message, trigger the function method
     if (isFunctionCall) {
@@ -304,15 +303,15 @@ export const chatMessage: StateCreator<
     }
   },
   dispatchMessage: (payload) => {
-    const { activeId } = get();
+    const {activeId} = get();
 
     if (!activeId) return;
 
     const messages = messagesReducer(get().messages, payload);
 
-    set({ messages }, false, n(`dispatchMessage/${payload.type}`, payload));
+    set({messages}, false, n(`dispatchMessage/${payload.type}`, payload));
   },
-  fetchAIChatMessage: async (messages, assistantId) => {
+  fetchAIChatMessage: async (messages, assistantId, assistant) => {
     const {
       toggleChatLoading,
       refreshMessages,
@@ -324,12 +323,12 @@ export const chatMessage: StateCreator<
     const abortController = toggleChatLoading(
       true,
       assistantId,
-      n('generateMessage(start)', { assistantId, messages }) as string,
+      n('generateMessage(start)', {assistantId, messages}) as string,
     );
 
     const config = getAgentConfig();
 
-    const compiler = template(config.inputTemplate, { interpolate: /{{([\S\s]+?)}}/g });
+    const compiler = template(config.inputTemplate, {interpolate: /{{([\S\s]+?)}}/g});
 
     // ================================== //
     //   messages uniformly preprocess    //
@@ -342,22 +341,22 @@ export const chatMessage: StateCreator<
     preprocessMsgs = !config.inputTemplate
       ? preprocessMsgs
       : preprocessMsgs.map((m) => {
-          if (m.role === 'user') {
-            try {
-              return { ...m, content: compiler({ text: m.content }) };
-            } catch (error) {
-              console.error(error);
+        if (m.role === 'user') {
+          try {
+            return {...m, content: compiler({text: m.content})};
+          } catch (error) {
+            console.error(error);
 
-              return m;
-            }
+            return m;
           }
+        }
 
-          return m;
-        });
+        return m;
+      });
 
     // 3. add systemRole
     if (config.systemRole) {
-      preprocessMsgs.unshift({ content: config.systemRole, role: 'system' } as ChatMessage);
+      preprocessMsgs.unshift({content: config.systemRole, role: 'system'} as ChatMessage);
     }
 
     // 4. handle max_tokens
@@ -382,7 +381,7 @@ export const chatMessage: StateCreator<
           ...config.params,
           plugins: config.plugins,
         },
-        { signal: abortController?.signal },
+        {signal: abortController?.signal},
       );
 
     let output = '';
@@ -390,8 +389,10 @@ export const chatMessage: StateCreator<
     let functionCallAtEnd = false;
     let functionCallContent = '';
 
-    const { startAnimation, stopAnimation, outputQueue, isAnimationActive } =
+    const {startAnimation, stopAnimation, outputQueue, isAnimationActive} =
       createSmoothMessage(assistantId);
+
+    let idList = [assistantId]
 
     await fetchSSE(fetcher, {
       onErrorHandle: async (error) => {
@@ -410,25 +411,48 @@ export const chatMessage: StateCreator<
         if (outputQueue.length > 0 && !isFunctionCall) {
           await startAnimation(15);
         }
-
-        // update the content after fetch result
-        await updateMessageContent(assistantId, content);
+        const texts = content.split(/\n{2,}/);
+        for (let index = 0; index < texts.length; index++) {
+          console.log(texts[index])
+          await updateMessageContent(idList[index], texts[index]);
+        }
       },
       onMessageHandle: async (text) => {
-        output += text;
-        outputQueue.push(...text.split(''));
-
-        // is this message is just a function call
-        if (isFunctionMessageAtStart(output)) {
-          stopAnimation();
-          dispatchMessage({
-            id: assistantId,
-            key: 'content',
-            type: 'updateMessage',
-            value: output,
-          });
-          isFunctionCall = true;
+        // output += text;
+        // outputQueue.push(...text.split(''));
+        if (text) {
+          const texts = text.split(/\n{2,}/);
+          console.log(texts)
+          let id
+          for (let index = 0; index < texts.length; index++) {
+            if (index !== 0) {
+              id = await messageService.create(assistant);
+              idList.push(id)
+              createSmoothMessage(id);
+            }
+            if (isFunctionMessageAtStart(texts[index])) {
+              stopAnimation();
+              dispatchMessage({
+                id: id,
+                key: 'content',
+                type: 'updateMessage',
+                value: texts[index],
+              });
+              isFunctionCall = true;
+            }
+          }
         }
+        // // is this message is just a function call
+        // if (isFunctionMessageAtStart(output)) {
+        //   stopAnimation();
+        //   dispatchMessage({
+        //     id: assistantId + index,
+        //     key: 'content',
+        //     type: 'updateMessage',
+        //     value: output,
+        //   });
+        //   isFunctionCall = true;
+        // }
 
         // if it's the first time to receive the message,
         // and the message is not a function call
@@ -442,7 +466,7 @@ export const chatMessage: StateCreator<
     // also exist message like this:
     // 请稍等，我帮您查询一下。{"tool_calls":[{"id":"call_sbca","type":"function","function":{"name":"pluginName____apiName","arguments":{"key":"value"}}}]}
     if (!isFunctionCall) {
-      const { content, valid } = testFunctionMessageAtEnd(output);
+      const {content, valid} = testFunctionMessageAtEnd(output);
 
       // if fc at end, replace the message
       if (valid) {
@@ -452,25 +476,25 @@ export const chatMessage: StateCreator<
       }
     }
 
-    return { content: output, functionCallAtEnd, functionCallContent, isFunctionCall };
+    return {content: output, functionCallAtEnd, functionCallContent, isFunctionCall};
   },
   toggleChatLoading: (loading, id, action) => {
     if (loading) {
       window.addEventListener('beforeunload', preventLeavingFn);
 
       const abortController = new AbortController();
-      set({ abortController, chatLoadingId: id }, false, action);
+      set({abortController, chatLoadingId: id}, false, action);
 
       return abortController;
     } else {
-      set({ abortController: undefined, chatLoadingId: undefined }, false, action);
+      set({abortController: undefined, chatLoadingId: undefined}, false, action);
 
       window.removeEventListener('beforeunload', preventLeavingFn);
     }
   },
 
   createSmoothMessage: (id) => {
-    const { dispatchMessage } = get();
+    const {dispatchMessage} = get();
 
     let buffer = '';
     // why use queue: https://shareg.pt/GLBrjpK
@@ -516,7 +540,7 @@ export const chatMessage: StateCreator<
             buffer += charsToAdd;
 
             // 更新消息内容，这里可能需要结合实际情况调整
-            dispatchMessage({ id, key: 'content', type: 'updateMessage', value: buffer });
+            dispatchMessage({id, key: 'content', type: 'updateMessage', value: buffer});
 
             // 设置下一个字符的延迟
             animationTimeoutId = setTimeout(updateText, 16); // 16 毫秒的延迟模拟打字机效果
@@ -531,6 +555,6 @@ export const chatMessage: StateCreator<
         updateText();
       });
 
-    return { startAnimation, stopAnimation, outputQueue, isAnimationActive };
+    return {startAnimation, stopAnimation, outputQueue, isAnimationActive};
   },
 });
