@@ -35,18 +35,18 @@ const TopActions = memo<TopActionProps>(({ tab, setTab }) => {
           title={t('tab.chat')}
         />
       </Link>
-      <Link href={'/market'}>
-        <ActionIcon
-          active={tab === SidebarTabKey.Market}
-          icon={Compass}
-          onClick={() => {
-            setTab(SidebarTabKey.Market);
-          }}
-          placement={'right'}
-          size="large"
-          title={t('tab.market')}
-        />
-      </Link>
+      {/*<Link href={'/market'}>*/}
+      {/*  <ActionIcon*/}
+      {/*    active={tab === SidebarTabKey.Market}*/}
+      {/*    icon={Compass}*/}
+      {/*    onClick={() => {*/}
+      {/*      setTab(SidebarTabKey.Market);*/}
+      {/*    }}*/}
+      {/*    placement={'right'}*/}
+      {/*    size="large"*/}
+      {/*    title={t('tab.market')}*/}
+      {/*  />*/}
+      {/*</Link>*/}
     </>
   );
 });

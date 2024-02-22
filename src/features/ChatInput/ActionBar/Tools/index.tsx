@@ -1,4 +1,4 @@
-import { ActionIcon, Avatar, Icon } from '@lobehub/ui';
+import { ActionIcon, Icon } from '@lobehub/ui';
 import { Dropdown } from 'antd';
 import { createStyles } from 'antd-style';
 import isEqual from 'fast-deep-equal';
@@ -57,7 +57,7 @@ const Tools = memo(() => {
           items: [
             {
               children: builtinList.map((item) => ({
-                icon: <Avatar avatar={item.meta.avatar} size={24} />,
+                // icon: <Avatar avatar={item.meta.avatar} size={24} />,
                 key: item.identifier,
                 label: (
                   <ToolItem
@@ -74,11 +74,11 @@ const Tools = memo(() => {
             {
               children: [
                 ...list.map((item) => ({
-                  icon: item.meta?.avatar ? (
-                    <Avatar avatar={pluginHelpers.getPluginAvatar(item.meta)} size={24} />
-                  ) : (
-                    <Icon icon={ToyBrick} size={{ fontSize: 16 }} style={{ padding: 4 }} />
-                  ),
+                  // icon: item.meta?.avatar ? (
+                  //   <Avatar avatar={pluginHelpers.getPluginAvatar(item.meta)} size={24} />
+                  // ) : (
+                  //   <Icon icon={ToyBrick} size={{ fontSize: 16 }} style={{ padding: 4 }} />
+                  // ),
                   key: item.identifier,
                   label: (
                     <ToolItem

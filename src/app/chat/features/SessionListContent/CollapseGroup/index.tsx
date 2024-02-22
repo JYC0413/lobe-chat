@@ -39,9 +39,11 @@ const useStyles = createStyles(({ css, prefixCls, token, responsive }) => ({
 }));
 
 const CollapseGroup = memo<CollapseProps>((props) => {
+  console.log(props)
   const { styles } = useStyles();
   return (
     <Collapse
+      style={{color:'wheat'}}
       bordered={false}
       className={styles.container}
       expandIcon={({ isActive }) => (

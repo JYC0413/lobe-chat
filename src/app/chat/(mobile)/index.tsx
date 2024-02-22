@@ -21,7 +21,7 @@ const ChatMobilePage = memo(() => {
   }, []);
 
   return (
-    <AppLayoutMobile navBar={<SessionHeader />} showTabBar>
+    <AppLayoutMobile style={{backgroundColor:"white"}} navBar={<SessionHeader />} showTabBar>
       <PageTitle />
       <SessionList />
     </AppLayoutMobile>

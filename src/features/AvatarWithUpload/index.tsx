@@ -1,16 +1,16 @@
-import { Logo } from '@lobehub/ui';
-import { Upload } from 'antd';
-import { createStyles } from 'antd-style';
+import {Upload} from 'antd';
+import {createStyles} from 'antd-style';
 import Avatar from 'next/image';
-import { CSSProperties, memo } from 'react';
+import {CSSProperties, memo} from 'react';
 
-import { useGlobalStore } from '@/store/global';
-import { commonSelectors } from '@/store/global/selectors';
-import { imageToBase64 } from '@/utils/imageToBase64';
-import { createUploadImageHandler } from '@/utils/uploadFIle';
+import { DEFAULT_INBOX_AVATAR } from '@/const/meta';
+import {useGlobalStore} from '@/store/global';
+import {commonSelectors} from '@/store/global/selectors';
+import {imageToBase64} from '@/utils/imageToBase64';
+import {createUploadImageHandler} from '@/utils/uploadFIle';
 
 const useStyle = createStyles(
-  ({ css, token }) => css`
+  ({css, token}) => css`
     cursor: pointer;
     overflow: hidden;
     border-radius: 50%;
@@ -29,6 +29,7 @@ const useStyle = createStyles(
 );
 
 interface AvatarWithUploadProps {
+  passAvatar?: string;
   compressSize?: number;
   id?: string;
   size?: number;
@@ -36,8 +37,8 @@ interface AvatarWithUploadProps {
 }
 
 const AvatarWithUpload = memo<AvatarWithUploadProps>(
-  ({ size = 40, compressSize = 256, style, id }) => {
-    const { styles } = useStyle();
+  ({passAvatar, size = 40, compressSize = 256, style, id}) => {
+    const {styles} = useStyle();
     const [avatar, updateAvatar] = useGlobalStore((s) => [
       commonSelectors.userAvatar(s),
       s.updateAvatar,
@@ -47,19 +48,21 @@ const AvatarWithUpload = memo<AvatarWithUploadProps>(
       const img = new Image();
       img.src = avatar;
       img.addEventListener('load', () => {
-        const webpBase64 = imageToBase64({ img, size: compressSize });
+        const webpBase64 = imageToBase64({img, size: compressSize});
         updateAvatar(webpBase64);
       });
     });
 
+    if (!avatar && passAvatar) {
+      handleUploadAvatar(DEFAULT_INBOX_AVATAR)
+    }
+
     return (
-      <div className={styles} id={id} style={{ maxHeight: size, maxWidth: size, ...style }}>
+      <div className={styles} id={id} style={{maxHeight: size, maxWidth: size, ...style}}>
         <Upload beforeUpload={handleUploadAvatar} itemRender={() => void 0} maxCount={1}>
           {avatar ? (
-            <Avatar alt={'avatar'} height={size} src={avatar} width={size} />
-          ) : (
-            <Logo size={size} />
-          )}
+            <Avatar alt={'avatar'} height={size} src={avatar} width={size}/>
+          ) : <div style={{width: size, height: size}}/>}
         </Upload>
       </div>
     );

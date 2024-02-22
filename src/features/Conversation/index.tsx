@@ -54,7 +54,7 @@ const Conversation = memo<ConversationProps>(({ chatInput, mobile }) => {
     <Flexbox
       flex={1}
       //  position: 'relative' is required, ChatInput's absolute position needs it
-      style={{ position: 'relative' }}
+      style={{ position: 'relative',backgroundColor:"rgb(250,250,250)" }}
     >
       <div className={styles}>
         {init ? <ChatList mobile={mobile} /> : <SkeletonList mobile={mobile} />}

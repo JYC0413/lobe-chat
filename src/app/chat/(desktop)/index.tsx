@@ -21,7 +21,7 @@ const DesktopPage = memo(() => (
       <ChatHeader />
       <Flexbox flex={1} height={'calc(100% - 64px)'} horizontal>
         <Conversation />
-        <SideBar />
+        {/*<SideBar />*/}
       </Flexbox>
     </Layout>
   </ResponsiveIndex>

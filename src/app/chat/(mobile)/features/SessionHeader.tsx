@@ -1,4 +1,5 @@
-import { ActionIcon, Avatar, Logo, MobileNavBar } from '@lobehub/ui';
+import { ActionIcon, Avatar, Logo,MobileNavBar } from '@lobehub/ui';
+// import MobileNavBar from '/change/MobileNavBar/index';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -25,19 +26,20 @@ const Header = memo(() => {
   const avatar = useGlobalStore(commonSelectors.userAvatar);
   return (
     <MobileNavBar
+      style={{background:"#247678"}}
       center={<Logo type={'text'} />}
-      left={
-        <div onClick={() => router.push('/settings')} style={{ marginLeft: 8 }}>
-          {avatar ? <Avatar avatar={avatar} size={28} /> : <Logo size={28} />}
-        </div>
-      }
-      right={
-        <ActionIcon
-          icon={MessageSquarePlus}
-          onClick={() => createSession()}
-          size={MOBILE_HEADER_ICON_SIZE}
-        />
-      }
+      // left={
+      //   <div onClick={() => router.push('/settings')} style={{ marginLeft: 8 }}>
+      //     {avatar ? <Avatar avatar={avatar} size={28} /> : <Logo size={28} />}
+      //   </div>
+      // }
+      // right={
+      //   <ActionIcon
+      //     icon={MessageSquarePlus}
+      //     onClick={() => createSession()}
+      //     size={MOBILE_HEADER_ICON_SIZE}
+      //   />
+      // }
     />
   );
 });

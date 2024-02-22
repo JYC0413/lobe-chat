@@ -28,16 +28,16 @@ const ChatInputMobileLayout = memo(() => {
         background: `linear-gradient(to bottom, ${theme.colorFillQuaternary}, transparent)`,
         width: '100vw',
       }}
-      textAreaLeftAddons={<STT mobile />}
+      // textAreaLeftAddons={<STT mobile />}
       textAreaRightAddons={
         <MobileChatSendButton loading={loading} onSend={onSend} onStop={onStop} />
       }
-      topAddons={
-        <>
-          <Files />
-          <ActionBar mobile padding={'0 8px'} rightAreaStartRender={<SaveTopic mobile />} />
-        </>
-      }
+      // topAddons={
+      //   <>
+      //     <Files />
+      //     <ActionBar mobile padding={'0 8px'} rightAreaStartRender={<SaveTopic mobile />} />
+      //   </>
+      // }
       value={value}
     />
   );

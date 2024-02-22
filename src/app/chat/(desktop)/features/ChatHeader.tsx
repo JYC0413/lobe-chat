@@ -17,6 +17,7 @@ import { pathString } from '@/utils/url';
 import PluginTag from '../../features/ChatHeader/PluginTag';
 import SettingButton from '../../features/ChatHeader/SettingButton';
 import ShareButton from '../../features/ChatHeader/ShareButton';
+import AvatarWithUpload from "@/features/AvatarWithUpload";
 
 const Left = memo(() => {
   const { t } = useTranslation('chat');
@@ -39,6 +40,8 @@ const Left = memo(() => {
   const displayTitle = isInbox ? t('inbox.title') : title;
   const displayDesc = isInbox ? t('inbox.desc') : description;
 
+  console.log(displayTitle)
+  console.log(displayTitle.toString())
   return !init ? (
     <Flexbox horizontal>
       <Skeleton
@@ -49,26 +52,20 @@ const Left = memo(() => {
       />
     </Flexbox>
   ) : (
-    <Flexbox align={'flex-start'} gap={12} horizontal>
-      <Avatar
-        avatar={avatar}
-        background={backgroundColor}
-        onClick={() =>
-          isInbox
-            ? router.push('/settings/agent')
-            : router.push(pathString('/chat/settings', { hash: location.hash }))
-        }
+    <Flexbox align={'flex-center'} gap={12} horizontal>
+      <AvatarWithUpload
+        id={displayTitle}
         size={40}
-        title={title}
+        // title={title}
       />
       <ChatHeaderTitle
-        desc={displayDesc}
-        tag={
-          <>
-            <ModelTag model={model} />
-            {showPlugin && plugins?.length > 0 && <PluginTag plugins={plugins} />}
-          </>
-        }
+        // desc={displayDesc}
+        // tag={
+        //   <>
+        //     <ModelTag model={model} />
+        //     {showPlugin && plugins?.length > 0 && <PluginTag plugins={plugins} />}
+        //   </>
+        // }
         title={displayTitle}
       />
     </Flexbox>
@@ -85,18 +82,18 @@ const Right = memo(() => {
 
   return (
     <>
-      <ShareButton />
-      <ActionIcon
-        icon={showAgentSettings ? PanelRightClose : PanelRightOpen}
-        onClick={() => toggleConfig()}
-        size={DESKTOP_HEADER_ICON_SIZE}
-        title={t('roleAndArchive')}
-      />
-      <SettingButton />
+      {/*<ShareButton />*/}
+      {/*<ActionIcon*/}
+      {/*  icon={showAgentSettings ? PanelRightClose : PanelRightOpen}*/}
+      {/*  onClick={() => toggleConfig()}*/}
+      {/*  size={DESKTOP_HEADER_ICON_SIZE}*/}
+      {/*  title={t('roleAndArchive')}*/}
+      {/*/>*/}
+      {/*<SettingButton />*/}
     </>
   );
 });
 
-const Header = memo(() => <ChatHeader left={<Left />} right={<Right />} />);
+const Header = memo(() => <ChatHeader style={{backgroundColor:"white",background:"linear-gradient(to bottom,white,rgba(255, 255, 255,0.9)",color:"rgb(84,84,84)"}} left={<Left />} right={<Right />} />);
 
 export default Header;

@@ -76,12 +76,14 @@ class ChatService {
       res,
     );
 
+    console.log("res",res)
+    console.log("provider",provider)
     const headers = await createHeaderWithAuth({
       headers: { 'Content-Type': 'application/json' },
       provider,
     });
 
-    return fetch(`/api/chat/${provider}`, {
+    return fetch(`/api/chatWithFlow`, {
       body: JSON.stringify(payload),
       headers,
       method: 'POST',

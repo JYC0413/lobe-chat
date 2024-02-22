@@ -15,6 +15,7 @@ const SessionSearchBar = memo(() => {
   const { mobile } = useResponsive();
   return (
     <SearchBar
+      style={{color:"wheat",backgroundColor:"#247678"}}
       allowClear
       enableShortKey={!mobile}
       onChange={(e) => {

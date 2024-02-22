@@ -26,18 +26,19 @@ const Header = memo(() => {
   const [createSession] = useSessionStore((s) => [s.createSession]);
 
   return (
-    <Flexbox className={styles.top} gap={16} padding={16}>
-      <Flexbox distribution={'space-between'} horizontal>
-        <Logo className={styles.logo} size={36} type={'text'} />
-        <ActionIcon
-          icon={MessageSquarePlus}
-          onClick={() => createSession()}
-          size={DESKTOP_HEADER_ICON_SIZE}
-          style={{ flex: 'none' }}
-          title={t('newAgent')}
-        />
+    <Flexbox style={{backgroundColor:"#247678"}} className={styles.top} gap={16} padding={16}>
+      <Flexbox align={'center'} distribution={'space-between'} horizontal>
+        {/*<Logo className={styles.logo} size={36} type={'text'} />*/}
+        <div style={{fontSize:"2.25rem",fontWeight:700,color:"white"}}>Pastor</div>
+        {/*<ActionIcon*/}
+        {/*  icon={MessageSquarePlus}*/}
+        {/*  onClick={() => createSession()}*/}
+        {/*  size={DESKTOP_HEADER_ICON_SIZE}*/}
+        {/*  style={{ flex: 'none' }}*/}
+        {/*  title={t('newAgent')}*/}
+        {/*/>*/}
       </Flexbox>
-      <SessionSearchBar />
+      {/*<SessionSearchBar />*/}
     </Flexbox>
   );
 });

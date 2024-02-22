@@ -15,7 +15,6 @@ import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 
 import StopLoadingIcon from '@/components/StopLoading';
-import SaveTopic from '@/features/ChatInput/Topic';
 import { useSendMessage } from '@/features/ChatInput/useSend';
 import { useChatStore } from '@/store/chat';
 import { useGlobalStore } from '@/store/global';
@@ -114,7 +113,7 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
         <Flexbox
           gap={4}
           horizontal
-          style={{ color: theme.colorTextDescription, fontSize: 12, marginRight: 12 }}
+          style={{ color: "white", fontSize: 12, marginRight: 12 }}
         >
           {sendShortcut}
           <span>{t('input.send')}</span>
@@ -122,7 +121,7 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
           {wrapperShortcut}
           <span>{t('input.warp')}</span>
         </Flexbox>
-        <SaveTopic />
+        {/*<SaveTopic />*/}
         <Flexbox style={{ minWidth: 92 }}>
           {loading ? (
             <Button

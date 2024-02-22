@@ -1,18 +1,18 @@
-import { TextArea } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { TextAreaRef } from 'antd/es/input/TextArea';
-import { memo, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import {TextArea} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {TextAreaRef} from 'antd/es/input/TextArea';
+import {memo, useEffect, useRef} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useSendMessage } from '@/features/ChatInput/useSend';
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { preferenceSelectors } from '@/store/global/selectors';
-import { isCommandPressed } from '@/utils/keyboard';
+import {useSendMessage} from '@/features/ChatInput/useSend';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {preferenceSelectors} from '@/store/global/selectors';
+import {isCommandPressed} from '@/utils/keyboard';
 
-import { useAutoFocus } from './useAutoFocus';
+import {useAutoFocus} from './useAutoFocus';
 
-const useStyles = createStyles(({ css }) => {
+const useStyles = createStyles(({css}) => {
   return {
     textarea: css`
       resize: none !important;
@@ -31,9 +31,9 @@ const useStyles = createStyles(({ css }) => {
   };
 });
 
-const InputArea = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) => {
-  const { t } = useTranslation('chat');
-  const { styles } = useStyles();
+const InputArea = memo<{ setExpand?: (expand: boolean) => void }>(({setExpand}) => {
+  const {t} = useTranslation('chat');
+  const {styles} = useStyles();
   const ref = useRef<TextAreaRef>(null);
   const isChineseInput = useRef(false);
 
@@ -70,6 +70,7 @@ const InputArea = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }
     <div className={styles.textareaContainer}>
       <TextArea
         autoFocus
+        style={{color: 'black'}}
         className={styles.textarea}
         onBlur={(e) => {
           updateInputMessage?.(e.target.value);

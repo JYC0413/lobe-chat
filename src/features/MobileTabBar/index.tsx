@@ -35,29 +35,30 @@ export default memo<{ className?: string }>(({ className }) => {
         },
         title: t('tab.chat'),
       },
-      {
-        icon: (active) => <Icon className={active ? styles.active : undefined} icon={Bot} />,
-        key: SidebarTabKey.Market,
-        onClick: () => {
-          setTab(SidebarTabKey.Market);
-          router.push('/market');
-        },
-        title: t('tab.market'),
-      },
-      {
-        icon: (active) => <Icon className={active ? styles.active : undefined} icon={User} />,
-        key: SidebarTabKey.Setting,
-        onClick: () => {
-          setTab(SidebarTabKey.Setting);
-          router.push('/settings');
-        },
-        title: t('tab.setting'),
-      },
+      // {
+      //   icon: (active) => <Icon className={active ? styles.active : undefined} icon={Bot} />,
+      //   key: SidebarTabKey.Market,
+      //   onClick: () => {
+      //     setTab(SidebarTabKey.Market);
+      //     router.push('/market');
+      //   },
+      //   title: t('tab.market'),
+      // },
+      // {
+      //   icon: (active) => <Icon className={active ? styles.active : undefined} icon={User} />,
+      //   key: SidebarTabKey.Setting,
+      //   onClick: () => {
+      //     setTab(SidebarTabKey.Setting);
+      //     router.push('/settings');
+      //   },
+      //   title: t('tab.setting'),
+      // },
     ],
     [t],
   );
   return (
     <MobileTabBar
+      style={{backgroundColor:"#247678"}}
       activeKey={tab}
       className={className}
       items={items}

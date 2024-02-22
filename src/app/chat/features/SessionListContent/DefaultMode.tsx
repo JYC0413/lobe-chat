@@ -64,7 +64,7 @@ const SessionListContent = memo(() => {
           children: <SessionList dataSource={defaultSessions} />,
           extra: <Actions openConfigModal={() => setConfigGroupModalOpen(true)} />,
           key: SessionDefaultGroup.Default,
-          label: t('defaultList'),
+          label: <span style={{color:'#fffbf3'}}>defaultList</span>,
         },
       ].filter(Boolean) as CollapseProps['items'],
     [customSessionGroups, pinnedSessions, defaultSessions],
@@ -72,27 +72,35 @@ const SessionListContent = memo(() => {
 
   return (
     <>
+      <style>
+        {`#black div{
+        color:black;
+      }
+      #white div{
+        color:white;
+      }`}
+      </style>
       <Inbox />
-      <CollapseGroup
-        activeKey={sessionGroupKeys}
-        items={items}
-        onChange={(keys) => {
-          const expandSessionGroupKeys = typeof keys === 'string' ? [keys] : keys;
+      {/*<CollapseGroup*/}
+      {/*  activeKey={sessionGroupKeys}*/}
+      {/*  items={items}*/}
+      {/*  onChange={(keys) => {*/}
+      {/*    const expandSessionGroupKeys = typeof keys === 'string' ? [keys] : keys;*/}
 
-          updatePreference({ expandSessionGroupKeys });
-        }}
-      />
-      {activeGroupId && (
-        <RenameGroupModal
-          id={activeGroupId}
-          onCancel={() => setRenameGroupModalOpen(false)}
-          open={renameGroupModalOpen}
-        />
-      )}
-      <ConfigGroupModal
-        onCancel={() => setConfigGroupModalOpen(false)}
-        open={configGroupModalOpen}
-      />
+      {/*    updatePreference({ expandSessionGroupKeys });*/}
+      {/*  }}*/}
+      {/*/>*/}
+      {/*{activeGroupId && (*/}
+      {/*  <RenameGroupModal*/}
+      {/*    id={activeGroupId}*/}
+      {/*    onCancel={() => setRenameGroupModalOpen(false)}*/}
+      {/*    open={renameGroupModalOpen}*/}
+      {/*  />*/}
+      {/*)}*/}
+      {/*<ConfigGroupModal*/}
+      {/*  onCancel={() => setConfigGroupModalOpen(false)}*/}
+      {/*  open={configGroupModalOpen}*/}
+      {/*/>*/}
     </>
   );
 });

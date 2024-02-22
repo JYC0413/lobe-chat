@@ -1,4 +1,5 @@
-import { AlertProps, ChatItem } from '@lobehub/ui';
+import { AlertProps } from '@lobehub/ui';
+import ChatItem from '/change/ChatItem/index';
 import { createStyles } from 'antd-style';
 import isEqual from 'fast-deep-equal';
 import { ReactNode, memo, useCallback, useMemo, useState } from 'react';
@@ -99,9 +100,22 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
     );
   });
 
+  const placement = (type === 'chat' ? (item.role === 'user' ? 'right' : 'left') : 'left')
+
   return (
     item && (
       <>
+        <style>
+          {`
+          #left p{
+          color: rgb(60,60,60);
+        }
+
+        #right p{
+          color: white;
+        }
+        `}
+        </style>
         <HistoryDivider enable={enableHistoryDivider} />
         <ChatItem
           actions={<ActionsBar index={index} setEditing={setEditing} />}
@@ -122,7 +136,7 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
             }
           }}
           onEditingChange={setEditing}
-          placement={type === 'chat' ? (item.role === 'user' ? 'right' : 'left') : 'left'}
+          placement={placement}
           primary={item.role === 'user'}
           renderMessage={(editableContent) => (
             <RenderMessage data={item} editableContent={editableContent} />

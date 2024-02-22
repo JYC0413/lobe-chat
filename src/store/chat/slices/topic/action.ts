@@ -103,23 +103,23 @@ export const chatTopic: StateCreator<
 
     let output = '';
 
-    // 自动总结话题标题
-    await chatService.fetchPresetTaskResult({
-      onError: () => {
-        updateTopicTitleInSummary(topicId, topic.title);
-      },
-      onFinish: async (text) => {
-        topicService.updateTitle(topicId, text);
-      },
-      onLoadingChange: (loading) => {
-        updateTopicLoading(loading ? topicId : undefined);
-      },
-      onMessageHandle: (x) => {
-        output += x;
-        updateTopicTitleInSummary(topicId, output);
-      },
-      params: await chainSummaryTitle(messages),
-    });
+    // // 自动总结话题标题
+    // await chatService.fetchPresetTaskResult({
+    //   onError: () => {
+    //     updateTopicTitleInSummary(topicId, topic.title);
+    //   },
+    //   onFinish: async (text) => {
+    //     topicService.updateTitle(topicId, text);
+    //   },
+    //   onLoadingChange: (loading) => {
+    //     updateTopicLoading(loading ? topicId : undefined);
+    //   },
+    //   onMessageHandle: (x) => {
+    //     output += x;
+    //     updateTopicTitleInSummary(topicId, output);
+    //   },
+    //   params: await chainSummaryTitle(messages),
+    // });
     await refreshTopic();
   },
   favoriteTopic: async (id, favState) => {

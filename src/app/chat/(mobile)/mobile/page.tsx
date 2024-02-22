@@ -21,7 +21,13 @@ const Chat = memo(() => {
 
   return (
     <AppLayoutMobile navBar={<ChatHeader />}>
-      <Flexbox height={'calc(100% - 44px)'} horizontal>
+      <style>
+        {`#mobileTextArea textarea {
+          color:black;
+          background-color:rgb(240,240,240);
+        }`}
+      </style>
+      <Flexbox id="mobileTextArea" height={'calc(100% - 44px)'} horizontal>
         <Conversation chatInput={<ChatInput />} mobile />
         <TopicList />
       </Flexbox>

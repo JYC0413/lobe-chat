@@ -12,5 +12,5 @@ export const DefaultMessage = memo<
 >(({ id, editableContent, content }) => {
   if (content === LOADING_FLAT) return <BubblesLoading />;
 
-  return <div id={id}>{editableContent}</div>;
+  return <div style={{color:"black"}} id={id}>{editableContent}</div>;
 });

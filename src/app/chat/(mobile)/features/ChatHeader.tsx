@@ -1,4 +1,4 @@
-import { MobileNavBar } from '@lobehub/ui';
+import MobileNavBar from '/change/MobileNavBar/index';
 import { useRouter } from 'next/navigation';
 import { memo, useState } from 'react';
 
@@ -29,20 +29,20 @@ const MobileHeader = memo(() => {
     <MobileNavBar
       center={<ChatHeaderTitle />}
       onBackClick={() => router.push('/chat')}
-      right={
-        <>
-          <ShareButton mobile open={open} setOpen={setOpen} />
-          <SettingButton mobile />
-          {/*<Dropdown*/}
-          {/*  menu={{*/}
-          {/*    items,*/}
-          {/*  }}*/}
-          {/*  trigger={['click']}*/}
-          {/*>*/}
-          {/*  <ActionIcon icon={MoreHorizontal} />*/}
-          {/*</Dropdown>*/}
-        </>
-      }
+      // right={
+      //   <>
+      //     <ShareButton mobile open={open} setOpen={setOpen} />
+      //     <SettingButton mobile />
+      //     {/*<Dropdown*/}
+      //     {/*  menu={{*/}
+      //     {/*    items,*/}
+      //     {/*  }}*/}
+      //     {/*  trigger={['click']}*/}
+      //     {/*>*/}
+      //     {/*  <ActionIcon icon={MoreHorizontal} />*/}
+      //     {/*</Dropdown>*/}
+      //   </>
+      // }
       showBackButton
     />
   );

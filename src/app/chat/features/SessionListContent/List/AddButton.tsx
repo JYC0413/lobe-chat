@@ -12,7 +12,7 @@ const AddButton = memo<{ groupId?: string }>(({ groupId }) => {
   const createSession = useSessionStore((s) => s.createSession);
   return (
     <Flexbox style={{ margin: '12px 16px' }}>
-      <Button block icon={<Icon icon={Plus} />} onClick={() => createSession({ group: groupId })}>
+      <Button style={{backgroundColor:"#276c6e"}} block icon={<Icon icon={Plus} />} onClick={() => createSession({ group: groupId })}>
         {t('newAgent')}
       </Button>
     </Flexbox>

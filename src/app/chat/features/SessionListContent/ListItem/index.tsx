@@ -1,11 +1,12 @@
-import { Avatar, List, ListItemProps } from '@lobehub/ui';
-import { useHover } from 'ahooks';
-import { createStyles, useResponsive } from 'antd-style';
-import { memo, useMemo, useRef } from 'react';
+import {List, ListItemProps} from '@lobehub/ui';
+import {useHover} from 'ahooks';
+import {createStyles, useResponsive} from 'antd-style';
+import {memo, useMemo, useRef} from 'react';
+import AvatarWithUpload from "@/features/AvatarWithUpload";
 
-const { Item } = List;
+const {Item} = List;
 
-const useStyles = createStyles(({ css, token, responsive }) => {
+const useStyles = createStyles(({css, token, responsive}) => {
   return {
     container: css`
       position: relative;
@@ -20,22 +21,22 @@ const useStyles = createStyles(({ css, token, responsive }) => {
         padding-left: 12px;
         border-radius: 0;
       }
+
     `,
   };
 });
 
 const ListItem = memo<ListItemProps & { avatar: string; avatarBackground?: string }>(
-  ({ avatar, avatarBackground, active, showAction, actions, ...props }) => {
+  ({avatar, avatarBackground, active, showAction, actions, ...props}) => {
     const ref = useRef(null);
     const isHovering = useHover(ref);
-    const { mobile } = useResponsive();
-    const { styles } = useStyles();
+    const {mobile} = useResponsive();
+    const {styles} = useStyles();
 
     const avatarRender = useMemo(
       () => (
-        <Avatar
+        <AvatarWithUpload
           animation={isHovering}
-          avatar={avatar}
           background={avatarBackground}
           shape="circle"
           size={46}
@@ -45,15 +46,19 @@ const ListItem = memo<ListItemProps & { avatar: string; avatarBackground?: strin
     );
 
     return (
-      <Item
-        actions={actions}
-        active={mobile ? false : active}
-        avatar={avatarRender}
-        className={styles.container}
-        ref={ref}
-        showAction={actions && (isHovering || showAction)}
-        {...(props as any)}
-      />
+      <>
+        <Item
+          actions={actions}
+          active={mobile ? false : active}
+          id={mobile ? "black" : "white"}
+          style={{paddingTop:"1.5rem"}}
+          avatar={avatarRender}
+          className={styles.container}
+          ref={ref}
+          showAction={actions && (isHovering || showAction)}
+          {...(props as any)}
+        />
+      </>
     );
   },
 );

@@ -28,20 +28,20 @@ const ChatHeaderTitle = memo(() => {
 
   return (
     <MobileNavBarTitle
-      desc={
-        <Flexbox align={'center'} gap={4} horizontal onClick={() => toggleConfig()}>
-          <ActionIcon
-            active
-            icon={ChevronDown}
-            size={{ blockSize: 14, borderRadius: '50%', fontSize: 12 }}
-            style={{
-              background: theme.colorFillSecondary,
-              color: theme.colorTextDescription,
-            }}
-          />
-          <span>{topic?.title || t('topic.title')}</span>
-        </Flexbox>
-      }
+      // desc={
+      //   <Flexbox align={'center'} gap={4} horizontal onClick={() => toggleConfig()}>
+      //     <ActionIcon
+      //       active
+      //       icon={ChevronDown}
+      //       size={{ blockSize: 14, borderRadius: '50%', fontSize: 12 }}
+      //       style={{
+      //         background: theme.colorFillSecondary,
+      //         color: theme.colorTextDescription,
+      //       }}
+      //     />
+      //     <span>{topic?.title || t('topic.title')}</span>
+      //   </Flexbox>
+      // }
       title={
         <div onClick={() => toggleConfig()}>
           {displayTitle}

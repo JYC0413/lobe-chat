@@ -6,9 +6,9 @@ import SessionSearchBar from '../../features/SessionSearchBar';
 const Sessions = memo(() => {
   return (
     <>
-      <div style={{ padding: '8px 16px' }}>
-        <SessionSearchBar />
-      </div>
+      {/*<div style={{ padding: '8px 16px' }}>*/}
+      {/*  <SessionSearchBar />*/}
+      {/*</div>*/}
       <SessionListContent />
     </>
   );

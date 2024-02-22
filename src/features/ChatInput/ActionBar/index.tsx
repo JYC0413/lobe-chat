@@ -35,13 +35,13 @@ const ActionBar = memo<ActionBarProps>(
 
     return (
       <ChatInputActionBar
-        leftAddons={
-          <>
-            {leftAreaStartRender}
-            <RenderActionList dataSource={leftActionList} />
-            {leftAreaEndRender}
-          </>
-        }
+        // leftAddons={
+        //   <>
+        //     {leftAreaStartRender}
+        //     <RenderActionList dataSource={leftActionList} />
+        //     {leftAreaEndRender}
+        //   </>
+        // }
         padding={padding}
         rightAddons={
           <>
