@@ -1,6 +1,4 @@
-export const config = {
-  runtime: 'edge',
-};
+export const runtime = "edge";
 
 export const POST = async (req: Request): Promise<Response> => {
   try {
