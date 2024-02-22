@@ -1,14 +1,10 @@
-import MobileNavBar from '/change/MobileNavBar/index';
-import { useRouter } from 'next/navigation';
-import { memo, useState } from 'react';
-
-import SettingButton from '../../features/ChatHeader/SettingButton';
-import ShareButton from '../../features/ChatHeader/ShareButton';
+import { MobileNavBar } from '/change';
+import {useRouter} from 'next/navigation';
+import {memo} from 'react';
 import ChatHeaderTitle from './ChatHeaderTitle';
 
 const MobileHeader = memo(() => {
   const router = useRouter();
-  const [open, setOpen] = useState(false);
 
   // const items: MenuProps['items'] = [
   //   {
@@ -27,7 +23,7 @@ const MobileHeader = memo(() => {
 
   return (
     <MobileNavBar
-      center={<ChatHeaderTitle />}
+      center={<ChatHeaderTitle/>}
       onBackClick={() => router.push('/chat')}
       // right={
       //   <>
