@@ -1,4 +1,4 @@
-import { MobileNavBar } from '/change';
+import MobileNavBar from '/change/MobileNavBar/index';
 import {useRouter} from 'next/navigation';
 import {memo} from 'react';
 import ChatHeaderTitle from './ChatHeaderTitle';
