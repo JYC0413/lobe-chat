@@ -1,9 +1,8 @@
-import { LobeChatPluginManifest, LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
-import { describe, expect, it } from 'vitest';
+import {LobeChatPluginManifest, LobeChatPluginMeta} from '@lobehub/chat-plugin-sdk';
+import {describe, expect, it} from 'vitest';
 
-import { initialState } from '../initialState';
-import { ToolStoreState } from '../initialState';
-import { toolSelectors } from './tool';
+import {initialState, ToolStoreState} from '../initialState';
+import {toolSelectors} from './tool';
 
 const mockState = {
   ...initialState,

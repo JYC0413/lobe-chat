@@ -1,19 +1,19 @@
-import { gt } from 'semver';
-import useSWR, { SWRResponse, mutate } from 'swr';
-import { DeepPartial } from 'utility-types';
-import type { StateCreator } from 'zustand/vanilla';
+import {gt} from 'semver';
+import useSWR, {mutate, SWRResponse} from 'swr';
+import {DeepPartial} from 'utility-types';
+import type {StateCreator} from 'zustand/vanilla';
 
-import { INBOX_SESSION_ID } from '@/const/session';
-import { SESSION_CHAT_URL } from '@/const/url';
-import { CURRENT_VERSION } from '@/const/version';
-import { globalService } from '@/services/global';
-import { UserConfig, userService } from '@/services/user';
-import type { GlobalStore } from '@/store/global';
-import type { GlobalServerConfig, GlobalSettings } from '@/types/settings';
-import { merge } from '@/utils/merge';
-import { setNamespace } from '@/utils/storeDebug';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {SESSION_CHAT_URL} from '@/const/url';
+import {CURRENT_VERSION} from '@/const/version';
+import {globalService} from '@/services/global';
+import {UserConfig, userService} from '@/services/user';
+import type {GlobalStore} from '@/store/global';
+import type {GlobalServerConfig, GlobalSettings} from '@/types/settings';
+import {merge} from '@/utils/merge';
+import {setNamespace} from '@/utils/storeDebug';
 
-import type { SidebarTabKey } from './initialState';
+import type {SidebarTabKey} from './initialState';
 
 const n = setNamespace('common');
 

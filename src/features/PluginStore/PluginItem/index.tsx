@@ -1,12 +1,12 @@
-import { Avatar, Tooltip } from '@lobehub/ui';
-import { Typography } from 'antd';
-import { createStyles } from 'antd-style';
+import {Avatar, Tooltip} from '@lobehub/ui';
+import {Typography} from 'antd';
+import {createStyles} from 'antd-style';
 import Link from 'next/link';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import PluginTag from '@/features/PluginStore/PluginItem/PluginTag';
-import { InstallPluginMeta } from '@/types/tool/plugin';
+import {InstallPluginMeta} from '@/types/tool/plugin';
 
 import Actions from './Action';
 

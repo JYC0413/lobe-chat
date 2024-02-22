@@ -1,6 +1,6 @@
-import { LLMRoleType } from '@/types/llm';
+import {LLMRoleType} from '@/types/llm';
 
-import { OpenAIFunctionCall } from './functionCall';
+import {OpenAIFunctionCall} from './functionCall';
 
 interface UserMessageContentPartText {
   text: string;

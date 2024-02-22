@@ -1,10 +1,10 @@
-import { useResponsive } from 'antd-style';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {useResponsive} from 'antd-style';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 import EditableMessage from "../../EditableMessage";
-import { useStyles } from "../style";
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+import {useStyles} from "../style";
+import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
+
 var MessageContent = /*#__PURE__*/memo(function (_ref) {
   var editing = _ref.editing,
     onChange = _ref.onChange,

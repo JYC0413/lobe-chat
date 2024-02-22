@@ -1,12 +1,12 @@
-import { Avatar, Icon, Tag } from '@lobehub/ui';
-import type { MenuProps } from 'antd';
-import { Dropdown } from 'antd';
+import {Avatar, Icon, Tag} from '@lobehub/ui';
+import type {MenuProps} from 'antd';
+import {Dropdown} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { LucideToyBrick } from 'lucide-react';
-import { memo } from 'react';
+import {LucideToyBrick} from 'lucide-react';
+import {memo} from 'react';
 
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { toolSelectors } from '@/store/tool/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {toolSelectors} from '@/store/tool/selectors';
 
 import PluginStatus from './PluginStatus';
 

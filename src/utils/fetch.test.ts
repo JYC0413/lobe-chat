@@ -1,8 +1,8 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {afterEach, describe, expect, it, vi} from 'vitest';
 
-import { ErrorResponse, ErrorType } from '@/types/fetch';
+import {ErrorResponse} from '@/types/fetch';
 
-import { fetchAIFactory, fetchSSE, getMessageError } from './fetch';
+import {fetchAIFactory, getMessageError} from './fetch';
 
 // 模拟 i18next
 vi.mock('i18next', () => ({

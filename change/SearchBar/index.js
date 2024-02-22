@@ -1,19 +1,20 @@
 import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
 import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutProperties";
+import {Search} from 'lucide-react';
+import {memo, useEffect, useRef, useState} from 'react';
+import useControlledState from 'use-merge-value';
+import Icon from "../Icon";
+import {Input} from "../Input";
+import Spotlight from "../Spotlight";
+import Tag from "../Tag";
+import {useStyles} from "./style";
+import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
+
 var _excluded = ["defaultValue", "spotlight", "className", "value", "onInputChange", "placeholder", "enableShortKey", "shortKey"];
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-import { Search } from 'lucide-react';
-import { memo, useEffect, useRef, useState } from 'react';
-import useControlledState from 'use-merge-value';
-import Icon from "../Icon";
-import { Input } from "../Input";
-import Spotlight from "../Spotlight";
-import Tag from "../Tag";
-import { useStyles } from "./style";
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+
 var SearchBar = /*#__PURE__*/memo(function (_ref) {
   var defaultValue = _ref.defaultValue,
     spotlight = _ref.spotlight,

@@ -1,11 +1,8 @@
 import {ChatHeader, ChatHeaderTitle} from '@lobehub/ui';
 import {Skeleton} from 'antd';
-import {useRouter} from 'next/navigation';
 import {memo} from 'react';
 import {useTranslation} from 'react-i18next';
 import {Flexbox} from 'react-layout-kit';
-import {useGlobalStore} from '@/store/global';
-import {modelProviderSelectors} from '@/store/global/slices/settings/selectors';
 import {useSessionStore} from '@/store/session';
 import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
 import AvatarWithUpload from "@/features/AvatarWithUpload";

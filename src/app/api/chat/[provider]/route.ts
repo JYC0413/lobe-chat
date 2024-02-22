@@ -1,16 +1,16 @@
-import { getPreferredRegion } from '@/app/api/config';
-import { createErrorResponse } from '@/app/api/errorResponse';
-import { LOBE_CHAT_AUTH_HEADER } from '@/const/auth';
+import {getPreferredRegion} from '@/app/api/config';
+import {createErrorResponse} from '@/app/api/errorResponse';
+import {LOBE_CHAT_AUTH_HEADER} from '@/const/auth';
 import {
   AgentInitErrorPayload,
   AgentRuntimeError,
   ChatCompletionErrorPayload,
   ILobeAgentRuntimeErrorType,
 } from '@/libs/agent-runtime';
-import { ChatErrorType } from '@/types/fetch';
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {ChatErrorType} from '@/types/fetch';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
-import { checkPasswordOrUseUserApiKey, getJWTPayload } from '../auth';
+import {checkPasswordOrUseUserApiKey, getJWTPayload} from '../auth';
 import AgentRuntime from './agentRuntime';
 
 export const runtime = 'edge';

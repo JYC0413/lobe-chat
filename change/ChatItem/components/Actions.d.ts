@@ -1,5 +1,6 @@
 /// <reference types="react" />
-import { ChatItemProps } from "..";
+import {ChatItemProps} from "..";
+
 export interface ActionsProps {
     actions: ChatItemProps['actions'];
     editing?: boolean;

@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react';
+import {memo, useEffect} from 'react';
 
 const PageTitle = memo<{ title: string }>(({ title }) => {
   useEffect(() => {

@@ -1,17 +1,17 @@
-import { Form, type FormItemProps, Modal, type ModalProps } from '@lobehub/ui';
-import { Button, Segmented, SegmentedProps, Switch } from 'antd';
-import { memo, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Form, type FormItemProps, Modal, type ModalProps} from '@lobehub/ui';
+import {Button, Segmented, SegmentedProps, Switch} from 'antd';
+import {memo, useMemo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { commonSelectors } from '@/store/global/selectors';
+import {FORM_STYLE} from '@/const/layoutTokens';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {commonSelectors} from '@/store/global/selectors';
 
 import Preview from './Preview';
-import { FieldType, ImageType } from './type';
-import { useScreenshot } from './useScreenshot';
+import {FieldType, ImageType} from './type';
+import {useScreenshot} from './useScreenshot';
 
 enum Tab {
   Screenshot = 'screenshot',

@@ -1,7 +1,7 @@
-import { BaseModel } from '@/database/core';
-import { DB_SessionGroup, DB_SessionGroupSchema } from '@/database/schemas/sessionGroup';
-import { SessionGroups } from '@/types/session';
-import { nanoid } from '@/utils/uuid';
+import {BaseModel} from '@/database/core';
+import {DB_SessionGroup, DB_SessionGroupSchema} from '@/database/schemas/sessionGroup';
+import {SessionGroups} from '@/types/session';
+import {nanoid} from '@/utils/uuid';
 
 class _SessionGroupModel extends BaseModel {
   constructor() {

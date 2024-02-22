@@ -5,8 +5,8 @@ import {
   OPENAI_END_POINT,
   USE_AZURE_OPENAI,
 } from '@/const/fetch';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors, settingsSelectors } from '@/store/global/selectors';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors, settingsSelectors} from '@/store/global/selectors';
 
 // TODO: Need to be removed after tts refactor
 // eslint-disable-next-line no-undef

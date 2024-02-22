@@ -1,13 +1,13 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Dropdown, MenuProps } from 'antd';
-import { useResponsive } from 'antd-style';
-import { HardDriveDownload } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon} from '@lobehub/ui';
+import {Dropdown, MenuProps} from 'antd';
+import {useResponsive} from 'antd-style';
+import {HardDriveDownload} from 'lucide-react';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { HEADER_ICON_SIZE } from '@/const/layoutTokens';
-import { configService } from '@/services/config';
-import { useSessionStore } from '@/store/session';
+import {HEADER_ICON_SIZE} from '@/const/layoutTokens';
+import {configService} from '@/services/config';
+import {useSessionStore} from '@/store/session';
 
 import SubmitAgentButton from './SubmitAgentButton';
 

@@ -1,12 +1,12 @@
-import { IPluginErrorType } from '@lobehub/chat-plugin-sdk';
+import {IPluginErrorType} from '@lobehub/chat-plugin-sdk';
 
-import { ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
-import { ErrorType } from '@/types/fetch';
+import {ILobeAgentRuntimeErrorType} from '@/libs/agent-runtime';
+import {ErrorType} from '@/types/fetch';
 
-import { LLMRoleType } from '../llm';
-import { BaseDataModel } from '../meta';
-import { ChatPluginPayload } from './tools';
-import { Translate } from './translate';
+import {LLMRoleType} from '../llm';
+import {BaseDataModel} from '../meta';
+import {ChatPluginPayload} from './tools';
+import {Translate} from './translate';
 
 /**
  * 聊天消息错误对象

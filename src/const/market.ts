@@ -1,7 +1,7 @@
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { AgentsMarketItem } from '@/types/market';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {AgentsMarketItem} from '@/types/market';
 
-import { DEFAULT_AGENT_META } from './meta';
+import {DEFAULT_AGENT_META} from './meta';
 
 export const DEFAULT_AGENTS_MARKET_ITEM: AgentsMarketItem = {
   author: '',

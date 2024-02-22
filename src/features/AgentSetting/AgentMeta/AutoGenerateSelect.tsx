@@ -1,10 +1,10 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Select, SelectProps } from 'antd';
-import { useTheme } from 'antd-style';
-import { isString } from 'lodash-es';
-import { Wand2 } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon} from '@lobehub/ui';
+import {Select, SelectProps} from 'antd';
+import {useTheme} from 'antd-style';
+import {isString} from 'lodash-es';
+import {Wand2} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
 export interface AutoGenerateInputProps extends SelectProps {
   loading?: boolean;

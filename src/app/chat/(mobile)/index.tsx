@@ -1,11 +1,11 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { memo, useEffect } from 'react';
+import {useRouter} from 'next/navigation';
+import {memo, useEffect} from 'react';
 
 import AppLayoutMobile from '@/layout/AppLayout.mobile';
-import { useSwitchSideBarOnInit } from '@/store/global';
-import { SidebarTabKey } from '@/store/global/slices/common/initialState';
+import {useSwitchSideBarOnInit} from '@/store/global';
+import {SidebarTabKey} from '@/store/global/slices/common/initialState';
 
 import PageTitle from '../features/PageTitle';
 import SessionHeader from './features/SessionHeader';

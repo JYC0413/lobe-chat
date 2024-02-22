@@ -1,15 +1,15 @@
-import { AudioPlayer } from '@lobehub/tts/react';
-import { Alert, Highlighter } from '@lobehub/ui';
-import { Button, RefSelectProps, Select, SelectProps } from 'antd';
-import { useTheme } from 'antd-style';
-import { forwardRef, useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {AudioPlayer} from '@lobehub/tts/react';
+import {Alert, Highlighter} from '@lobehub/ui';
+import {Button, RefSelectProps, Select, SelectProps} from 'antd';
+import {useTheme} from 'antd-style';
+import {forwardRef, useCallback, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useTTS } from '@/hooks/useTTS';
-import { TTSServer } from '@/types/agent';
-import { ChatMessageError } from '@/types/message';
-import { getMessageError } from '@/utils/fetch';
+import {useTTS} from '@/hooks/useTTS';
+import {TTSServer} from '@/types/agent';
+import {ChatMessageError} from '@/types/message';
+import {getMessageError} from '@/utils/fetch';
 
 interface SelectWithTTSPreviewProps extends SelectProps {
   server: TTSServer;

@@ -1,18 +1,18 @@
-import { StateCreator } from 'zustand/vanilla';
+import {StateCreator} from 'zustand/vanilla';
 
-import { chainPickEmoji } from '@/chains/pickEmoji';
-import { chainSummaryAgentName } from '@/chains/summaryAgentName';
-import { chainSummaryDescription } from '@/chains/summaryDescription';
-import { chainSummaryTags } from '@/chains/summaryTags';
-import { chatService } from '@/services/chat';
-import { LobeAgentConfig } from '@/types/agent';
-import { MetaData } from '@/types/meta';
-import { setNamespace } from '@/utils/storeDebug';
+import {chainPickEmoji} from '@/chains/pickEmoji';
+import {chainSummaryAgentName} from '@/chains/summaryAgentName';
+import {chainSummaryDescription} from '@/chains/summaryDescription';
+import {chainSummaryTags} from '@/chains/summaryTags';
+import {chatService} from '@/services/chat';
+import {LobeAgentConfig} from '@/types/agent';
+import {MetaData} from '@/types/meta';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { SessionLoadingState } from '../store/initialState';
-import { State, initialState } from './initialState';
-import { ConfigDispatch, configReducer } from './reducers/config';
-import { MetaDataDispatch, metaDataReducer } from './reducers/meta';
+import {SessionLoadingState} from '../store/initialState';
+import {initialState, State} from './initialState';
+import {ConfigDispatch, configReducer} from './reducers/config';
+import {MetaDataDispatch, metaDataReducer} from './reducers/meta';
 
 /**
  * 设置操作

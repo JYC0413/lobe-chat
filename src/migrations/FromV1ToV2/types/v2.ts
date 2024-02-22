@@ -1,4 +1,4 @@
-import { V1Config } from './v1';
+import {V1Config} from './v1';
 
 export interface V2ConfigState {
   messages: V2Message[];

@@ -1,8 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { NON_HTTP_PREFIX } from '@/const/auth';
+import {NON_HTTP_PREFIX} from '@/const/auth';
 
-import { createJWT } from './jwt';
+import {createJWT} from './jwt';
 
 describe('createJWT', () => {
   it('should create a JWT token', async () => {

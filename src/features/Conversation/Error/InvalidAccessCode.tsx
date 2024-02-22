@@ -1,13 +1,13 @@
-import { Icon } from '@lobehub/ui';
-import { Segmented } from 'antd';
-import { AsteriskSquare, KeySquare } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {Segmented} from 'antd';
+import {AsteriskSquare, KeySquare} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import APIKeyForm from './APIKeyForm';
 import AccessCodeForm from './AccessCodeForm';
-import { ErrorActionContainer } from './style';
+import {ErrorActionContainer} from './style';
 
 enum Tab {
   Api = 'api',

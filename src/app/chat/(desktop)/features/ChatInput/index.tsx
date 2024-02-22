@@ -1,16 +1,11 @@
-import { DraggablePanel } from '@lobehub/ui';
-import { memo, useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {DraggablePanel} from '@lobehub/ui';
+import {memo, useState} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
-import {
-  CHAT_TEXTAREA_HEIGHT,
-  CHAT_TEXTAREA_MAX_HEIGHT,
-  HEADER_HEIGHT,
-} from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
+import {CHAT_TEXTAREA_HEIGHT, CHAT_TEXTAREA_MAX_HEIGHT, HEADER_HEIGHT,} from '@/const/layoutTokens';
+import {useGlobalStore} from '@/store/global';
 
 import Footer from './Footer';
-import Head from './Header';
 import TextArea from './TextArea';
 
 const ChatInput = memo(() => {

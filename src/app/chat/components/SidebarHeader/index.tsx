@@ -1,6 +1,6 @@
-import { createStyles } from 'antd-style';
-import { type ReactNode, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {createStyles} from 'antd-style';
+import {memo, type ReactNode} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 const useStyles = createStyles(({ css, token }) => ({
   header: css`

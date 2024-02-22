@@ -1,13 +1,13 @@
 'use client';
 
-import { useResponsive } from 'antd-style';
-import { useRouter } from 'next/navigation';
-import { useQueryState } from 'nuqs';
-import { parseAsString } from 'nuqs/parsers';
-import { memo, useEffect } from 'react';
-import { createStoreUpdater } from 'zustand-utils';
+import {useResponsive} from 'antd-style';
+import {useRouter} from 'next/navigation';
+import {useQueryState} from 'nuqs';
+import {parseAsString} from 'nuqs/parsers';
+import {memo, useEffect} from 'react';
+import {createStoreUpdater} from 'zustand-utils';
 
-import { useSessionStore } from '@/store/session';
+import {useSessionStore} from '@/store/session';
 
 // sync outside state to useSessionStore
 const SessionHydration = memo(() => {

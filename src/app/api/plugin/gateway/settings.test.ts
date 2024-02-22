@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { parserPluginSettings } from './settings';
+import {parserPluginSettings} from './settings';
 
 describe('parserPluginSettings', () => {
   it('should return an empty object when input is undefined', () => {

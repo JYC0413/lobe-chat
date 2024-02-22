@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import {useMemo} from 'react';
 
 export const useParseContent = (content: string) => {
   let isJSON = true;

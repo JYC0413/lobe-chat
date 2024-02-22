@@ -1,14 +1,14 @@
-import { Icon } from '@lobehub/ui';
-import { Button, Result, Table, Upload } from 'antd';
-import { createStyles } from 'antd-style';
-import { CheckCircle, ImportIcon } from 'lucide-react';
-import React, { ReactNode, memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {Button, Result, Table, Upload} from 'antd';
+import {createStyles} from 'antd-style';
+import {CheckCircle, ImportIcon} from 'lucide-react';
+import React, {memo, ReactNode, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
 import DataStyleModal from '@/components/DataStyleModal';
-import { useImportConfig } from '@/hooks/useImportConfig';
-import { ImportResult, ImportResults } from '@/services/config';
+import {useImportConfig} from '@/hooks/useImportConfig';
+import {ImportResult, ImportResults} from '@/services/config';
 
 const useStyles = createStyles(({ css, token }) => {
   const size = 28;

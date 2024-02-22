@@ -1,5 +1,5 @@
-import { URLS } from '@/services/_url';
-import { LobeChatAgentsMarketIndex } from '@/types/market';
+import {URLS} from '@/services/_url';
+import {LobeChatAgentsMarketIndex} from '@/types/market';
 
 class MarketService {
   getAgentList = async (locale: string): Promise<LobeChatAgentsMarketIndex> => {

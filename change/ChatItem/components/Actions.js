@@ -1,7 +1,8 @@
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
-import { useStyles } from "../style";
-import { jsx as _jsx } from "react/jsx-runtime";
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
+import {useStyles} from "../style";
+import {jsx as _jsx} from "react/jsx-runtime";
+
 var Actions = /*#__PURE__*/memo(function (_ref) {
   var actions = _ref.actions,
     placement = _ref.placement,

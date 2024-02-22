@@ -1,10 +1,10 @@
-import { PluginRenderProps } from '@lobehub/chat-plugin-sdk/client';
-import { Skeleton } from 'antd';
-import { memo, useRef, useState } from 'react';
+import {PluginRenderProps} from '@lobehub/chat-plugin-sdk/client';
+import {Skeleton} from 'antd';
+import {memo, useRef, useState} from 'react';
 
-import { useOnPluginReadyForInteraction } from '../../utils/iframeOnReady';
-import { useOnPluginFetchMessage } from '../../utils/listenToPlugin';
-import { sendMessageContentToPlugin } from '../../utils/postMessage';
+import {useOnPluginReadyForInteraction} from '../../utils/iframeOnReady';
+import {useOnPluginFetchMessage} from '../../utils/listenToPlugin';
+import {sendMessageContentToPlugin} from '../../utils/postMessage';
 
 interface IFrameRenderProps extends PluginRenderProps {
   height?: number;

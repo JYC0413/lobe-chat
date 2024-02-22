@@ -1,15 +1,15 @@
-import { Icon, Modal, type ModalProps, SortableList } from '@lobehub/ui';
-import { Button } from 'antd';
-import { createStyles } from 'antd-style';
+import {Icon, Modal, type ModalProps, SortableList} from '@lobehub/ui';
+import {Button} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { Plus } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Plus} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useSessionStore } from '@/store/session';
-import { sessionGroupSelectors } from '@/store/session/selectors';
-import { SessionGroupItem } from '@/types/session';
+import {useSessionStore} from '@/store/session';
+import {sessionGroupSelectors} from '@/store/session/selectors';
+import {SessionGroupItem} from '@/types/session';
 
 import GroupItem from './GroupItem';
 

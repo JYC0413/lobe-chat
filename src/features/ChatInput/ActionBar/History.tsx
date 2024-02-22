@@ -1,12 +1,12 @@
-import { ActionIcon, SliderWithInput } from '@lobehub/ui';
-import { Popover, Switch } from 'antd';
-import { Timer, TimerOff } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, SliderWithInput} from '@lobehub/ui';
+import {Popover, Switch} from 'antd';
+import {Timer, TimerOff} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 const History = memo(() => {
   const { t } = useTranslation('setting');

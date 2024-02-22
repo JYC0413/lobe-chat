@@ -1,8 +1,8 @@
-import { consola } from 'consola';
-import { markdownTable } from 'markdown-table';
+import {consola} from 'consola';
+import {markdownTable} from 'markdown-table';
 
-import { DataItem, PLGUIN_URL, PLUGIN_REPO, PLUGIN_SPLIT } from './const';
-import { fetchPluginIndex, genLink, genTags, readReadme, updateReadme, writeReadme } from './utlis';
+import {DataItem, PLGUIN_URL, PLUGIN_REPO, PLUGIN_SPLIT} from './const';
+import {fetchPluginIndex, genLink, genTags, readReadme, updateReadme, writeReadme} from './utlis';
 
 const genPluginTable = (data: DataItem[], lang: string) => {
   const isCN = lang === 'zh-CN';

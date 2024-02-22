@@ -1,4 +1,4 @@
-import { getServerConfig } from '@/config/server';
+import {getServerConfig} from '@/config/server';
 
 interface UploadResponse {
   data: UploadData;

@@ -1,13 +1,12 @@
-import { LobeChatPluginManifest, LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
-import { act, renderHook } from '@testing-library/react';
-import { notification } from 'antd';
+import {LobeChatPluginManifest, LobeChatPluginMeta} from '@lobehub/chat-plugin-sdk';
+import {act, renderHook} from '@testing-library/react';
+import {notification} from 'antd';
 import useSWR from 'swr';
-import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { pluginService } from '@/services/plugin';
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {pluginService} from '@/services/plugin';
 
-import { useToolStore } from '../../store';
+import {useToolStore} from '../../store';
 
 // Mock the pluginService.getPluginList method
 vi.mock('@/services/plugin', () => ({

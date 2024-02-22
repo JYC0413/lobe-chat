@@ -1,17 +1,17 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { act } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import {LobeChatPluginManifest} from '@lobehub/chat-plugin-sdk';
+import {act} from '@testing-library/react';
+import {describe, expect, it, vi} from 'vitest';
 
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { useFileStore } from '@/store/file';
-import { useToolStore } from '@/store/tool';
-import { DalleManifest } from '@/tools/dalle';
-import { ChatMessage } from '@/types/message';
-import { ChatStreamPayload } from '@/types/openai/chat';
-import { LobeTool } from '@/types/tool';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {useFileStore} from '@/store/file';
+import {useToolStore} from '@/store/tool';
+import {DalleManifest} from '@/tools/dalle';
+import {ChatMessage} from '@/types/message';
+import {ChatStreamPayload} from '@/types/openai/chat';
+import {LobeTool} from '@/types/tool';
 
 // import { createHeaderWithAuth } from '../_header';
-import { chatService } from '../chat';
+import {chatService} from '../chat';
 
 // Mocking external dependencies
 vi.stubGlobal(

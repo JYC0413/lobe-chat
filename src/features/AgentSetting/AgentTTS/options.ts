@@ -1,4 +1,4 @@
-import { SelectProps } from 'antd';
+import {SelectProps} from 'antd';
 
 export const ttsOptions: SelectProps['options'] = [
   {

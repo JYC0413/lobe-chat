@@ -1,4 +1,4 @@
-import { LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
+import {LobeChatPluginMeta} from '@lobehub/chat-plugin-sdk';
 
 export type PluginInstallLoadingMap = Record<string, boolean | undefined>;
 

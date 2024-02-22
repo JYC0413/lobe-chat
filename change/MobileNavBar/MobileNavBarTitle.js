@@ -1,10 +1,10 @@
 import _taggedTemplateLiteral from "@babel/runtime/helpers/esm/taggedTemplateLiteral";
+import {createStyles} from 'antd-style';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
+import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
+
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
-import { createStyles } from 'antd-style';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
 var useStyles = createStyles(function (_ref) {
   var css = _ref.css,
     token = _ref.token;

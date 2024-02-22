@@ -1,4 +1,4 @@
-import { t } from 'i18next';
+import {t} from 'i18next';
 
 /**
  * 迁移接口

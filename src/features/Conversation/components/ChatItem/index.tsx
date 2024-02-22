@@ -1,19 +1,19 @@
-import { AlertProps } from '@lobehub/ui';
+import {AlertProps} from '@lobehub/ui';
 import ChatItem from '/change/ChatItem/index';
-import { createStyles } from 'antd-style';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { ReactNode, memo, useCallback, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo, ReactNode, useCallback, useMemo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
 
-import ErrorMessageExtra, { getErrorAlertConfig } from '../../Error';
-import { renderMessagesExtra } from '../../Extras';
-import { renderMessages, useAvatarsClick } from '../../Messages';
+import ErrorMessageExtra, {getErrorAlertConfig} from '../../Error';
+import {renderMessagesExtra} from '../../Extras';
+import {renderMessages, useAvatarsClick} from '../../Messages';
 import ActionsBar from './ActionsBar';
 import HistoryDivider from './HistoryDivider';
 

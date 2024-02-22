@@ -1,11 +1,11 @@
-import { Icon } from '@lobehub/ui';
-import { Button } from 'antd';
-import { Plus } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {Button} from 'antd';
+import {Plus} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useSessionStore } from '@/store/session';
+import {useSessionStore} from '@/store/session';
 
 const AddButton = memo<{ groupId?: string }>(({ groupId }) => {
   const { t } = useTranslation('chat');

@@ -1,5 +1,6 @@
-import { type ReactNode } from 'react';
-import { ChatItemProps } from "..";
+import {type ReactNode} from 'react';
+import {ChatItemProps} from "..";
+
 export interface MessageContentProps {
     editing?: ChatItemProps['editing'];
     message?: ReactNode;

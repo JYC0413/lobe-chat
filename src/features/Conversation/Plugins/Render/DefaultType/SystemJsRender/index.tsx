@@ -1,8 +1,8 @@
-import { PluginRender, PluginRenderProps } from '@lobehub/chat-plugin-sdk/client';
-import { Skeleton } from 'antd';
-import { memo, useEffect, useState } from 'react';
+import {PluginRender, PluginRenderProps} from '@lobehub/chat-plugin-sdk/client';
+import {Skeleton} from 'antd';
+import {memo, useEffect, useState} from 'react';
 
-import { system } from './utils';
+import {system} from './utils';
 
 interface SystemJsRenderProps extends PluginRenderProps {
   url: string;

@@ -1,7 +1,7 @@
-import type { Migration, MigrationData } from '@/migrations/VersionController';
+import type {Migration, MigrationData} from '@/migrations/VersionController';
 
-import { V2ConfigState, V2Session } from '../FromV1ToV2/types/v2';
-import { V3ConfigState, V3Session } from './types/v3';
+import {V2ConfigState, V2Session} from '../FromV1ToV2/types/v2';
+import {V3ConfigState, V3Session} from './types/v3';
 
 export class MigrationV2ToV3 implements Migration {
   // from this version to start migration

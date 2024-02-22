@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
-import { useGlobalStore } from '../store';
+import {useGlobalStore} from '../store';
 
 export const useEffectAfterGlobalHydrated = (
   fn: (store: typeof useGlobalStore) => void,

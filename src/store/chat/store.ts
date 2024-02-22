@@ -1,16 +1,16 @@
-import { devtools, subscribeWithSelector } from 'zustand/middleware';
-import { shallow } from 'zustand/shallow';
-import { createWithEqualityFn } from 'zustand/traditional';
-import { StateCreator } from 'zustand/vanilla';
+import {devtools, subscribeWithSelector} from 'zustand/middleware';
+import {shallow} from 'zustand/shallow';
+import {createWithEqualityFn} from 'zustand/traditional';
+import {StateCreator} from 'zustand/vanilla';
 
-import { isDev } from '@/utils/env';
+import {isDev} from '@/utils/env';
 
-import { ChatStoreState, initialState } from './initialState';
-import { ChatEnhanceAction, chatEnhance } from './slices/enchance/action';
-import { ChatMessageAction, chatMessage } from './slices/message/action';
-import { ShareAction, chatShare } from './slices/share/action';
-import { ChatPluginAction, chatPlugin } from './slices/tool/action';
-import { ChatTopicAction, chatTopic } from './slices/topic/action';
+import {ChatStoreState, initialState} from './initialState';
+import {chatEnhance, ChatEnhanceAction} from './slices/enchance/action';
+import {chatMessage, ChatMessageAction} from './slices/message/action';
+import {chatShare, ShareAction} from './slices/share/action';
+import {chatPlugin, ChatPluginAction} from './slices/tool/action';
+import {chatTopic, ChatTopicAction} from './slices/topic/action';
 
 export interface ChatStoreAction
   extends ChatMessageAction,

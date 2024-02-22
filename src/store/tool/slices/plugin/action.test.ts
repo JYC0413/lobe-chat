@@ -1,11 +1,11 @@
-import { LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
-import { act, renderHook } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import {LobeChatPluginMeta} from '@lobehub/chat-plugin-sdk';
+import {act, renderHook} from '@testing-library/react';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { pluginService } from '@/services/plugin';
-import { LobeTool } from '@/types/tool';
+import {pluginService} from '@/services/plugin';
+import {LobeTool} from '@/types/tool';
 
-import { useToolStore } from '../../store';
+import {useToolStore} from '../../store';
 
 vi.mock('@/services/plugin', () => ({
   pluginService: {

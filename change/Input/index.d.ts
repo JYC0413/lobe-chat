@@ -1,6 +1,7 @@
 /// <reference types="react" />
-import { type InputProps as AntdInputProps, type InputRef } from 'antd';
-import { TextAreaProps as AntdTextAreaProps, type TextAreaRef } from 'antd/es/input/TextArea';
+import {type InputProps as AntdInputProps, type InputRef} from 'antd';
+import {TextAreaProps as AntdTextAreaProps, type TextAreaRef} from 'antd/es/input/TextArea';
+
 export interface InputProps extends AntdInputProps {
     /**
      * @description Type of the input

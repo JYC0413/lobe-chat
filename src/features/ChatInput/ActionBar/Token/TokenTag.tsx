@@ -1,19 +1,19 @@
-import { TokenTag, Tooltip } from '@lobehub/ui';
+import {TokenTag, Tooltip} from '@lobehub/ui';
 import numeral from 'numeral';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useTokenCount } from '@/hooks/useTokenCount';
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { useToolStore } from '@/store/tool';
-import { toolSelectors } from '@/store/tool/selectors';
-import { LanguageModel } from '@/types/llm';
+import {useTokenCount} from '@/hooks/useTokenCount';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {useToolStore} from '@/store/tool';
+import {toolSelectors} from '@/store/tool/selectors';
+import {LanguageModel} from '@/types/llm';
 
 const format = (number: number) => numeral(number).format('0,0');
 

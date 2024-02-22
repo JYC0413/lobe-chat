@@ -1,5 +1,5 @@
-import { MetaData } from '@/types/meta';
-import { LobeAgentSettings } from '@/types/session';
+import {MetaData} from '@/types/meta';
+import {LobeAgentSettings} from '@/types/session';
 
 export interface AgentsMarketIndexItem {
   author: string;

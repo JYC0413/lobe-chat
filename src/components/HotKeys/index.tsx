@@ -1,14 +1,14 @@
 'use client';
 
-import { Icon } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { isString } from 'lodash-es';
-import { Command, Delete, Option } from 'lucide-react';
-import { memo, useEffect, useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {isString} from 'lodash-es';
+import {Command, Delete, Option} from 'lucide-react';
+import {memo, useEffect, useState} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
-import { CLEAN_MESSAGE_KEY, META_KEY, PREFIX_KEY } from '@/const/hotkeys';
-import { usePlatform } from '@/hooks/usePlatform';
+import {CLEAN_MESSAGE_KEY, META_KEY, PREFIX_KEY} from '@/const/hotkeys';
+import {usePlatform} from '@/hooks/usePlatform';
 
 const useStyles = createStyles(
   ({ css, token }) => css`

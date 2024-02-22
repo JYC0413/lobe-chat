@@ -1,7 +1,7 @@
-import { ChatInputActionBar } from '@lobehub/ui';
-import { ReactNode, memo, useMemo } from 'react';
+import {ChatInputActionBar} from '@lobehub/ui';
+import {memo, ReactNode, useMemo} from 'react';
 
-import { ActionKeys, actionMap, getLeftActionList, getRightActionList } from './config';
+import {ActionKeys, actionMap, getLeftActionList, getRightActionList} from './config';
 
 const RenderActionList = ({ dataSource }: { dataSource: ActionKeys[] }) => (
   <>

@@ -1,6 +1,6 @@
-import { SignJWT, importJWK } from 'jose';
+import {importJWK, SignJWT} from 'jose';
 
-import { JWT_SECRET_KEY, NON_HTTP_PREFIX } from '@/const/auth';
+import {JWT_SECRET_KEY, NON_HTTP_PREFIX} from '@/const/auth';
 
 export const createJWT = async <T>(payload: T) => {
   const now = Math.floor(Date.now() / 1000);

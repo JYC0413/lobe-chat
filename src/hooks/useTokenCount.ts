@@ -1,6 +1,6 @@
-import { startTransition, useEffect, useState } from 'react';
+import {startTransition, useEffect, useState} from 'react';
 
-import { encodeAsync } from '@/utils/tokenizer';
+import {encodeAsync} from '@/utils/tokenizer';
 
 export const useTokenCount = (input: string = '') => {
   const [value, setNum] = useState(0);

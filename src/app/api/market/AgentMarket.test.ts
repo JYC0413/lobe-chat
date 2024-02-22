@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { AgentMarket } from './AgentMarket';
+import {AgentMarket} from './AgentMarket';
 
 const baseURL = 'https://chat-agents.lobehub.com';
 describe('AgentMarket', () => {

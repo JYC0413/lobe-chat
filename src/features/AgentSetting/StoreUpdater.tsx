@@ -1,7 +1,7 @@
-import { memo } from 'react';
-import { createStoreUpdater } from 'zustand-utils';
+import {memo} from 'react';
+import {createStoreUpdater} from 'zustand-utils';
 
-import { State, useStoreApi } from './store';
+import {State, useStoreApi} from './store';
 
 export type StoreUpdaterProps = Partial<
   Pick<State, 'onMetaChange' | 'onConfigChange' | 'meta' | 'config'>

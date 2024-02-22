@@ -1,16 +1,16 @@
-import { copyToClipboard } from '@lobehub/ui';
-import { App } from 'antd';
-import { useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import {copyToClipboard} from '@lobehub/ui';
+import {App} from 'antd';
+import {useCallback} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useChatStore } from '@/store/chat';
-import { LLMRoleType } from '@/types/llm';
+import {useChatStore} from '@/store/chat';
+import {LLMRoleType} from '@/types/llm';
 
-import { OnActionsClick, RenderAction } from '../types';
-import { AssistantActionsBar } from './Assistant';
-import { DefaultActionsBar } from './Fallback';
-import { FunctionActionsBar } from './Function';
-import { UserActionsBar } from './User';
+import {OnActionsClick, RenderAction} from '../types';
+import {AssistantActionsBar} from './Assistant';
+import {DefaultActionsBar} from './Fallback';
+import {FunctionActionsBar} from './Function';
+import {UserActionsBar} from './User';
 
 export const renderActions: Record<LLMRoleType, RenderAction> = {
   assistant: AssistantActionsBar,

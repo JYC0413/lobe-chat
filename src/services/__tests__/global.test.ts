@@ -1,6 +1,6 @@
-import { Mock, beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { globalService } from '../global';
+import {globalService} from '../global';
 
 global.fetch = vi.fn();
 

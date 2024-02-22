@@ -1,14 +1,8 @@
-import { MobileChatInputArea, MobileChatSendButton } from '@lobehub/ui';
-import { useTheme } from 'antd-style';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-
-import ActionBar from '@/features/ChatInput/ActionBar';
-import STT from '@/features/ChatInput/STT';
-import SaveTopic from '@/features/ChatInput/Topic';
-import { useChatInput } from '@/features/ChatInput/useChatInput';
-
-import Files from './Files';
+import {MobileChatInputArea, MobileChatSendButton} from '@lobehub/ui';
+import {useTheme} from 'antd-style';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {useChatInput} from '@/features/ChatInput/useChatInput';
 
 const ChatInputMobileLayout = memo(() => {
   const { t } = useTranslation('chat');

@@ -1,18 +1,18 @@
-import { Form, type FormItemProps, Icon, type ItemGroup, Tooltip } from '@lobehub/ui';
-import { Button } from 'antd';
+import {Form, type FormItemProps, Icon, type ItemGroup, Tooltip} from '@lobehub/ui';
+import {Button} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { isString } from 'lodash-es';
-import { UserCircle, Wand2 } from 'lucide-react';
+import {isString} from 'lodash-es';
+import {UserCircle, Wand2} from 'lucide-react';
 import dynamic from 'next/dynamic';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
+import {FORM_STYLE} from '@/const/layoutTokens';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
 
-import { useStore } from '../store';
-import { SessionLoadingState } from '../store/initialState';
+import {useStore} from '../store';
+import {SessionLoadingState} from '../store/initialState';
 import AutoGenerateInput from './AutoGenerateInput';
 import AutoGenerateSelect from './AutoGenerateSelect';
 import BackgroundSwatches from './BackgroundSwatches';

@@ -1,6 +1,6 @@
-import { useRef } from 'react';
+import {useRef} from 'react';
 
-import { getBrowser, getPlatform } from '@/utils/platform';
+import {getBrowser, getPlatform} from '@/utils/platform';
 
 export const usePlatform = () => {
   const platform = useRef(getPlatform());

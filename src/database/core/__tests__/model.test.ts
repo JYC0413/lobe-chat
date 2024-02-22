@@ -1,7 +1,7 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { z } from 'zod';
+import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
+import {z} from 'zod';
 
-import { BaseModel } from '../model';
+import {BaseModel} from '../model';
 
 // Define a mock schema for testing
 const mockSchema = z.object({

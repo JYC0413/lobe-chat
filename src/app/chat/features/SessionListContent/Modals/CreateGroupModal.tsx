@@ -1,11 +1,11 @@
-import { Input, Modal, type ModalProps } from '@lobehub/ui';
-import { App } from 'antd';
-import { MouseEvent, memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Input, Modal, type ModalProps} from '@lobehub/ui';
+import {App} from 'antd';
+import {memo, MouseEvent, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useGlobalStore } from '@/store/global';
-import { useSessionStore } from '@/store/session';
+import {useGlobalStore} from '@/store/global';
+import {useSessionStore} from '@/store/session';
 
 interface CreateGroupModalProps extends ModalProps {
   id: string;

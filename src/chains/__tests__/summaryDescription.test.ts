@@ -1,8 +1,8 @@
-import { Mock, describe, expect, it, vi } from 'vitest';
+import {describe, expect, it, Mock, vi} from 'vitest';
 
-import { globalHelpers } from '@/store/global/helpers';
+import {globalHelpers} from '@/store/global/helpers';
 
-import { chainSummaryDescription } from '../summaryDescription';
+import {chainSummaryDescription} from '../summaryDescription';
 
 // Mock the globalHelpers.getCurrentLanguage function
 vi.mock('@/store/global/helpers', () => ({

@@ -1,5 +1,5 @@
-import { CreateTopicParams, QueryTopicParams, TopicModel } from '@/database/models/topic';
-import { ChatTopic } from '@/types/topic';
+import {CreateTopicParams, QueryTopicParams, TopicModel} from '@/database/models/topic';
+import {ChatTopic} from '@/types/topic';
 
 class TopicService {
   async createTopic(params: CreateTopicParams): Promise<string> {

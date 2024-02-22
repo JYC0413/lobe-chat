@@ -1,7 +1,7 @@
-import { DB_File, DB_FileSchema } from '@/database/schemas/files';
-import { nanoid } from '@/utils/uuid';
+import {DB_File, DB_FileSchema} from '@/database/schemas/files';
+import {nanoid} from '@/utils/uuid';
 
-import { BaseModel } from '../core';
+import {BaseModel} from '../core';
 
 class _FileModel extends BaseModel<'files'> {
   constructor() {

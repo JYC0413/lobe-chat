@@ -1,6 +1,6 @@
-import { SidebarTabKey } from '../initialState';
-import { useGlobalStore } from '../store';
-import { useOnFinishHydrationGlobal } from './useOnFinishHydrationGlobal';
+import {SidebarTabKey} from '../initialState';
+import {useGlobalStore} from '../store';
+import {useOnFinishHydrationGlobal} from './useOnFinishHydrationGlobal';
 
 /**
  * 切换侧边栏选项

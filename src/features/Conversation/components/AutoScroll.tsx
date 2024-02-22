@@ -1,7 +1,7 @@
-import { memo, useEffect } from 'react';
+import {memo, useEffect} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
 
 import BackBottom from './BackBottom';
 

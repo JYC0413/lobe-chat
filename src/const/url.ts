@@ -1,7 +1,7 @@
 import urlJoin from 'url-join';
 
 import pkg from '../../package.json';
-import { INBOX_SESSION_ID } from './session';
+import {INBOX_SESSION_ID} from './session';
 
 export const GITHUB = pkg.homepage;
 export const CHANGELOG = urlJoin(GITHUB, 'blob/master/CHANGELOG.md');

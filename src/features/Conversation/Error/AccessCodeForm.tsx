@@ -1,13 +1,13 @@
-import { Button, Input } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Button, Input} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
 
-import { FormAction } from './style';
+import {FormAction} from './style';
 
 interface AccessCodeFormProps {
   id: string;

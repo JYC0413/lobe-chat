@@ -1,11 +1,11 @@
 'use client';
 
-import { PropsWithChildren, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo, PropsWithChildren} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import AppLayoutDesktop from '@/layout/AppLayout.desktop';
-import { useSwitchSideBarOnInit } from '@/store/global';
-import { SidebarTabKey } from '@/store/global/initialState';
+import {useSwitchSideBarOnInit} from '@/store/global';
+import {SidebarTabKey} from '@/store/global/initialState';
 
 import ResponsiveSessionList from './features/SessionList';
 

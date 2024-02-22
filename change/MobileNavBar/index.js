@@ -1,12 +1,12 @@
-import { ChevronLeft } from 'lucide-react';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {ChevronLeft} from 'lucide-react';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 import ActionIcon from "@lobehub/ui/es/ActionIcon";
 import AvatarWithUpload from "src/features/AvatarWithUpload/index";
 import MobileSafeArea from "@lobehub/ui/es/MobileSafeArea";
-import { useStyles } from "./style";
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+import {useStyles} from "./style";
+import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
+
 var MobileNavBar = /*#__PURE__*/memo(function (_ref) {
   console.log("abc")
   var className = _ref.className,

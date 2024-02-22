@@ -1,5 +1,5 @@
-import { PluginChannel } from '@lobehub/chat-plugin-sdk/client';
-import { useEffect, useState } from 'react';
+import {PluginChannel} from '@lobehub/chat-plugin-sdk/client';
+import {useEffect, useState} from 'react';
 
 export const useOnPluginReadyForInteraction = (onReady: () => void, deps: any[] = []) => {
   const [readyForRender, setReady] = useState(false);

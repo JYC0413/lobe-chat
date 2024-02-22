@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix  */
-import { z } from 'zod';
+import {z} from 'zod';
 
 const TranslateSchema = z.object({
   from: z.string().optional(),

@@ -1,22 +1,22 @@
-import { PluginRequestPayload, createHeadersWithPluginSettings } from '@lobehub/chat-plugin-sdk';
-import { produce } from 'immer';
-import { merge } from 'lodash-es';
+import {createHeadersWithPluginSettings, PluginRequestPayload} from '@lobehub/chat-plugin-sdk';
+import {produce} from 'immer';
+import {merge} from 'lodash-es';
 
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { ModelProvider } from '@/libs/agent-runtime';
-import { filesSelectors, useFileStore } from '@/store/file';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors, toolSelectors } from '@/store/tool/selectors';
-import { ChatMessage } from '@/types/message';
-import type { ChatStreamPayload, OpenAIChatMessage } from '@/types/openai/chat';
-import { UserMessageContentPart } from '@/types/openai/chat';
-import { fetchAIFactory, getMessageError } from '@/utils/fetch';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {ModelProvider} from '@/libs/agent-runtime';
+import {filesSelectors, useFileStore} from '@/store/file';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors, toolSelectors} from '@/store/tool/selectors';
+import {ChatMessage} from '@/types/message';
+import type {ChatStreamPayload, OpenAIChatMessage} from '@/types/openai/chat';
+import {UserMessageContentPart} from '@/types/openai/chat';
+import {fetchAIFactory, getMessageError} from '@/utils/fetch';
 
-import { createHeaderWithAuth } from './_auth';
-import { createHeaderWithOpenAI } from './_header';
-import { PLUGINS_URLS } from './_url';
+import {createHeaderWithAuth} from './_auth';
+import {createHeaderWithOpenAI} from './_header';
+import {PLUGINS_URLS} from './_url';
 
 interface FetchOptions {
   signal?: AbortSignal | undefined;

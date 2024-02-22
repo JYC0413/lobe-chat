@@ -1,12 +1,12 @@
-import { ActionIcon, EditableText, SortableList } from '@lobehub/ui';
-import { App, Popconfirm } from 'antd';
-import { createStyles } from 'antd-style';
-import { PencilLine, Trash } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon, EditableText, SortableList} from '@lobehub/ui';
+import {App, Popconfirm} from 'antd';
+import {createStyles} from 'antd-style';
+import {PencilLine, Trash} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useSessionStore } from '@/store/session';
-import { SessionGroupItem } from '@/types/session';
+import {useSessionStore} from '@/store/session';
+import {SessionGroupItem} from '@/types/session';
 
 const useStyles = createStyles(({ css }) => ({
   content: css`

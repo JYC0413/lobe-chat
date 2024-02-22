@@ -1,8 +1,8 @@
-import { PluginRequestPayload } from '@lobehub/chat-plugin-sdk';
-import { memo } from 'react';
+import {PluginRequestPayload} from '@lobehub/chat-plugin-sdk';
+import {memo} from 'react';
 
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/slices/plugin/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/slices/plugin/selectors';
 
 import IFrameRender from './Iframe';
 

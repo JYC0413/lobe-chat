@@ -1,13 +1,13 @@
-import { TokenTag } from '@lobehub/ui';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {TokenTag} from '@lobehub/ui';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useTokenCount } from '@/hooks/useTokenCount';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
+import {useTokenCount} from '@/hooks/useTokenCount';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 
 const Tokens = memo(() => {
   const { t } = useTranslation('chat');

@@ -1,6 +1,6 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { creatUrlStorage } from './urlStorage';
+import {creatUrlStorage} from './urlStorage';
 
 // Mock global location and history objects
 const mockLocation = {

@@ -1,10 +1,10 @@
-import { ActionIconGroup } from '@lobehub/ui';
-import { memo } from 'react';
+import {ActionIconGroup} from '@lobehub/ui';
+import {memo} from 'react';
 
-import { useChatListActionsBar } from '../hooks/useChatListActionsBar';
-import { RenderAction } from '../types';
-import { ErrorActionsBar } from './Error';
-import { useCustomActions } from './customAction';
+import {useChatListActionsBar} from '../hooks/useChatListActionsBar';
+import {RenderAction} from '../types';
+import {ErrorActionsBar} from './Error';
+import {useCustomActions} from './customAction';
 
 export const AssistantActionsBar: RenderAction = memo(({ id, onActionClick, error }) => {
   const { regenerate, edit, delAndRegenerate, copy, divider, del } = useChatListActionsBar();

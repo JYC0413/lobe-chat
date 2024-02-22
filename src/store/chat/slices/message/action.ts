@@ -1,25 +1,25 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix, typescript-sort-keys/interface */
 // Note: DON'T REMOVE THE FIRST LINE
 // Disable the auto sort key eslint rule to make the code more logic and readable
-import { template } from 'lodash-es';
-import useSWR, { SWRResponse, mutate } from 'swr';
-import { StateCreator } from 'zustand/vanilla';
+import {template} from 'lodash-es';
+import useSWR, {mutate, SWRResponse} from 'swr';
+import {StateCreator} from 'zustand/vanilla';
 
-import { LOADING_FLAT, isFunctionMessageAtStart, testFunctionMessageAtEnd } from '@/const/message';
-import { CreateMessageParams } from '@/database/models/message';
-import { chatService } from '@/services/chat';
-import { messageService } from '@/services/message';
-import { topicService } from '@/services/topic';
-import { chatHelpers } from '@/store/chat/helpers';
-import { ChatStore } from '@/store/chat/store';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
-import { fetchSSE } from '@/utils/fetch';
-import { setNamespace } from '@/utils/storeDebug';
+import {isFunctionMessageAtStart, LOADING_FLAT, testFunctionMessageAtEnd} from '@/const/message';
+import {CreateMessageParams} from '@/database/models/message';
+import {chatService} from '@/services/chat';
+import {messageService} from '@/services/message';
+import {topicService} from '@/services/topic';
+import {chatHelpers} from '@/store/chat/helpers';
+import {ChatStore} from '@/store/chat/store';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
+import {fetchSSE} from '@/utils/fetch';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { chatSelectors } from '../../selectors';
-import { MessageDispatch, messagesReducer } from './reducer';
+import {chatSelectors} from '../../selectors';
+import {MessageDispatch, messagesReducer} from './reducer';
 
 const n = setNamespace('message');
 

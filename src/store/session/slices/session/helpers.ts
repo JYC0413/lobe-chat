@@ -1,6 +1,6 @@
-import { LobeAgentSession, LobeSessions } from '@/types/session';
+import {LobeAgentSession, LobeSessions} from '@/types/session';
 
-import { initLobeSession } from './initialState';
+import {initLobeSession} from './initialState';
 
 export const getSessionPinned = (session: LobeAgentSession) => session.pinned;
 

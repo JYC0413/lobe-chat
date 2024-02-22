@@ -1,6 +1,6 @@
-import { produce } from 'immer';
+import {produce} from 'immer';
 
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
 export type DevListState = LobeToolCustomPlugin[];
 

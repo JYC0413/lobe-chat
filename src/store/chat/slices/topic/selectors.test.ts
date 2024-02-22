@@ -1,10 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { ChatStore } from '@/store/chat';
-import { initialState } from '@/store/chat/initialState';
-import { merge } from '@/utils/merge';
+import {ChatStore} from '@/store/chat';
+import {initialState} from '@/store/chat/initialState';
+import {merge} from '@/utils/merge';
 
-import { topicSelectors } from '../../selectors';
+import {topicSelectors} from '../../selectors';
 
 const initialStore = initialState as ChatStore;
 

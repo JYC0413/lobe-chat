@@ -1,12 +1,12 @@
-import { PluginSchema } from '@lobehub/chat-plugin-sdk';
-import { Form, Markdown } from '@lobehub/ui';
-import { Form as AForm } from 'antd';
-import { createStyles } from 'antd-style';
+import {PluginSchema} from '@lobehub/chat-plugin-sdk';
+import {Form, Markdown} from '@lobehub/ui';
+import {Form as AForm} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { memo, useEffect } from 'react';
+import {memo, useEffect} from 'react';
 
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
 import PluginSettingRender from './PluginSettingRender';
 

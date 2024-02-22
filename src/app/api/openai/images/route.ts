@@ -1,7 +1,7 @@
-import { OpenAIImagePayload } from '@/types/openai/image';
+import {OpenAIImagePayload} from '@/types/openai/image';
 
-import { createBizOpenAI } from '../createBizOpenAI';
-import { createImageGeneration } from './createImageGeneration';
+import {createBizOpenAI} from '../createBizOpenAI';
+import {createImageGeneration} from './createImageGeneration';
 
 export const runtime = 'edge';
 

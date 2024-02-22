@@ -1,7 +1,7 @@
-import { DEFAULT_AGENTS_MARKET_ITEM } from '@/const/market';
-import { AgentsMarketItem } from '@/types/market';
+import {DEFAULT_AGENTS_MARKET_ITEM} from '@/const/market';
+import {AgentsMarketItem} from '@/types/market';
 
-import type { Store } from './store';
+import type {Store} from './store';
 
 const getAgentList = (s: Store) => {
   const { searchKeywords, agentList } = s;

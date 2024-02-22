@@ -1,20 +1,14 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import { DEFAULT_AGENT_LOBE_SESSION } from '@/const/session';
-import { BaseModel } from '@/database/core';
-import { DBModel } from '@/database/core/types/db';
-import { SessionGroupModel } from '@/database/models/sessionGroup';
-import { DB_Session, DB_SessionSchema } from '@/database/schemas/session';
-import { LobeAgentConfig } from '@/types/agent';
-import {
-  ChatSessionList,
-  LobeAgentSession,
-  LobeSessions,
-  SessionDefaultGroup,
-  SessionGroupId,
-} from '@/types/session';
-import { merge } from '@/utils/merge';
-import { uuid } from '@/utils/uuid';
+import {DEFAULT_AGENT_LOBE_SESSION} from '@/const/session';
+import {BaseModel} from '@/database/core';
+import {DBModel} from '@/database/core/types/db';
+import {SessionGroupModel} from '@/database/models/sessionGroup';
+import {DB_Session, DB_SessionSchema} from '@/database/schemas/session';
+import {LobeAgentConfig} from '@/types/agent';
+import {ChatSessionList, LobeAgentSession, LobeSessions, SessionDefaultGroup, SessionGroupId,} from '@/types/session';
+import {merge} from '@/utils/merge';
+import {uuid} from '@/utils/uuid';
 
 class _SessionModel extends BaseModel {
   constructor() {

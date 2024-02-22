@@ -1,8 +1,8 @@
-import { type MobileNavBarTitleProps } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
+import {type MobileNavBarTitleProps} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
 import dynamic from 'next/dynamic';
-import { CSSProperties, PropsWithChildren, ReactNode, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {CSSProperties, memo, PropsWithChildren, ReactNode} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import SafeSpacing from '@/components/SafeSpacing';
 

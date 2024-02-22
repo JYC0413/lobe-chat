@@ -1,17 +1,16 @@
-import { act } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import {act} from '@testing-library/react';
+import {describe, expect, it} from 'vitest';
 
-import { DEFAULT_INBOX_AVATAR } from '@/const/meta';
-import { INBOX_SESSION_ID } from '@/const/session';
-import { ChatStore } from '@/store/chat';
-import { initialState } from '@/store/chat/initialState';
-import { useGlobalStore } from '@/store/global';
-import { useSessionStore } from '@/store/session';
-import { ChatMessage } from '@/types/message';
-import { MetaData } from '@/types/meta';
-import { merge } from '@/utils/merge';
+import {DEFAULT_INBOX_AVATAR} from '@/const/meta';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {ChatStore} from '@/store/chat';
+import {initialState} from '@/store/chat/initialState';
+import {useGlobalStore} from '@/store/global';
+import {ChatMessage} from '@/types/message';
+import {MetaData} from '@/types/meta';
+import {merge} from '@/utils/merge';
 
-import { chatSelectors } from './selectors';
+import {chatSelectors} from './selectors';
 
 vi.mock('i18next', () => ({
   t: vi.fn((key) => key), // Simplified mock return value

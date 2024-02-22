@@ -1,11 +1,11 @@
-import { Avatar, Markdown, Tag } from '@lobehub/ui';
-import { Divider } from 'antd';
-import { createStyles } from 'antd-style';
-import { startCase } from 'lodash-es';
-import { CSSProperties, memo } from 'react';
-import { Center } from 'react-layout-kit';
+import {Avatar, Markdown, Tag} from '@lobehub/ui';
+import {Divider} from 'antd';
+import {createStyles} from 'antd-style';
+import {startCase} from 'lodash-es';
+import {CSSProperties, memo} from 'react';
+import {Center} from 'react-layout-kit';
 
-import { MetaData } from '@/types/meta';
+import {MetaData} from '@/types/meta';
 
 const useStyles = createStyles(({ css, token, stylish }) => ({
   avatar: css`

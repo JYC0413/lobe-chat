@@ -1,16 +1,16 @@
-import { Form, ItemGroup, SelectWithImg, SliderWithInput } from '@lobehub/ui';
-import { Form as AFrom, Input, Switch } from 'antd';
-import { useThemeMode } from 'antd-style';
-import { debounce } from 'lodash-es';
-import { BrainCog, LayoutList, MessageSquare, MessagesSquare } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Form, ItemGroup, SelectWithImg, SliderWithInput} from '@lobehub/ui';
+import {Form as AFrom, Input, Switch} from 'antd';
+import {useThemeMode} from 'antd-style';
+import {debounce} from 'lodash-es';
+import {BrainCog, LayoutList, MessageSquare, MessagesSquare} from 'lucide-react';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
+import {FORM_STYLE} from '@/const/layoutTokens';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 import ModelSelect from './ModelSelect';
-import { useSyncConfig } from './useSyncConfig';
+import {useSyncConfig} from './useSyncConfig';
 
 const AgentConfig = memo(() => {
   const { t } = useTranslation('setting');

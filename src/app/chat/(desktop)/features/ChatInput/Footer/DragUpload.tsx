@@ -1,12 +1,12 @@
-import { Icon } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { FileImage, FileText, FileUpIcon } from 'lucide-react';
-import { rgba } from 'polished';
-import { memo, useEffect, useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {FileImage, FileText, FileUpIcon} from 'lucide-react';
+import {rgba} from 'polished';
+import {memo, useEffect, useRef, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
-import { useFileStore } from '@/store/file';
+import {useFileStore} from '@/store/file';
 
 const useStyles = createStyles(({ css, token, stylish }) => {
   return {

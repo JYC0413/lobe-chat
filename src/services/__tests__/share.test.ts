@@ -1,9 +1,9 @@
-import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { ShareGPTConversation } from '@/types/share';
-import { parseMarkdown } from '@/utils/parseMarkdown';
+import {ShareGPTConversation} from '@/types/share';
+import {parseMarkdown} from '@/utils/parseMarkdown';
 
-import { SHARE_GPT_URL, shareGPTService } from '../share';
+import {SHARE_GPT_URL, shareGPTService} from '../share';
 
 // Mock dependencies
 vi.mock('@/utils/parseMarkdown', () => ({

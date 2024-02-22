@@ -1,5 +1,5 @@
-import { Skeleton } from 'antd';
-import { createStyles } from 'antd-style';
+import {Skeleton} from 'antd';
+import {createStyles} from 'antd-style';
 
 const useStyles = createStyles(({ css, prefixCls }) => ({
   avatar: css`

@@ -1,11 +1,11 @@
-import { ActionIcon } from '@lobehub/ui';
-import { LucideSettings } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon} from '@lobehub/ui';
+import {LucideSettings} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
 import PluginDetailModal from '@/features/PluginDetailModal';
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
 const Settings = memo<{ id: string }>(({ id }) => {
   const item = useToolStore(pluginSelectors.getPluginManifestById(id));

@@ -1,15 +1,15 @@
-import { Icon } from '@lobehub/ui';
-import { Button, Result } from 'antd';
-import { CheckCircle, CpuIcon } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {Button, Result} from 'antd';
+import {CheckCircle, CpuIcon} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center} from 'react-layout-kit';
 
 import DataStyleModal from '@/components/DataStyleModal';
 
 import Failed from './Failed';
 import MigrationStart from './Start';
-import { MigrationError, UpgradeStatus } from './const';
+import {MigrationError, UpgradeStatus} from './const';
 
 interface MigrationModalProps {
   open: boolean;

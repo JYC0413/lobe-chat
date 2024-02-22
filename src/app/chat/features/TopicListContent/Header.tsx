@@ -1,12 +1,12 @@
-import { ActionIcon, Icon } from '@lobehub/ui';
-import { App, Dropdown, MenuProps } from 'antd';
-import { MoreHorizontal, Search, Trash } from 'lucide-react';
-import { memo, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, Icon} from '@lobehub/ui';
+import {App, Dropdown, MenuProps} from 'antd';
+import {MoreHorizontal, Search, Trash} from 'lucide-react';
+import {memo, useMemo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
-import { topicSelectors } from '@/store/chat/selectors';
+import {useChatStore} from '@/store/chat';
+import {topicSelectors} from '@/store/chat/selectors';
 
 import SidebarHeader from '../../components/SidebarHeader';
 import TopicSearchBar from './TopicSearchBar';

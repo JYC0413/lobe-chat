@@ -1,11 +1,11 @@
 import isEqual from 'fast-deep-equal';
-import React, { memo, useEffect, useRef, useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
-import { Virtuoso, VirtuosoHandle } from 'react-virtuoso';
+import React, {memo, useEffect, useRef, useState} from 'react';
+import {Flexbox} from 'react-layout-kit';
+import {Virtuoso, VirtuosoHandle} from 'react-virtuoso';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { isMobileScreen } from '@/utils/screen';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {isMobileScreen} from '@/utils/screen';
 
 import AutoScroll from '../AutoScroll';
 import Item from '../ChatItem';

@@ -1,7 +1,7 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import { DEFAULT_SETTINGS } from '@/const/settings';
-import { GlobalServerConfig, GlobalSettings } from '@/types/settings';
+import {DEFAULT_SETTINGS} from '@/const/settings';
+import {GlobalServerConfig, GlobalSettings} from '@/types/settings';
 
 export interface GlobalSettingsState {
   avatar?: string;

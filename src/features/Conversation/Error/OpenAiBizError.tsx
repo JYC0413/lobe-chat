@@ -1,6 +1,6 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { ChatMessage } from '@/types/message';
+import {ChatMessage} from '@/types/message';
 
 import ErrorJsonViewer from './ErrorJsonViewer';
 import InvalidAPIKey from './InvalidAPIKey';

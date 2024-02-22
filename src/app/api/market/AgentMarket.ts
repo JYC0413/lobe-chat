@@ -1,8 +1,8 @@
 import urlJoin from 'url-join';
 
-import { getServerConfig } from '@/config/server';
-import { DEFAULT_LANG, isLocaleNotSupport } from '@/const/locale';
-import { Locales, normalizeLocale } from '@/locales/resources';
+import {getServerConfig} from '@/config/server';
+import {DEFAULT_LANG, isLocaleNotSupport} from '@/const/locale';
+import {Locales, normalizeLocale} from '@/locales/resources';
 
 export class AgentMarket {
   private readonly baseUrl: string;

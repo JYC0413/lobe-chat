@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'antd-style';
+import {createGlobalStyle} from 'antd-style';
 
 import antdOverride from './antdOverride';
 import global from './global';

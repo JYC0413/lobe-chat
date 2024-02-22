@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { parseModelString } from './parseModels';
+import {parseModelString} from './parseModels';
 
 describe('parseModelString', () => {
   it('custom deletion, addition, and renaming of models', () => {

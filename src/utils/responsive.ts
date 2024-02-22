@@ -1,5 +1,5 @@
-import { headers } from 'next/headers';
-import { UAParser } from 'ua-parser-js';
+import {headers} from 'next/headers';
+import {UAParser} from 'ua-parser-js';
 
 /**
  * check mobile device in server

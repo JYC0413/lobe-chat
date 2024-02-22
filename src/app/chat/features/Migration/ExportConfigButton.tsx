@@ -1,6 +1,6 @@
-import { Button } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Button} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
 const ExportConfigButton = memo<{ primary?: boolean; state: any }>(({ state, primary }) => {
   const { t } = useTranslation('migration');

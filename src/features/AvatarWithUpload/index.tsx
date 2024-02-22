@@ -3,7 +3,7 @@ import {createStyles} from 'antd-style';
 import Avatar from 'next/image';
 import {CSSProperties, memo} from 'react';
 
-import { DEFAULT_INBOX_AVATAR } from '@/const/meta';
+import {DEFAULT_INBOX_AVATAR} from '@/const/meta';
 import {useGlobalStore} from '@/store/global';
 import {commonSelectors} from '@/store/global/selectors';
 import {imageToBase64} from '@/utils/imageToBase64';

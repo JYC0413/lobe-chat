@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 
-import { getClientConfig } from '@/config/client';
+import {getClientConfig} from '@/config/client';
 
 const Vercel = dynamic(() => import('./Vercel'), { ssr: false });
 const Plausible = dynamic(() => import('./Plausible'), { ssr: false });

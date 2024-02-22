@@ -1,8 +1,8 @@
-import { useResponsive } from 'antd-style';
-import { useRouter } from 'next/navigation';
-import { memo, useEffect } from 'react';
+import {useResponsive} from 'antd-style';
+import {useRouter} from 'next/navigation';
+import {memo, useEffect} from 'react';
 
-import { useEffectAfterGlobalHydrated, useGlobalStore } from '@/store/global';
+import {useEffectAfterGlobalHydrated, useGlobalStore} from '@/store/global';
 
 const StoreHydration = memo(() => {
   const [useFetchServerConfig, useFetchUserConfig] = useGlobalStore((s) => [

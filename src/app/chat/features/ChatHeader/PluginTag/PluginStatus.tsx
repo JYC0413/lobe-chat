@@ -1,15 +1,15 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Badge, Button, Tag } from 'antd';
+import {ActionIcon} from '@lobehub/ui';
+import {Badge, Button, Tag} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { LucideRotateCw, LucideTrash2, RotateCwIcon } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {LucideRotateCw, LucideTrash2, RotateCwIcon} from 'lucide-react';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import ManifestPreviewer from '@/components/ManifestPreviewer';
-import { useSessionStore } from '@/store/session';
-import { useToolStore } from '@/store/tool';
-import { customPluginSelectors, toolSelectors } from '@/store/tool/selectors';
+import {useSessionStore} from '@/store/session';
+import {useToolStore} from '@/store/tool';
+import {customPluginSelectors, toolSelectors} from '@/store/tool/selectors';
 
 interface PluginStatusProps {
   deprecated?: boolean;

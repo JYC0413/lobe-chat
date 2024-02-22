@@ -1,13 +1,13 @@
 import OpenAI from 'openai';
 
-import { checkAuth } from '@/app/api/auth';
-import { getServerConfig } from '@/config/server';
-import { getOpenAIAuthFromRequest } from '@/const/fetch';
-import { ChatErrorType, ErrorType } from '@/types/fetch';
+import {checkAuth} from '@/app/api/auth';
+import {getServerConfig} from '@/config/server';
+import {getOpenAIAuthFromRequest} from '@/const/fetch';
+import {ChatErrorType, ErrorType} from '@/types/fetch';
 
-import { createErrorResponse } from '../../errorResponse';
-import { createAzureOpenai } from './createAzureOpenai';
-import { createOpenai } from './createOpenai';
+import {createErrorResponse} from '../../errorResponse';
+import {createAzureOpenai} from './createAzureOpenai';
+import {createOpenai} from './createOpenai';
 
 /**
  * createOpenAI Instance with Auth and azure openai support

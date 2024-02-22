@@ -1,15 +1,15 @@
-import { ThemeMode } from 'antd-style';
+import {ThemeMode} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { DeepPartial } from 'utility-types';
-import type { StateCreator } from 'zustand/vanilla';
+import {DeepPartial} from 'utility-types';
+import type {StateCreator} from 'zustand/vanilla';
 
-import { userService } from '@/services/user';
-import type { GlobalStore } from '@/store/global';
-import { SettingsTabs } from '@/store/global/initialState';
-import { LobeAgentSettings } from '@/types/session';
-import { GlobalLLMConfig, GlobalLLMProviderKey, GlobalSettings } from '@/types/settings';
-import { difference } from '@/utils/difference';
-import { merge } from '@/utils/merge';
+import {userService} from '@/services/user';
+import type {GlobalStore} from '@/store/global';
+import {SettingsTabs} from '@/store/global/initialState';
+import {LobeAgentSettings} from '@/types/session';
+import {GlobalLLMConfig, GlobalLLMProviderKey, GlobalSettings} from '@/types/settings';
+import {difference} from '@/utils/difference';
+import {merge} from '@/utils/merge';
 
 /**
  * 设置操作

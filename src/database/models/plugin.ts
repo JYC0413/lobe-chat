@@ -1,7 +1,7 @@
-import { BaseModel } from '@/database/core';
-import { merge } from '@/utils/merge';
+import {BaseModel} from '@/database/core';
+import {merge} from '@/utils/merge';
 
-import { DB_Plugin, DB_PluginSchema } from '../schemas/plugin';
+import {DB_Plugin, DB_PluginSchema} from '../schemas/plugin';
 
 class _PluginModel extends BaseModel {
   constructor() {

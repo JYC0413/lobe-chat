@@ -1,11 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import { Mock, beforeEach, describe, expect, it, vi } from 'vitest';
+import {render, screen} from '@testing-library/react';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
 
-import { AssistantMessageExtra } from './Assistant';
+import {AssistantMessageExtra} from './Assistant';
 
 // Mock TTS and Translate components
 vi.mock('./TTS', () => ({

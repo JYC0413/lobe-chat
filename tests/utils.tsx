@@ -1,4 +1,4 @@
-import { SWRConfig } from 'swr';
+import {SWRConfig} from 'swr';
 
 // 全局的 SWR 配置
 const swrConfig = {

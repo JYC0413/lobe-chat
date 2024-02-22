@@ -1,10 +1,10 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { SessionModel } from '@/database/models/session';
-import { SessionGroups } from '@/types/session';
+import {SessionModel} from '@/database/models/session';
+import {SessionGroups} from '@/types/session';
 
-import { DB_SessionGroup } from '../../schemas/sessionGroup';
-import { SessionGroupModel } from '../sessionGroup';
+import {DB_SessionGroup} from '../../schemas/sessionGroup';
+import {SessionGroupModel} from '../sessionGroup';
 
 describe('SessionGroupModel', () => {
   let sessionGroupData: DB_SessionGroup;

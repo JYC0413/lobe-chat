@@ -1,11 +1,10 @@
-import { type ChatItemProps } from '@lobehub/ui';
-import { ActionEvent } from '@lobehub/ui';
-import { FC, ReactNode } from 'react';
+import {ActionEvent, type ChatItemProps} from '@lobehub/ui';
+import {FC, ReactNode} from 'react';
 
-import { LLMRoleType } from '@/types/llm';
-import { ChatMessage } from '@/types/message';
+import {LLMRoleType} from '@/types/llm';
+import {ChatMessage} from '@/types/message';
 
-import { type ActionsBarProps } from '../components/ChatItem/ActionsBar';
+import {type ActionsBarProps} from '../components/ChatItem/ActionsBar';
 
 export type OnActionsClick = (action: ActionEvent, message: ChatMessage) => void;
 export type OnAvatarsClick = (role: RenderRole) => ChatItemProps['onAvatarClick'];

@@ -1,8 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { ChatErrorType } from '@/types/fetch';
+import {ChatErrorType} from '@/types/fetch';
 
-import { createErrorResponse } from './errorResponse';
+import {createErrorResponse} from './errorResponse';
 
 describe('createErrorResponse', () => {
   // 测试各种错误类型的状态码

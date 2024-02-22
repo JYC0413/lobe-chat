@@ -1,4 +1,4 @@
-import { LobeToolRenderType } from '@/types/tool';
+import {LobeToolRenderType} from '@/types/tool';
 
 export interface ChatPluginPayload {
   apiName: string;

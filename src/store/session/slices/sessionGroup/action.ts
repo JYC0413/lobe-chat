@@ -1,8 +1,8 @@
-import { StateCreator } from 'zustand/vanilla';
+import {StateCreator} from 'zustand/vanilla';
 
-import { sessionService } from '@/services/session';
-import { SessionStore } from '@/store/session';
-import { SessionGroupItem } from '@/types/session';
+import {sessionService} from '@/services/session';
+import {SessionStore} from '@/store/session';
+import {SessionGroupItem} from '@/types/session';
 
 export interface SessionGroupAction {
   addSessionGroup: (name: string) => Promise<string>;

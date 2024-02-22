@@ -1,5 +1,5 @@
-import { getAppConfig } from './app';
-import { getProviderConfig } from './provider';
+import {getAppConfig} from './app';
+import {getProviderConfig} from './provider';
 
 export const getServerConfig = () => {
   if (typeof process === 'undefined') {

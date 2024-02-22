@@ -1,7 +1,7 @@
-import { consola } from 'consola';
-import { colors } from 'consola/utils';
-import { readFileSync, writeFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import {consola} from 'consola';
+import {colors} from 'consola/utils';
+import {readFileSync, writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
 
 import i18nConfig from '../../.i18nrc';
 

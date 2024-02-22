@@ -1,8 +1,8 @@
-import { PluginChannel } from '@lobehub/chat-plugin-sdk/client';
-import { renderHook } from '@testing-library/react';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import {PluginChannel} from '@lobehub/chat-plugin-sdk/client';
+import {renderHook} from '@testing-library/react';
+import {afterEach, describe, expect, it, vi} from 'vitest';
 
-import { useOnPluginStateUpdate } from './pluginState';
+import {useOnPluginStateUpdate} from './pluginState';
 
 describe('useOnPluginStateUpdate', () => {
   // Mock for the callback function to be used in tests

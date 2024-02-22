@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import {render, screen} from '@testing-library/react';
+import {describe, expect, it, vi} from 'vitest';
 
-import { DalleManifest } from '@/tools/dalle';
-import { BuiltinToolsRenders } from '@/tools/renders';
+import {DalleManifest} from '@/tools/dalle';
+import {BuiltinToolsRenders} from '@/tools/renders';
 
 import BuiltinType from './index';
 

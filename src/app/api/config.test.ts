@@ -1,7 +1,7 @@
-import { describe, expect, it, vi } from 'vitest';
+import {describe, expect, it, vi} from 'vitest';
 
-import { checkAuth } from './auth';
-import { getPreferredRegion } from './config';
+import {checkAuth} from './auth';
+import {getPreferredRegion} from './config';
 
 // Stub the global process object to safely mock environment variables
 vi.stubGlobal('process', {

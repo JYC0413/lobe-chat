@@ -1,10 +1,10 @@
-import { Modal } from '@lobehub/ui';
-import { Segmented } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Modal} from '@lobehub/ui';
+import {Segmented} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useToolStore } from '@/store/tool';
+import {useToolStore} from '@/store/tool';
 
 import InstalledPluginList from './InstalledPluginList';
 import OnlineList from './OnlineList';

@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { FC, memo } from 'react';
+import {FC, memo} from 'react';
 
 import SessionHydration from '@/app/chat/components/SessionHydration';
 import ResponsiveIndex from '@/components/ResponsiveIndex';

@@ -1,12 +1,12 @@
-import { SearchBar } from '@lobehub/ui';
-import { useResponsive } from 'antd-style';
+import {SearchBar} from '@lobehub/ui';
+import {useResponsive} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
 import AddPluginButton from './AddPluginButton';
 import PluginItem from './PluginItem';

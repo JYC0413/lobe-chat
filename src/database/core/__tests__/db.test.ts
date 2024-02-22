@@ -1,9 +1,9 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { DBModel } from '@/database/core/types/db';
-import { DB_File } from '@/database/schemas/files';
+import {DBModel} from '@/database/core/types/db';
+import {DB_File} from '@/database/schemas/files';
 
-import { LocalDB } from '../db';
+import {LocalDB} from '../db';
 
 describe('LocalDB', () => {
   let db: LocalDB;

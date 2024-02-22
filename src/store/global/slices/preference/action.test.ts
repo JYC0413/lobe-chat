@@ -1,9 +1,9 @@
-import { act, renderHook } from '@testing-library/react';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {act, renderHook} from '@testing-library/react';
+import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { useGlobalStore } from '@/store/global';
+import {useGlobalStore} from '@/store/global';
 
-import { type Guide } from './initialState';
+import {type Guide} from './initialState';
 
 beforeEach(() => {
   vi.clearAllMocks();

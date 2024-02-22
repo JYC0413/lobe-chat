@@ -1,7 +1,7 @@
-import { LobeToolMeta } from '@/types/tool/tool';
+import {LobeToolMeta} from '@/types/tool/tool';
 
-import { pluginHelpers } from '../../helpers';
-import type { ToolStoreState } from '../../initialState';
+import {pluginHelpers} from '../../helpers';
+import type {ToolStoreState} from '../../initialState';
 
 const isBuiltinTool = (id: string) => (s: ToolStoreState) =>
   pluginHelpers.isCustomPlugin(id, s.installedPlugins);

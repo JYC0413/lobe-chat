@@ -1,5 +1,5 @@
-import { readdirSync } from 'node:fs';
-import { resolve } from 'node:path';
+import {readdirSync} from 'node:fs';
+import {resolve} from 'node:path';
 
 import i18nConfig from '../../.i18nrc';
 

@@ -1,9 +1,9 @@
 import Dexie from 'dexie';
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { LocalDB } from '../db';
-import { dbSchemaV3 } from '../schemas';
-import { LOBE_CHAT_LOCAL_DB_NAME } from '../types/db';
+import {LocalDB} from '../db';
+import {dbSchemaV3} from '../schemas';
+import {LOBE_CHAT_LOCAL_DB_NAME} from '../types/db';
 
 beforeEach(async () => {
   // 确保在测试开始前删除数据库

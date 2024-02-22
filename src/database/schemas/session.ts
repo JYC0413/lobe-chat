@@ -1,6 +1,6 @@
-import { z } from 'zod';
+import {z} from 'zod';
 
-import { LobeMetaDataSchema } from '@/types/meta';
+import {LobeMetaDataSchema} from '@/types/meta';
 
 const fewShotsSchema = z.array(
   z.object({

@@ -1,4 +1,4 @@
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
 export interface CustomPluginState {
   newCustomPlugin: Partial<LobeToolCustomPlugin>;

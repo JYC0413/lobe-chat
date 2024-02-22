@@ -1,7 +1,7 @@
-import { ImageGallery } from '@lobehub/ui';
-import { useResponsive } from 'antd-style';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {ImageGallery} from '@lobehub/ui';
+import {useResponsive} from 'antd-style';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import ImageFileItem from './ImageFileItem';
 

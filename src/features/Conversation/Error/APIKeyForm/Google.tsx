@@ -1,13 +1,13 @@
-import { Google } from '@lobehub/icons';
-import { Input } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Google} from '@lobehub/icons';
+import {Input} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { ModelProvider } from '@/libs/agent-runtime';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
+import {ModelProvider} from '@/libs/agent-runtime';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
 
-import { FormAction } from '../style';
+import {FormAction} from '../style';
 
 const GoogleForm = memo(() => {
   const { t } = useTranslation('error');

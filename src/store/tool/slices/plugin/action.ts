@@ -1,12 +1,12 @@
-import { Schema, ValidationResult } from '@cfworker/json-schema';
-import useSWR, { SWRResponse } from 'swr';
-import { StateCreator } from 'zustand/vanilla';
+import {Schema, ValidationResult} from '@cfworker/json-schema';
+import useSWR, {SWRResponse} from 'swr';
+import {StateCreator} from 'zustand/vanilla';
 
-import { pluginService } from '@/services/plugin';
+import {pluginService} from '@/services/plugin';
 
-import { ToolStore } from '../../store';
-import { pluginStoreSelectors } from '../store/selectors';
-import { pluginSelectors } from './selectors';
+import {ToolStore} from '../../store';
+import {pluginStoreSelectors} from '../store/selectors';
+import {pluginSelectors} from './selectors';
 
 /**
  * 插件接口

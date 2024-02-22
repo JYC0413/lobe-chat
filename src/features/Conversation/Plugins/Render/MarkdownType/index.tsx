@@ -1,5 +1,5 @@
-import { Markdown } from '@lobehub/ui';
-import { memo } from 'react';
+import {Markdown} from '@lobehub/ui';
+import {memo} from 'react';
 
 import Loading from '../Loading';
 

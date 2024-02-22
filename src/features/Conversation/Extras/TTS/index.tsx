@@ -1,13 +1,13 @@
-import { memo, useMemo } from 'react';
-import { Md5 } from 'ts-md5';
+import {memo, useMemo} from 'react';
+import {Md5} from 'ts-md5';
 
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 import FilePlayer from './FilePlayer';
-import InitPlayer, { TTSProps } from './InitPlayer';
+import InitPlayer, {TTSProps} from './InitPlayer';
 
 const TTS = memo<TTSProps>(
   (props) => {

@@ -1,6 +1,7 @@
-import { CSSProperties } from 'react';
-import { type MessageInputProps } from "@lobehub/ui/es/MessageInput";
-import { type MessageModalProps } from "@lobehub/ui/es/MessageModal";
+import {CSSProperties} from 'react';
+import {type MessageInputProps} from "@lobehub/ui/es/MessageInput";
+import {type MessageModalProps} from "@lobehub/ui/es/MessageModal";
+
 export interface EditableMessageProps {
     /**
      * @title The class name for the Markdown and MessageInput component

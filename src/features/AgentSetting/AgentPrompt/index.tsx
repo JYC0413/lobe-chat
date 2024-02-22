@@ -1,14 +1,14 @@
-import { EditableMessage, FormGroup } from '@lobehub/ui';
-import { Button } from 'antd';
-import { createStyles } from 'antd-style';
-import { Bot } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {EditableMessage, FormGroup} from '@lobehub/ui';
+import {Button} from 'antd';
+import {createStyles} from 'antd-style';
+import {Bot} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
+import {FORM_STYLE} from '@/const/layoutTokens';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 import TokenTag from './TokenTag';
 
 export const useStyles = createStyles(({ css, token }) => ({

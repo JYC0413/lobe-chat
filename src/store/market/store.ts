@@ -1,13 +1,13 @@
-import { PersistOptions, devtools, persist } from 'zustand/middleware';
-import { shallow } from 'zustand/shallow';
-import { createWithEqualityFn } from 'zustand/traditional';
-import type { StateCreator } from 'zustand/vanilla';
+import {devtools, persist, PersistOptions} from 'zustand/middleware';
+import {shallow} from 'zustand/shallow';
+import {createWithEqualityFn} from 'zustand/traditional';
+import type {StateCreator} from 'zustand/vanilla';
 
-import { createHyperStorage } from '@/store/middleware/createHyperStorage';
-import { isDev } from '@/utils/env';
+import {createHyperStorage} from '@/store/middleware/createHyperStorage';
+import {isDev} from '@/utils/env';
 
-import { type StoreAction, createMarketAction } from './action';
-import { type StoreState, initialState } from './initialState';
+import {createMarketAction, type StoreAction} from './action';
+import {initialState, type StoreState} from './initialState';
 
 export type Store = StoreAction & StoreState;
 

@@ -1,10 +1,10 @@
 'use client';
 
-import { FC, ReactNode, Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import {FC, ReactNode, Suspense} from 'react';
+import {useTranslation} from 'react-i18next';
 
 import FullscreenLoading from '@/components/FullscreenLoading';
-import { useIsMobile } from '@/hooks/useIsMobile';
+import {useIsMobile} from '@/hooks/useIsMobile';
 
 interface ResponsiveIndexProps {
   Mobile: FC;

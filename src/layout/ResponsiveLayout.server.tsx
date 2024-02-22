@@ -1,6 +1,6 @@
-import { PropsWithChildren, ReactNode } from 'react';
+import {PropsWithChildren, ReactNode} from 'react';
 
-import { isMobileDevice } from '@/utils/responsive';
+import {isMobileDevice} from '@/utils/responsive';
 
 interface ServerResponsiveLayoutProps {
   Desktop: (props: PropsWithChildren) => ReactNode;

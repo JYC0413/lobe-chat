@@ -1,4 +1,4 @@
-import { consola } from 'consola';
+import {consola} from 'consola';
 
 import syncAgentIndex from './syncAgentIndex';
 import syncPluginIndex from './syncPluginIndex';

@@ -1,7 +1,7 @@
-import { z } from 'zod';
+import {z} from 'zod';
 
-import { AgentSchema } from '@/database/schemas/session';
-import { LobeMetaDataSchema } from '@/types/meta';
+import {AgentSchema} from '@/database/schemas/session';
+import {LobeMetaDataSchema} from '@/types/meta';
 
 const modelProviderSchema = z.object({
   openai: z.object({

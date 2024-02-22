@@ -1,18 +1,18 @@
-import { LobePluginType } from '@lobehub/chat-plugin-sdk';
-import { t } from 'i18next';
+import {LobePluginType} from '@lobehub/chat-plugin-sdk';
+import {t} from 'i18next';
 
-import { DEFAULT_INBOX_AVATAR, DEFAULT_USER_AVATAR } from '@/const/meta';
-import { INBOX_SESSION_ID } from '@/const/session';
-import { useGlobalStore } from '@/store/global';
-import { commonSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
-import { MetaData } from '@/types/meta';
-import { merge } from '@/utils/merge';
+import {DEFAULT_INBOX_AVATAR, DEFAULT_USER_AVATAR} from '@/const/meta';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {useGlobalStore} from '@/store/global';
+import {commonSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
+import {MetaData} from '@/types/meta';
+import {merge} from '@/utils/merge';
 
-import { chatHelpers } from '../../helpers';
-import type { ChatStore } from '../../store';
+import {chatHelpers} from '../../helpers';
+import type {ChatStore} from '../../store';
 
 const getMeta = (message: ChatMessage) => {
   switch (message.role) {

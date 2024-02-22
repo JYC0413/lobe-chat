@@ -1,8 +1,8 @@
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
 
 import Item from '../ChatItem';
 

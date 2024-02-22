@@ -1,14 +1,14 @@
 'use client';
 
-import { App } from 'antd';
-import { createStyles } from 'antd-style';
+import {App} from 'antd';
+import {createStyles} from 'antd-style';
 import 'antd/dist/reset.css';
 import dynamic from 'next/dynamic';
-import { FC, PropsWithChildren, memo } from 'react';
+import {FC, memo, PropsWithChildren} from 'react';
 
-import { getClientConfig } from '@/config/client';
+import {getClientConfig} from '@/config/client';
 
-import AppTheme, { AppThemeProps } from './AppTheme';
+import AppTheme, {AppThemeProps} from './AppTheme';
 import Locale from './Locale';
 import StoreHydration from './StoreHydration';
 

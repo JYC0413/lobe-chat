@@ -1,5 +1,5 @@
-import { FC } from 'react';
+import {FC} from 'react';
 
-import { ChatMessage } from '@/types/message';
+import {ChatMessage} from '@/types/message';
 
 export type RenderMessageExtra = FC<ChatMessage>;

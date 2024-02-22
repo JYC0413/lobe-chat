@@ -1,10 +1,10 @@
-import { useAudioPlayer } from '@lobehub/tts/react';
-import { memo, useCallback } from 'react';
+import {useAudioPlayer} from '@lobehub/tts/react';
+import {memo, useCallback} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { useFileStore } from '@/store/file';
+import {useChatStore} from '@/store/chat';
+import {useFileStore} from '@/store/file';
 
-import { TTSProps } from './InitPlayer';
+import {TTSProps} from './InitPlayer';
 import Player from './Player';
 
 const FilePlayer = memo<TTSProps>(({ file, id }) => {

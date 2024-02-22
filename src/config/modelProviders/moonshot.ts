@@ -1,4 +1,4 @@
-import { ModelProviderCard } from '@/types/llm';
+import {ModelProviderCard} from '@/types/llm';
 
 const Moonshot: ModelProviderCard = {
   chatModels: [

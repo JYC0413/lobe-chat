@@ -1,14 +1,14 @@
-import { Select, SelectProps } from 'antd';
-import { createStyles } from 'antd-style';
+import {Select, SelectProps} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { memo, useMemo } from 'react';
+import {memo, useMemo} from 'react';
 
-import { ModelItemRender, ProviderItemRender } from '@/components/ModelSelect';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { ModelProviderCard } from '@/types/llm';
+import {ModelItemRender, ProviderItemRender} from '@/components/ModelSelect';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {ModelProviderCard} from '@/types/llm';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 
 const useStyles = createStyles(({ css, prefixCls }) => ({
   select: css`

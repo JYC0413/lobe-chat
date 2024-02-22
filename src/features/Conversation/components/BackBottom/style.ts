@@ -1,5 +1,5 @@
-import { createStyles } from 'antd-style';
-import { rgba } from 'polished';
+import {createStyles} from 'antd-style';
+import {rgba} from 'polished';
 
 export const useStyles = createStyles(({ token, css, stylish, cx, responsive }) => ({
   container: cx(

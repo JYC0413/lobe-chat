@@ -1,12 +1,12 @@
-import { ActionIcon, EditableText, Icon } from '@lobehub/ui';
-import { App, Dropdown, type MenuProps, Typography } from 'antd';
-import { createStyles } from 'antd-style';
-import { LucideCopy, MoreVertical, PencilLine, Star, Trash, Wand2 } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, EditableText, Icon} from '@lobehub/ui';
+import {App, Dropdown, type MenuProps, Typography} from 'antd';
+import {createStyles} from 'antd-style';
+import {LucideCopy, MoreVertical, PencilLine, Star, Trash, Wand2} from 'lucide-react';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
+import {useChatStore} from '@/store/chat';
 
 const useStyles = createStyles(({ css }) => ({
   content: css`

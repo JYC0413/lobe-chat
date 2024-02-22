@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
-import { domToJpeg, domToPng, domToSvg, domToWebp } from 'modern-screenshot';
-import { useCallback, useState } from 'react';
+import {domToJpeg, domToPng, domToSvg, domToWebp} from 'modern-screenshot';
+import {useCallback, useState} from 'react';
 
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
-import { ImageType } from './type';
+import {ImageType} from './type';
 
 export const useScreenshot = (imageType: ImageType) => {
   const [loading, setLoading] = useState(false);

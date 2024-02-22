@@ -1,11 +1,11 @@
-import { produce } from 'immer';
-import type { StateCreator } from 'zustand/vanilla';
+import {produce} from 'immer';
+import type {StateCreator} from 'zustand/vanilla';
 
-import type { GlobalStore } from '@/store/global';
-import { merge } from '@/utils/merge';
-import { setNamespace } from '@/utils/storeDebug';
+import type {GlobalStore} from '@/store/global';
+import {merge} from '@/utils/merge';
+import {setNamespace} from '@/utils/storeDebug';
 
-import type { GlobalPreference, GlobalPreferenceState, Guide } from './initialState';
+import type {GlobalPreference, GlobalPreferenceState, Guide} from './initialState';
 
 const n = setNamespace('preference');
 

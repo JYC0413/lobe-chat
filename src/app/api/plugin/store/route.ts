@@ -1,6 +1,6 @@
-import { DEFAULT_LANG } from '@/const/locale';
+import {DEFAULT_LANG} from '@/const/locale';
 
-import { PluginStore } from './Store';
+import {PluginStore} from './Store';
 
 export const runtime = 'edge';
 

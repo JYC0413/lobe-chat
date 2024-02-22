@@ -1,8 +1,8 @@
-import { OpenAISTTPayload } from '@lobehub/tts';
-import { createOpenaiAudioTranscriptions } from '@lobehub/tts/server';
+import {OpenAISTTPayload} from '@lobehub/tts';
+import {createOpenaiAudioTranscriptions} from '@lobehub/tts/server';
 
-import { getPreferredRegion } from '../../config';
-import { createBizOpenAI } from '../createBizOpenAI';
+import {getPreferredRegion} from '../../config';
+import {createBizOpenAI} from '../createBizOpenAI';
 
 export const runtime = 'edge';
 export const preferredRegion = getPreferredRegion();

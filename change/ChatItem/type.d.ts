@@ -1,7 +1,8 @@
-import { ReactNode } from 'react';
-import { AlertProps } from "../Alert";
-import { EditableMessageProps } from "../EditableMessage";
-import { DivProps, MetaData } from "../types";
+import {ReactNode} from 'react';
+import {AlertProps} from "../Alert";
+import {EditableMessageProps} from "../EditableMessage";
+import {DivProps, MetaData} from "../types";
+
 export interface ChatItemProps {
     /**
      * @description Actions to be displayed in the chat item

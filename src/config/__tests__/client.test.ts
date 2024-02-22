@@ -1,6 +1,6 @@
-import { describe, expect, it, vi } from 'vitest';
+import {describe, expect, it, vi} from 'vitest';
 
-import { getClientConfig } from '../client';
+import {getClientConfig} from '../client';
 
 // 测试前重置 process.env
 vi.stubGlobal('process', {

@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
-import { GlobalStore, useGlobalStore } from '../store';
+import {GlobalStore, useGlobalStore} from '../store';
 
 /**
  * 当 Session 水合完毕后才会执行的 useEffect

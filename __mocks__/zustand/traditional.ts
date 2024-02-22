@@ -1,6 +1,6 @@
-import { act } from 'react-dom/test-utils';
-import { beforeEach } from 'vitest';
-import { createWithEqualityFn as actualCreate } from 'zustand/traditional';
+import {act} from 'react-dom/test-utils';
+import {beforeEach} from 'vitest';
+import {createWithEqualityFn as actualCreate} from 'zustand/traditional';
 
 // a variable to hold reset functions for all stores declared in the app
 const storeResetFns = new Set<() => void>();

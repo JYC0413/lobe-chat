@@ -1,17 +1,13 @@
-import { ConfigProvider, NeutralColors, PrimaryColors, ThemeProvider } from '@lobehub/ui';
-import { ThemeAppearance } from 'antd-style';
+import {ConfigProvider, NeutralColors, PrimaryColors, ThemeProvider} from '@lobehub/ui';
+import {ThemeAppearance} from 'antd-style';
 import Image from 'next/image';
-import { ReactNode, memo, useEffect } from 'react';
+import {memo, ReactNode, useEffect} from 'react';
 
-import {
-  LOBE_THEME_APPEARANCE,
-  LOBE_THEME_NEUTRAL_COLOR,
-  LOBE_THEME_PRIMARY_COLOR,
-} from '@/const/theme';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { GlobalStyle } from '@/styles';
-import { setCookie } from '@/utils/cookie';
+import {LOBE_THEME_APPEARANCE, LOBE_THEME_NEUTRAL_COLOR, LOBE_THEME_PRIMARY_COLOR,} from '@/const/theme';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {GlobalStyle} from '@/styles';
+import {setCookie} from '@/utils/cookie';
 
 export interface AppThemeProps {
   children?: ReactNode;

@@ -1,10 +1,10 @@
-import useSWR, { SWRResponse } from 'swr';
-import { StateCreator } from 'zustand/vanilla';
+import useSWR, {SWRResponse} from 'swr';
+import {StateCreator} from 'zustand/vanilla';
 
-import { fileService } from '@/services/file';
-import { FilePreview } from '@/types/files';
+import {fileService} from '@/services/file';
+import {FilePreview} from '@/types/files';
 
-import { FileStore } from '../../store';
+import {FileStore} from '../../store';
 
 export interface TTSFileAction {
   removeTTSFile: (id: string) => Promise<void>;

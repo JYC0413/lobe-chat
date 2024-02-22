@@ -1,5 +1,5 @@
-import { PluginChannel } from '@lobehub/chat-plugin-sdk/client';
-import { describe, expect, it, vi } from 'vitest';
+import {PluginChannel} from '@lobehub/chat-plugin-sdk/client';
+import {describe, expect, it, vi} from 'vitest';
 
 import {
   sendMessageContentToPlugin,

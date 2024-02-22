@@ -1,11 +1,11 @@
-import { Mock, describe, expect, it, vi } from 'vitest';
+import {describe, expect, it, Mock, vi} from 'vitest';
 
-import { chatHelpers } from '@/store/chat/helpers';
-import { globalHelpers } from '@/store/global/helpers';
-import { LanguageModel } from '@/types/llm';
-import { OpenAIChatMessage } from '@/types/openai/chat';
+import {chatHelpers} from '@/store/chat/helpers';
+import {globalHelpers} from '@/store/global/helpers';
+import {LanguageModel} from '@/types/llm';
+import {OpenAIChatMessage} from '@/types/openai/chat';
 
-import { chainSummaryTitle } from '../summaryTitle';
+import {chainSummaryTitle} from '../summaryTitle';
 
 // Mock the getCurrentLanguage function
 vi.mock('@/store/global/helpers', () => ({

@@ -1,5 +1,6 @@
 /// <reference types="react" />
-import { ChatItemProps } from "..";
+import {ChatItemProps} from "..";
+
 export interface LoadingProps {
     loading?: ChatItemProps['loading'];
     placement?: ChatItemProps['placement'];

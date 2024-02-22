@@ -1,4 +1,4 @@
-import { BaseDataModel } from '@/types/meta';
+import {BaseDataModel} from '@/types/meta';
 
 export const filterWithKeywords = <T extends BaseDataModel>(
   map: Record<string, T>,

@@ -1,12 +1,12 @@
-import { Avatar, Form } from '@lobehub/ui';
-import { Form as AForm, Card, FormInstance } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Avatar, Form} from '@lobehub/ui';
+import {Card, Form as AForm, FormInstance} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import PluginTag from '@/features/PluginStore/PluginItem/PluginTag';
-import { pluginHelpers } from '@/store/tool';
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {pluginHelpers} from '@/store/tool';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
 const PluginPreview = memo<{ form: FormInstance }>(({ form }) => {
   const { t } = useTranslation('plugin');

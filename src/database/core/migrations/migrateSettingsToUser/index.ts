@@ -1,6 +1,6 @@
-import { DB_Settings, DB_User } from '@/database/schemas/user';
+import {DB_Settings, DB_User} from '@/database/schemas/user';
 
-import { V4Settings } from './type';
+import {V4Settings} from './type';
 
 export const migrateSettingsToUser = (settings: V4Settings): DB_User => {
   const dbSettings: DB_Settings = {

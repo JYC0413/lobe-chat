@@ -11,7 +11,7 @@ import {
   OpenAI,
   Tongyi,
 } from '@lobehub/icons';
-import { memo } from 'react';
+import {memo} from 'react';
 
 interface ModelProviderIconProps {
   model?: string;

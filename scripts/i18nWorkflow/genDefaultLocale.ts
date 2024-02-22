@@ -1,8 +1,8 @@
-import { consola } from 'consola';
-import { colors } from 'consola/utils';
+import {consola} from 'consola';
+import {colors} from 'consola/utils';
 
-import { entryLocaleJsonFilepath, i18nConfig, srcDefaultLocales } from './const';
-import { tagWhite, writeJSON } from './utils';
+import {entryLocaleJsonFilepath, i18nConfig, srcDefaultLocales} from './const';
+import {tagWhite, writeJSON} from './utils';
 
 export const genDefaultLocale = () => {
   consola.info(`Default locale is ${i18nConfig.entryLocale}...`);

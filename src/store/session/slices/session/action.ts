@@ -1,22 +1,22 @@
-import { message } from 'antd';
-import { t } from 'i18next';
-import useSWR, { SWRResponse, mutate } from 'swr';
-import { DeepPartial } from 'utility-types';
-import { StateCreator } from 'zustand/vanilla';
+import {message} from 'antd';
+import {t} from 'i18next';
+import useSWR, {mutate, SWRResponse} from 'swr';
+import {DeepPartial} from 'utility-types';
+import {StateCreator} from 'zustand/vanilla';
 
-import { INBOX_SESSION_ID } from '@/const/session';
-import { SESSION_CHAT_URL } from '@/const/url';
-import { sessionService } from '@/services/session';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { SessionStore } from '@/store/session';
-import { ChatSessionList, LobeAgentSession, LobeSessionType, LobeSessions } from '@/types/session';
-import { merge } from '@/utils/merge';
-import { setNamespace } from '@/utils/storeDebug';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {SESSION_CHAT_URL} from '@/const/url';
+import {sessionService} from '@/services/session';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {SessionStore} from '@/store/session';
+import {ChatSessionList, LobeAgentSession, LobeSessions, LobeSessionType} from '@/types/session';
+import {merge} from '@/utils/merge';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { agentSelectors } from '../agent/selectors';
-import { initLobeSession } from './initialState';
-import { sessionSelectors } from './selectors';
+import {agentSelectors} from '../agent/selectors';
+import {initLobeSession} from './initialState';
+import {sessionSelectors} from './selectors';
 
 const n = setNamespace('session');
 

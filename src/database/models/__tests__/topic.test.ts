@@ -1,13 +1,13 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { DBModel } from '@/database/core/types/db';
-import { CreateMessageParams, MessageModel } from '@/database/models/message';
-import { DB_Message } from '@/database/schemas/message';
-import { DB_Topic } from '@/database/schemas/topic';
-import { nanoid } from '@/utils/uuid';
+import {DBModel} from '@/database/core/types/db';
+import {CreateMessageParams, MessageModel} from '@/database/models/message';
+import {DB_Message} from '@/database/schemas/message';
+import {DB_Topic} from '@/database/schemas/topic';
 import * as uuidUtils from '@/utils/uuid';
+import {nanoid} from '@/utils/uuid';
 
-import { CreateTopicParams, QueryTopicParams, TopicModel } from '../topic';
+import {CreateTopicParams, QueryTopicParams, TopicModel} from '../topic';
 
 describe('TopicModel', () => {
   let topicData: CreateTopicParams;

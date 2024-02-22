@@ -1,6 +1,6 @@
-import { DEFAULT_LANG } from '@/const/locale';
+import {DEFAULT_LANG} from '@/const/locale';
 
-import { AgentMarket } from './AgentMarket';
+import {AgentMarket} from './AgentMarket';
 
 export const runtime = 'edge';
 

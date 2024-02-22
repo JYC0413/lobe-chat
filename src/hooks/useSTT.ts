@@ -1,19 +1,14 @@
-import { getRecordMineType } from '@lobehub/tts';
-import {
-  OpenAISTTOptions,
-  SpeechRecognitionOptions,
-  useOpenAISTT,
-  useSpeechRecognition,
-} from '@lobehub/tts/react';
+import {getRecordMineType} from '@lobehub/tts';
+import {OpenAISTTOptions, SpeechRecognitionOptions, useOpenAISTT, useSpeechRecognition,} from '@lobehub/tts/react';
 import isEqual from 'fast-deep-equal';
-import { SWRConfiguration } from 'swr';
+import {SWRConfiguration} from 'swr';
 
-import { createHeaderWithOpenAI } from '@/services/_header';
-import { OPENAI_URLS } from '@/services/_url';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {createHeaderWithOpenAI} from '@/services/_header';
+import {OPENAI_URLS} from '@/services/_url';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 interface STTConfig extends SWRConfiguration {
   onTextChange: (value: string) => void;

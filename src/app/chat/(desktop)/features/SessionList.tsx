@@ -1,6 +1,6 @@
-import { DraggablePanelBody } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { memo } from 'react';
+import {DraggablePanelBody} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {memo} from 'react';
 
 import FolderPanel from '@/features/FolderPanel';
 

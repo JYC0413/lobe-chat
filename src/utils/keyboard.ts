@@ -1,6 +1,6 @@
-import { KeyboardEvent } from 'react';
+import {KeyboardEvent} from 'react';
 
-import { isMacOS } from './platform';
+import {isMacOS} from './platform';
 
 export const isCommandPressed = (event: KeyboardEvent) => {
   const isMac = isMacOS();

@@ -1,9 +1,9 @@
 'use client';
 
-import { Analytics } from '@vercel/analytics/react';
-import { memo } from 'react';
+import {Analytics} from '@vercel/analytics/react';
+import {memo} from 'react';
 
-import { getClientConfig } from '@/config/client';
+import {getClientConfig} from '@/config/client';
 
 const { VERCEL_DEBUG } = getClientConfig();
 

@@ -1,7 +1,8 @@
 import _taggedTemplateLiteral from "@babel/runtime/helpers/esm/taggedTemplateLiteral";
+import {createStyles} from 'antd-style';
+import {rgba} from 'polished';
+
 var _templateObject, _templateObject2;
-import { createStyles } from 'antd-style';
-import { rgba } from 'polished';
 export var useStyles = createStyles(function (_ref) {
   var stylish = _ref.stylish,
     token = _ref.token,

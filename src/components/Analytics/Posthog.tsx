@@ -1,9 +1,9 @@
 'use client';
 
 import posthog from 'posthog-js';
-import { FC, memo, useEffect } from 'react';
+import {FC, memo, useEffect} from 'react';
 
-import { getClientConfig } from '@/config/client';
+import {getClientConfig} from '@/config/client';
 
 const { POSTHOG_HOST, POSTHOG_KEY, POSTHOG_DEBUG } = getClientConfig();
 

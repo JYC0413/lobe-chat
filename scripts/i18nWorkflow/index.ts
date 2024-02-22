@@ -1,6 +1,6 @@
-import { genDefaultLocale } from './genDefaultLocale';
-import { genDiff } from './genDiff';
-import { split } from './utils';
+import {genDefaultLocale} from './genDefaultLocale';
+import {genDiff} from './genDiff';
+import {split} from './utils';
 
 split('DIFF ANALYSIS');
 genDiff();

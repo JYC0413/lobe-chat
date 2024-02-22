@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { ToolStoreState, initialState } from '../../initialState';
-import { pluginStoreSelectors } from './selectors';
+import {initialState, ToolStoreState} from '../../initialState';
+import {pluginStoreSelectors} from './selectors';
 
 const mockState = {
   ...initialState,

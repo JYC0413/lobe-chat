@@ -1,7 +1,7 @@
-import { FormInstance } from 'antd/es/form/hooks/useForm';
-import { useEffect } from 'react';
+import {FormInstance} from 'antd/es/form/hooks/useForm';
+import {useEffect} from 'react';
 
-import { useStoreApi } from '../store';
+import {useStoreApi} from '../store';
 
 export const useSyncConfig = (form: FormInstance) => {
   const storeApi = useStoreApi();

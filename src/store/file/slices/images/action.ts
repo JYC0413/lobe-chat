@@ -1,12 +1,12 @@
-import { produce } from 'immer';
-import useSWR, { SWRResponse } from 'swr';
-import { StateCreator } from 'zustand/vanilla';
+import {produce} from 'immer';
+import useSWR, {SWRResponse} from 'swr';
+import {StateCreator} from 'zustand/vanilla';
 
-import { fileService } from '@/services/file';
-import { FilePreview } from '@/types/files';
-import { setNamespace } from '@/utils/storeDebug';
+import {fileService} from '@/services/file';
+import {FilePreview} from '@/types/files';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { FileStore } from '../../store';
+import {FileStore} from '../../store';
 
 const n = setNamespace('image');
 

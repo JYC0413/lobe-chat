@@ -1,9 +1,9 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import { BaseModel } from '@/database/core';
-import { GlobalSettings } from '@/types/settings';
+import {BaseModel} from '@/database/core';
+import {GlobalSettings} from '@/types/settings';
 
-import { DB_User, DB_UserSchema } from '../schemas/user';
+import {DB_User, DB_UserSchema} from '../schemas/user';
 
 class _UserModel extends BaseModel {
   constructor() {

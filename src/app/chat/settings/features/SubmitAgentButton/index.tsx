@@ -1,10 +1,10 @@
-import { ActionIcon } from '@lobehub/ui';
-import { useResponsive } from 'antd-style';
-import { Share2 } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon} from '@lobehub/ui';
+import {useResponsive} from 'antd-style';
+import {Share2} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { HEADER_ICON_SIZE } from '@/const/layoutTokens';
+import {HEADER_ICON_SIZE} from '@/const/layoutTokens';
 
 import SubmitAgentModal from './SubmitAgentModal';
 

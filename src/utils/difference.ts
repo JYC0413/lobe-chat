@@ -1,4 +1,4 @@
-import { isEqual, isObject, transform } from 'lodash-es';
+import {isEqual, isObject, transform} from 'lodash-es';
 
 export const difference = <T extends object>(object: T, base: T) => {
   const changes = (object: any, base: any) =>

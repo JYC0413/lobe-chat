@@ -1,8 +1,8 @@
-import { Azure, Bedrock, Google, Moonshot, OpenAI, Zhipu } from '@lobehub/icons';
-import { memo } from 'react';
-import { Center } from 'react-layout-kit';
+import {Azure, Bedrock, Google, Moonshot, OpenAI, Zhipu} from '@lobehub/icons';
+import {memo} from 'react';
+import {Center} from 'react-layout-kit';
 
-import { ModelProvider } from '@/libs/agent-runtime';
+import {ModelProvider} from '@/libs/agent-runtime';
 
 interface ModelProviderIconProps {
   provider?: string;

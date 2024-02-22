@@ -1,7 +1,7 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import { UserModel } from '@/database/models/user';
-import { GlobalSettings } from '@/types/settings';
+import {UserModel} from '@/database/models/user';
+import {GlobalSettings} from '@/types/settings';
 
 export interface UserConfig {
   avatar?: string;

@@ -1,6 +1,6 @@
 import OpenAI from 'openai';
 
-import { OpenAIImagePayload } from '@/types/openai/image';
+import {OpenAIImagePayload} from '@/types/openai/image';
 
 export const createImageGeneration = async ({
   openai,

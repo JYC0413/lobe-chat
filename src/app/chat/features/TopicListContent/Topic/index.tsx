@@ -1,17 +1,17 @@
-import { EmptyCard } from '@lobehub/ui';
-import { useThemeMode } from 'antd-style';
+import {EmptyCard} from '@lobehub/ui';
+import {useThemeMode} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import React, { memo, useCallback, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
-import { Virtuoso, VirtuosoHandle } from 'react-virtuoso';
+import React, {memo, useCallback, useRef} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
+import {Virtuoso, VirtuosoHandle} from 'react-virtuoso';
 
-import { useChatStore } from '@/store/chat';
-import { topicSelectors } from '@/store/chat/selectors';
-import { useGlobalStore } from '@/store/global';
-import { ChatTopic } from '@/types/topic';
+import {useChatStore} from '@/store/chat';
+import {topicSelectors} from '@/store/chat/selectors';
+import {useGlobalStore} from '@/store/global';
+import {ChatTopic} from '@/types/topic';
 
-import { Placeholder, SkeletonList } from './SkeletonList';
+import {Placeholder, SkeletonList} from './SkeletonList';
 import TopicItem from './TopicItem';
 
 export const Topic = memo(() => {

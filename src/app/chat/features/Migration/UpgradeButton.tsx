@@ -1,14 +1,14 @@
-import { Button } from 'antd';
-import { createStore, set } from 'idb-keyval';
-import { ReactNode, memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Button} from 'antd';
+import {createStore, set} from 'idb-keyval';
+import {memo, ReactNode} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { Migration } from '@/migrations';
-import { configService } from '@/services/config';
-import { useChatStore } from '@/store/chat';
-import { useSessionStore } from '@/store/session';
+import {Migration} from '@/migrations';
+import {configService} from '@/services/config';
+import {useChatStore} from '@/store/chat';
+import {useSessionStore} from '@/store/session';
 
-import { MIGRATE_KEY, MigrationError, UpgradeStatus, V1DB_NAME, V1DB_TABLE_NAME } from './const';
+import {MIGRATE_KEY, MigrationError, UpgradeStatus, V1DB_NAME, V1DB_TABLE_NAME} from './const';
 
 export interface UpgradeButtonProps {
   children?: ReactNode;

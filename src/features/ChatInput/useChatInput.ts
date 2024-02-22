@@ -1,13 +1,13 @@
-import { TextAreaRef } from 'antd/es/input/TextArea';
-import { useCallback, useRef, useState } from 'react';
+import {TextAreaRef} from 'antd/es/input/TextArea';
+import {useCallback, useRef, useState} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
-import { useSendMessage } from './useSend';
+import {useSendMessage} from './useSend';
 
 export const useChatInput = () => {
   const ref = useRef<TextAreaRef>(null);

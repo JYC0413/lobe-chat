@@ -1,10 +1,10 @@
-import { Icon, Tag } from '@lobehub/ui';
-import { Typography } from 'antd';
-import { useTheme } from 'antd-style';
-import { MessageSquareDashed } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Icon, Tag} from '@lobehub/ui';
+import {Typography} from 'antd';
+import {useTheme} from 'antd-style';
+import {MessageSquareDashed} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 const { Paragraph } = Typography;
 

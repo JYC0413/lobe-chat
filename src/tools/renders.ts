@@ -1,6 +1,6 @@
-import { BuiltinRender } from '@/types/tool';
+import {BuiltinRender} from '@/types/tool';
 
-import { DalleManifest } from './dalle';
+import {DalleManifest} from './dalle';
 import DalleRender from './dalle/Render';
 
 export const BuiltinToolsRenders: Record<string, BuiltinRender> = {

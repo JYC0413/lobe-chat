@@ -1,8 +1,8 @@
-import OpenAI, { ClientOptions } from 'openai';
+import OpenAI, {ClientOptions} from 'openai';
 import urlJoin from 'url-join';
 
-import { getServerConfig } from '@/config/server';
-import { ChatErrorType } from '@/types/fetch';
+import {getServerConfig} from '@/config/server';
+import {ChatErrorType} from '@/types/fetch';
 
 // create Azure OpenAI Instance
 export const createAzureOpenai = (params: {

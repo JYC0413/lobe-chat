@@ -1,5 +1,5 @@
-import { getServerConfig } from '@/config/server';
-import { ChatErrorType } from '@/types/fetch';
+import {getServerConfig} from '@/config/server';
+import {ChatErrorType} from '@/types/fetch';
 
 interface AuthConfig {
   accessCode?: string | null;

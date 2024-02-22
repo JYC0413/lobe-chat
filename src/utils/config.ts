@@ -1,6 +1,6 @@
-import { notification } from 'antd';
+import {notification} from 'antd';
 
-import { CURRENT_CONFIG_VERSION, Migration } from '@/migrations';
+import {CURRENT_CONFIG_VERSION, Migration} from '@/migrations';
 import {
   ConfigFile,
   ConfigFileAgents,

@@ -1,4 +1,4 @@
-import { HyperStorageOptionsObj } from './type';
+import {HyperStorageOptionsObj} from './type';
 
 export const createKeyMapper = (options: HyperStorageOptionsObj) => {
   const mapStateKeyToStorageKey = (

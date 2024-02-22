@@ -1,11 +1,11 @@
-import { Empty, Table } from 'antd';
+import {Empty, Table} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
 const APIs = memo<{
   id: string;

@@ -1,18 +1,13 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { CreateMessageParams, MessageModel } from '@/database/models/message';
-import { SessionGroupModel } from '@/database/models/sessionGroup';
-import { TopicModel } from '@/database/models/topic';
-import { LobeAgentConfig } from '@/types/agent';
-import {
-  LobeAgentSession,
-  LobeSessionType,
-  SessionDefaultGroup,
-  SessionGroupId,
-} from '@/types/session';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {CreateMessageParams, MessageModel} from '@/database/models/message';
+import {SessionGroupModel} from '@/database/models/sessionGroup';
+import {TopicModel} from '@/database/models/topic';
+import {LobeAgentConfig} from '@/types/agent';
+import {LobeAgentSession, LobeSessionType, SessionDefaultGroup, SessionGroupId,} from '@/types/session';
 
-import { SessionModel } from '../session';
+import {SessionModel} from '../session';
 
 describe('SessionModel', () => {
   let sessionData: Partial<LobeAgentSession>;

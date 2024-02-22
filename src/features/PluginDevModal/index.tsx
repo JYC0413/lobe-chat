@@ -1,13 +1,13 @@
-import { Alert, Icon, Modal, Tooltip } from '@lobehub/ui';
-import { App, Button, Form, Popconfirm, Segmented } from 'antd';
-import { useResponsive } from 'antd-style';
-import { MoveUpRight } from 'lucide-react';
-import { memo, useEffect, useState } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Alert, Icon, Modal, Tooltip} from '@lobehub/ui';
+import {App, Button, Form, Popconfirm, Segmented} from 'antd';
+import {useResponsive} from 'antd-style';
+import {MoveUpRight} from 'lucide-react';
+import {memo, useEffect, useState} from 'react';
+import {Trans, useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { WIKI_PLUGIN_GUIDE } from '@/const/url';
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {WIKI_PLUGIN_GUIDE} from '@/const/url';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
 import PluginPreview from './PluginPreview';
 import UrlManifestForm from './UrlManifestForm';

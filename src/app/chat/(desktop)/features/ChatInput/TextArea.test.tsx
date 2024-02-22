@@ -1,9 +1,9 @@
-import { act, fireEvent, render, screen } from '@testing-library/react';
+import {act, fireEvent, render, screen} from '@testing-library/react';
 import React from 'react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
 
 import InputArea from './TextArea';
 

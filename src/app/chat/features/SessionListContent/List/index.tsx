@@ -1,12 +1,12 @@
-import { createStyles, useResponsive } from 'antd-style';
+import {createStyles, useResponsive} from 'antd-style';
 import Link from 'next/link';
-import { memo } from 'react';
+import {memo} from 'react';
 import LazyLoad from 'react-lazy-load';
 
-import { SESSION_CHAT_URL } from '@/const/url';
-import { useSessionStore } from '@/store/session';
-import { sessionSelectors } from '@/store/session/selectors';
-import { LobeAgentSession } from '@/types/session';
+import {SESSION_CHAT_URL} from '@/const/url';
+import {useSessionStore} from '@/store/session';
+import {sessionSelectors} from '@/store/session/selectors';
+import {LobeAgentSession} from '@/types/session';
 
 import AddButton from './AddButton';
 import SessionItem from './Item';

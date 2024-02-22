@@ -1,5 +1,5 @@
-import { Divider } from 'antd';
-import { PropsWithChildren, memo } from 'react';
+import {Divider} from 'antd';
+import {memo, PropsWithChildren} from 'react';
 
 const ExtraContainer = memo<PropsWithChildren>(({ children }) => {
   return (

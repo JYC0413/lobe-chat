@@ -1,6 +1,6 @@
-import { DEFAULT_AGENT_META } from '@/const/meta';
-import { ModelProvider } from '@/libs/agent-runtime';
-import { LobeAgentConfig, LobeAgentTTSConfig } from '@/types/agent';
+import {DEFAULT_AGENT_META} from '@/const/meta';
+import {ModelProvider} from '@/libs/agent-runtime';
+import {LobeAgentConfig, LobeAgentTTSConfig} from '@/types/agent';
 import {
   GlobalBaseSettings,
   GlobalDefaultAgent,

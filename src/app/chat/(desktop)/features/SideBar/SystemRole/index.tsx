@@ -1,20 +1,20 @@
-import { ActionIcon, EditableMessage } from '@lobehub/ui';
-import { Skeleton } from 'antd';
-import { Edit } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, EditableMessage} from '@lobehub/ui';
+import {Skeleton} from 'antd';
+import {Edit} from 'lucide-react';
+import {useRouter} from 'next/navigation';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 import useMergeState from 'use-merge-value';
 
 import AgentInfo from '@/features/AgentInfo';
-import { useGlobalStore } from '@/store/global';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors, sessionSelectors } from '@/store/session/selectors';
-import { pathString } from '@/utils/url';
+import {useGlobalStore} from '@/store/global';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
+import {pathString} from '@/utils/url';
 
 import SidebarHeader from '../../../../components/SidebarHeader';
-import { useStyles } from './style';
+import {useStyles} from './style';
 
 const SystemRole = memo(() => {
   const router = useRouter();

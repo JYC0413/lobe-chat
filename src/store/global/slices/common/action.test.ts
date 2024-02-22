@@ -1,11 +1,8 @@
-import { act, renderHook } from '@testing-library/react';
-import { router } from 'next/client';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {act, renderHook} from '@testing-library/react';
+import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
+import {useGlobalStore} from '@/store/global';
 
-import { globalService } from '@/services/global';
-import { useGlobalStore } from '@/store/global';
-
-import { SidebarTabKey } from './initialState';
+import {SidebarTabKey} from './initialState';
 
 // Mock globalService
 vi.mock('@/services/global', () => ({

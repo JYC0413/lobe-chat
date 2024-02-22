@@ -1,6 +1,6 @@
-import { Input, InputNumber, Select, Slider, Switch } from 'antd';
-import { JSONSchema7Type } from 'json-schema';
-import { memo } from 'react';
+import {Input, InputNumber, Select, Slider, Switch} from 'antd';
+import {JSONSchema7Type} from 'json-schema';
+import {memo} from 'react';
 
 interface PluginSettingsProps {
   defaultValue?: any;

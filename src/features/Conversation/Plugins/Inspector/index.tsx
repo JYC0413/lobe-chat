@@ -1,25 +1,19 @@
-import { Loading3QuartersOutlined } from '@ant-design/icons';
-import { LobePluginType } from '@lobehub/chat-plugin-sdk';
-import { ActionIcon, Avatar, Highlighter, Icon } from '@lobehub/ui';
-import { Tabs } from 'antd';
+import {Loading3QuartersOutlined} from '@ant-design/icons';
+import {LobePluginType} from '@lobehub/chat-plugin-sdk';
+import {ActionIcon, Avatar, Highlighter, Icon} from '@lobehub/ui';
+import {Tabs} from 'antd';
 import isEqual from 'fast-deep-equal';
-import {
-  LucideBug,
-  LucideBugOff,
-  LucideChevronDown,
-  LucideChevronUp,
-  LucideToyBrick,
-} from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {LucideBug, LucideBugOff, LucideChevronDown, LucideChevronUp, LucideToyBrick,} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { pluginSelectors, toolSelectors } from '@/store/tool/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {pluginSelectors, toolSelectors} from '@/store/tool/selectors';
 
 import PluginResult from './PluginResultJSON';
 import Settings from './Settings';
-import { useStyles } from './style';
+import {useStyles} from './style';
 
 export interface InspectorProps {
   arguments?: string;

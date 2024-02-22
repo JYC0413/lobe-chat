@@ -1,4 +1,4 @@
-import { ModelProviderCard } from '@/types/llm';
+import {ModelProviderCard} from '@/types/llm';
 
 // refs to: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
 const OpenAI: ModelProviderCard = {

@@ -1,15 +1,15 @@
-import { Icon, SearchBar } from '@lobehub/ui';
-import { Button, Empty } from 'antd';
-import { useResponsive } from 'antd-style';
+import {Icon, SearchBar} from '@lobehub/ui';
+import {Button, Empty} from 'antd';
+import {useResponsive} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { ServerCrash } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {ServerCrash} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
 import AddPluginButton from '@/features/PluginStore/AddPluginButton';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors, pluginStoreSelectors } from '@/store/tool/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors, pluginStoreSelectors} from '@/store/tool/selectors';
 
 import Loading from './Loading';
 import PluginItem from './PluginItem';

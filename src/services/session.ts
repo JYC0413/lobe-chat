@@ -1,14 +1,14 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import { SessionModel } from '@/database/models/session';
-import { SessionGroupModel } from '@/database/models/sessionGroup';
-import { LobeAgentConfig } from '@/types/agent';
-import { MetaData } from '@/types/meta';
+import {SessionModel} from '@/database/models/session';
+import {SessionGroupModel} from '@/database/models/sessionGroup';
+import {LobeAgentConfig} from '@/types/agent';
+import {MetaData} from '@/types/meta';
 import {
   ChatSessionList,
   LobeAgentSession,
-  LobeSessionType,
   LobeSessions,
+  LobeSessionType,
   SessionGroupId,
   SessionGroupItem,
   SessionGroups,

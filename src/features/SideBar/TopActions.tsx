@@ -1,12 +1,12 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Compass, MessageSquare } from 'lucide-react';
+import {ActionIcon} from '@lobehub/ui';
+import {MessageSquare} from 'lucide-react';
 import Link from 'next/link';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { GlobalStore, useGlobalStore } from '@/store/global';
-import { SidebarTabKey } from '@/store/global/initialState';
-import { useSessionStore } from '@/store/session';
+import {GlobalStore, useGlobalStore} from '@/store/global';
+import {SidebarTabKey} from '@/store/global/initialState';
+import {useSessionStore} from '@/store/session';
 
 export interface TopActionProps {
   setTab: GlobalStore['switchSideBar'];

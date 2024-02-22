@@ -1,7 +1,7 @@
-import { LanguageModel } from '@/types/llm';
+import {LanguageModel} from '@/types/llm';
 
-import { GlobalStore } from '../../../store';
-import { settingsSelectors } from './settings';
+import {GlobalStore} from '../../../store';
+import {settingsSelectors} from './settings';
 
 describe('settingsSelectors', () => {
   describe('currentSettings', () => {

@@ -1,4 +1,4 @@
-import { pathString } from './url';
+import {pathString} from './url';
 
 describe('pathString', () => {
   it('基本情况', () => {

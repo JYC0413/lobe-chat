@@ -1,4 +1,4 @@
-import { Migration, MigrationData, VersionController } from './VersionController';
+import {Migration, MigrationData, VersionController} from './VersionController';
 
 class TestMigration0 implements Migration {
   version = 0;

@@ -1,13 +1,13 @@
-import { Icon } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { Database, SearchCheck, Zap } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {Database, SearchCheck, Zap} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 import Balancer from 'react-wrap-balancer';
 
 import ExportConfigButton from './ExportConfigButton';
-import UpgradeButton, { UpgradeButtonProps } from './UpgradeButton';
+import UpgradeButton, {UpgradeButtonProps} from './UpgradeButton';
 
 const useStyles = createStyles(({ css, token, isDarkMode, responsive }) => ({
   desc: css`

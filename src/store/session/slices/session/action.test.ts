@@ -1,12 +1,12 @@
-import { act, renderHook } from '@testing-library/react';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {act, renderHook} from '@testing-library/react';
+import {AppRouterInstance} from 'next/dist/shared/lib/app-router-context.shared-runtime';
+import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { INBOX_SESSION_ID } from '@/const/session';
-import { SESSION_CHAT_URL } from '@/const/url';
-import { sessionService } from '@/services/session';
-import { useSessionStore } from '@/store/session';
-import { LobeSessionType } from '@/types/session';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {SESSION_CHAT_URL} from '@/const/url';
+import {sessionService} from '@/services/session';
+import {useSessionStore} from '@/store/session';
+import {LobeSessionType} from '@/types/session';
 
 // Mock sessionService 和其他依赖项
 vi.mock('@/services/session', () => ({

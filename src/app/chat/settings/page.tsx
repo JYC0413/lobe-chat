@@ -1,4 +1,4 @@
-import { isMobileDevice } from '@/utils/responsive';
+import {isMobileDevice} from '@/utils/responsive';
 
 import DesktopPage from './(desktop)';
 import MobilePage from './(mobile)';

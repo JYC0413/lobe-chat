@@ -1,4 +1,4 @@
-import { DefaultResources } from '@/types/locale';
+import {DefaultResources} from '@/types/locale';
 
 declare module 'i18next' {
   interface CustomTypeOptions {

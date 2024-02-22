@@ -1,10 +1,10 @@
-import { INBOX_SESSION_ID } from '@/const/session';
-import { sessionHelpers } from '@/store/session/slices/session/helpers';
-import { MetaData } from '@/types/meta';
-import { CustomSessionGroup, LobeAgentSession, LobeSessions } from '@/types/session';
+import {INBOX_SESSION_ID} from '@/const/session';
+import {sessionHelpers} from '@/store/session/slices/session/helpers';
+import {MetaData} from '@/types/meta';
+import {CustomSessionGroup, LobeAgentSession, LobeSessions} from '@/types/session';
 
-import { SessionStore } from '../../../store';
-import { initLobeSession } from '../initialState';
+import {SessionStore} from '../../../store';
+import {initLobeSession} from '../initialState';
 
 const defaultSessions = (s: SessionStore): LobeSessions => s.defaultSessions;
 const pinnedSessions = (s: SessionStore): LobeSessions => s.pinnedSessions;

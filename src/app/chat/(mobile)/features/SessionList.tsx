@@ -1,7 +1,6 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
 import SessionListContent from '../../features/SessionListContent';
-import SessionSearchBar from '../../features/SessionSearchBar';
 
 const Sessions = memo(() => {
   return (

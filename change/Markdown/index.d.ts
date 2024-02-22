@@ -1,5 +1,6 @@
-import { CollapseProps, DividerProps, ImageProps, TypographyProps } from 'antd';
-import { CSSProperties } from 'react';
+import {CollapseProps, DividerProps, ImageProps, TypographyProps} from 'antd';
+import {CSSProperties} from 'react';
+
 export interface MarkdownProps {
     /**
      * @description The markdown content to be rendered

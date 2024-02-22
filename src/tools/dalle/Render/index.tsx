@@ -1,12 +1,12 @@
-import { ActionIcon, ImageGallery } from '@lobehub/ui';
-import { Download } from 'lucide-react';
-import { memo, useRef } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, ImageGallery} from '@lobehub/ui';
+import {Download} from 'lucide-react';
+import {memo, useRef} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import GalleyGrid from '@/components/GalleyGrid';
-import { fileService } from '@/services/file';
-import { BuiltinRenderProps } from '@/types/tool';
-import { DallEImageItem } from '@/types/tool/dalle';
+import {fileService} from '@/services/file';
+import {BuiltinRenderProps} from '@/types/tool';
+import {DallEImageItem} from '@/types/tool/dalle';
 
 import ImageItem from './Item';
 

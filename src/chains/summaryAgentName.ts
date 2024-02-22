@@ -1,5 +1,5 @@
-import { globalHelpers } from '@/store/global/helpers';
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {globalHelpers} from '@/store/global/helpers';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
 /**
  * summary agent name for user prompt

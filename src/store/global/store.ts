@@ -1,15 +1,15 @@
-import { PersistOptions, devtools, persist, subscribeWithSelector } from 'zustand/middleware';
-import { shallow } from 'zustand/shallow';
-import { createWithEqualityFn } from 'zustand/traditional';
-import { StateCreator } from 'zustand/vanilla';
+import {devtools, persist, PersistOptions, subscribeWithSelector} from 'zustand/middleware';
+import {shallow} from 'zustand/shallow';
+import {createWithEqualityFn} from 'zustand/traditional';
+import {StateCreator} from 'zustand/vanilla';
 
-import { isDev } from '@/utils/env';
+import {isDev} from '@/utils/env';
 
-import { createHyperStorage } from '../middleware/createHyperStorage';
-import { type GlobalState, initialState } from './initialState';
-import { type CommonAction, createCommonSlice } from './slices/common/action';
-import { type PreferenceAction, createPreferenceSlice } from './slices/preference/action';
-import { type SettingsAction, createSettingsSlice } from './slices/settings/action';
+import {createHyperStorage} from '../middleware/createHyperStorage';
+import {type GlobalState, initialState} from './initialState';
+import {type CommonAction, createCommonSlice} from './slices/common/action';
+import {createPreferenceSlice, type PreferenceAction} from './slices/preference/action';
+import {createSettingsSlice, type SettingsAction} from './slices/settings/action';
 
 //  ===============  聚合 createStoreFn ============ //
 

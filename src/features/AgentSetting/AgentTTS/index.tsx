@@ -1,19 +1,19 @@
-import { VoiceList } from '@lobehub/tts';
-import { Form, ItemGroup } from '@lobehub/ui';
-import { Form as AFrom, Select, Switch } from 'antd';
+import {VoiceList} from '@lobehub/tts';
+import {Form, ItemGroup} from '@lobehub/ui';
+import {Form as AFrom, Select, Switch} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { debounce } from 'lodash-es';
-import { Mic } from 'lucide-react';
-import { memo, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import {debounce} from 'lodash-es';
+import {Mic} from 'lucide-react';
+import {memo, useEffect} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
+import {FORM_STYLE} from '@/const/layoutTokens';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 import SelectWithTTSPreview from './SelectWithTTSPreview';
-import { ttsOptions } from './options';
+import {ttsOptions} from './options';
 
 const TTS_SETTING_KEY = 'tts';
 const { openaiVoiceOptions, localeOptions } = VoiceList;

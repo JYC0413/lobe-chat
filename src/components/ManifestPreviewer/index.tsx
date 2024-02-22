@@ -1,6 +1,6 @@
-import { Highlighter } from '@lobehub/ui';
-import { Popover } from 'antd';
-import { ReactNode, memo } from 'react';
+import {Highlighter} from '@lobehub/ui';
+import {Popover} from 'antd';
+import {memo, ReactNode} from 'react';
 
 interface PluginManifestPreviewerProps {
   children?: ReactNode;

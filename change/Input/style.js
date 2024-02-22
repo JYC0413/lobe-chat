@@ -1,6 +1,7 @@
 import _taggedTemplateLiteral from "@babel/runtime/helpers/esm/taggedTemplateLiteral";
+import {createStyles} from 'antd-style';
+
 var _templateObject, _templateObject2, _templateObject3;
-import { createStyles } from 'antd-style';
 export var useStyles = createStyles(function (_ref, _ref2) {
   var cx = _ref.cx,
     css = _ref.css,

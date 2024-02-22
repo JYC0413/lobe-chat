@@ -1,4 +1,4 @@
-import { SessionDefaultGroup, SessionGroupId } from '@/types/session';
+import {SessionDefaultGroup, SessionGroupId} from '@/types/session';
 
 export interface Guide {
   // Topic 引导

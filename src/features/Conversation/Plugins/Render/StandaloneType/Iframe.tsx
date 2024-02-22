@@ -1,13 +1,13 @@
-import { PluginRequestPayload } from '@lobehub/chat-plugin-sdk';
-import { Skeleton } from 'antd';
-import { memo, useRef, useState } from 'react';
+import {PluginRequestPayload} from '@lobehub/chat-plugin-sdk';
+import {Skeleton} from 'antd';
+import {memo, useRef, useState} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
-import { useOnPluginReadyForInteraction } from '../utils/iframeOnReady';
+import {useOnPluginReadyForInteraction} from '../utils/iframeOnReady';
 import {
   useOnPluginCreateAssistantMessage,
   useOnPluginFetchMessage,
@@ -16,8 +16,8 @@ import {
   useOnPluginFillContent,
   useOnPluginTriggerAIMessage,
 } from '../utils/listenToPlugin';
-import { useOnPluginSettingsUpdate } from '../utils/pluginSettings';
-import { useOnPluginStateUpdate } from '../utils/pluginState';
+import {useOnPluginSettingsUpdate} from '../utils/pluginSettings';
+import {useOnPluginStateUpdate} from '../utils/pluginState';
 import {
   sendMessageContentToPlugin,
   sendPayloadToPlugin,

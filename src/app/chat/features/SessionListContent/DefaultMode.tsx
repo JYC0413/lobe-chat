@@ -1,20 +1,17 @@
-import { CollapseProps } from 'antd';
+import {CollapseProps} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { memo, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo, useMemo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useGlobalStore } from '@/store/global';
-import { preferenceSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { sessionSelectors } from '@/store/session/selectors';
-import { SessionDefaultGroup } from '@/types/session';
+import {useGlobalStore} from '@/store/global';
+import {preferenceSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {sessionSelectors} from '@/store/session/selectors';
+import {SessionDefaultGroup} from '@/types/session';
 
 import Actions from '../SessionListContent/CollapseGroup/Actions';
-import CollapseGroup from './CollapseGroup';
 import Inbox from './Inbox';
 import SessionList from './List';
-import ConfigGroupModal from './Modals/ConfigGroupModal';
-import RenameGroupModal from './Modals/RenameGroupModal';
 
 const SessionListContent = memo(() => {
   const { t } = useTranslation('chat');

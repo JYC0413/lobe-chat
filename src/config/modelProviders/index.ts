@@ -1,4 +1,4 @@
-import { ChatModelCard } from '@/types/llm';
+import {ChatModelCard} from '@/types/llm';
 
 import BedrockProvider from './bedrock';
 import GoogleProvider from './google';

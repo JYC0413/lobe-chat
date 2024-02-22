@@ -1,8 +1,8 @@
-import { produce } from 'immer';
+import {produce} from 'immer';
 
-import { DEFAULT_AGENT_META } from '@/const/meta';
-import { MetaData } from '@/types/meta';
-import { merge } from '@/utils/merge';
+import {DEFAULT_AGENT_META} from '@/const/meta';
+import {MetaData} from '@/types/meta';
+import {merge} from '@/utils/merge';
 
 export type MetaDataDispatch = { type: 'update'; value: Partial<MetaData> } | { type: 'reset' };
 

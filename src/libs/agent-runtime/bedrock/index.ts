@@ -1,16 +1,13 @@
-import {
-  BedrockRuntimeClient,
-  InvokeModelWithResponseStreamCommand,
-} from '@aws-sdk/client-bedrock-runtime';
-import { AWSBedrockAnthropicStream, AWSBedrockLlama2Stream, StreamingTextResponse } from 'ai';
-import { experimental_buildAnthropicPrompt, experimental_buildLlama2Prompt } from 'ai/prompts';
+import {BedrockRuntimeClient, InvokeModelWithResponseStreamCommand,} from '@aws-sdk/client-bedrock-runtime';
+import {AWSBedrockAnthropicStream, AWSBedrockLlama2Stream, StreamingTextResponse} from 'ai';
+import {experimental_buildAnthropicPrompt, experimental_buildLlama2Prompt} from 'ai/prompts';
 
-import { LobeRuntimeAI } from '../BaseAI';
-import { AgentRuntimeErrorType } from '../error';
-import { ChatStreamPayload, ModelProvider } from '../types';
-import { AgentRuntimeError } from '../utils/createError';
-import { debugStream } from '../utils/debugStream';
-import { DEBUG_CHAT_COMPLETION } from '../utils/env';
+import {LobeRuntimeAI} from '../BaseAI';
+import {AgentRuntimeErrorType} from '../error';
+import {ChatStreamPayload, ModelProvider} from '../types';
+import {AgentRuntimeError} from '../utils/createError';
+import {debugStream} from '../utils/debugStream';
+import {DEBUG_CHAT_COMPLETION} from '../utils/env';
 
 export interface LobeBedrockAIParams {
   accessKeyId?: string;

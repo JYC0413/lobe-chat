@@ -1,5 +1,5 @@
-import { URLS } from '@/services/_url';
-import { GlobalServerConfig } from '@/types/settings';
+import {URLS} from '@/services/_url';
+import {GlobalServerConfig} from '@/types/settings';
 
 const VERSION_URL = 'https://registry.npmmirror.com/@lobehub/chat';
 

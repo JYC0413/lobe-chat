@@ -1,9 +1,9 @@
-import type { SessionStore } from '@/store/session';
-import { LanguageModel } from '@/types/llm';
-import { LobeAgentSession, LobeSessionType } from '@/types/session';
+import type {SessionStore} from '@/store/session';
+import {LanguageModel} from '@/types/llm';
+import {LobeAgentSession, LobeSessionType} from '@/types/session';
 
-import { initLobeSession } from '../initialState';
-import { sessionSelectors } from './list';
+import {initLobeSession} from '../initialState';
+import {sessionSelectors} from './list';
 
 describe('currentSession', () => {
   const s = {

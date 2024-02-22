@@ -1,14 +1,14 @@
-import { OpenAIStream, StreamingTextResponse } from 'ai';
+import {OpenAIStream, StreamingTextResponse} from 'ai';
 import OpenAI from 'openai';
 
-import { LobeRuntimeAI } from '../BaseAI';
-import { AgentRuntimeErrorType } from '../error';
-import { ChatStreamPayload, ModelProvider } from '../types';
-import { AgentRuntimeError } from '../utils/createError';
-import { debugStream } from '../utils/debugStream';
-import { desensitizeUrl } from '../utils/desensitizeUrl';
-import { DEBUG_CHAT_COMPLETION } from '../utils/env';
-import { handleOpenAIError } from '../utils/handleOpenAIError';
+import {LobeRuntimeAI} from '../BaseAI';
+import {AgentRuntimeErrorType} from '../error';
+import {ChatStreamPayload, ModelProvider} from '../types';
+import {AgentRuntimeError} from '../utils/createError';
+import {debugStream} from '../utils/debugStream';
+import {desensitizeUrl} from '../utils/desensitizeUrl';
+import {DEBUG_CHAT_COMPLETION} from '../utils/env';
+import {handleOpenAIError} from '../utils/handleOpenAIError';
 
 const DEFAULT_BASE_URL = 'https://api.moonshot.cn/v1';
 

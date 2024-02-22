@@ -1,14 +1,14 @@
-import { Content, GoogleGenerativeAI, Part } from '@google/generative-ai';
-import { GoogleGenerativeAIStream, StreamingTextResponse } from 'ai';
+import {Content, GoogleGenerativeAI, Part} from '@google/generative-ai';
+import {GoogleGenerativeAIStream, StreamingTextResponse} from 'ai';
 
-import { LobeRuntimeAI } from '../BaseAI';
-import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '../error';
-import { ChatStreamPayload, OpenAIChatMessage, UserMessageContentPart } from '../types';
-import { ModelProvider } from '../types/type';
-import { AgentRuntimeError } from '../utils/createError';
-import { debugStream } from '../utils/debugStream';
-import { DEBUG_CHAT_COMPLETION } from '../utils/env';
-import { parseDataUri } from '../utils/uriParser';
+import {LobeRuntimeAI} from '../BaseAI';
+import {AgentRuntimeErrorType, ILobeAgentRuntimeErrorType} from '../error';
+import {ChatStreamPayload, OpenAIChatMessage, UserMessageContentPart} from '../types';
+import {ModelProvider} from '../types/type';
+import {AgentRuntimeError} from '../utils/createError';
+import {debugStream} from '../utils/debugStream';
+import {DEBUG_CHAT_COMPLETION} from '../utils/env';
+import {parseDataUri} from '../utils/uriParser';
 
 type GoogleChatErrors = GoogleChatError[];
 

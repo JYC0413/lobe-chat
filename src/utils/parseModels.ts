@@ -1,4 +1,4 @@
-import { CustomModels } from '@/types/settings';
+import {CustomModels} from '@/types/settings';
 
 export const parseModelString = (modelString: string = '') => {
   let models: CustomModels = [];

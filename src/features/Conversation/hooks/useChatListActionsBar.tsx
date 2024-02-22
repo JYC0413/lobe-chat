@@ -1,7 +1,7 @@
-import { ActionIconGroupItems } from '@lobehub/ui/es/ActionIconGroup';
-import { Copy, Edit, ListRestart, RotateCcw, Trash } from 'lucide-react';
-import { useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIconGroupItems} from '@lobehub/ui/es/ActionIconGroup';
+import {Copy, Edit, ListRestart, RotateCcw, Trash} from 'lucide-react';
+import {useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
 interface ChatListActionsBar {
   copy: ActionIconGroupItems;

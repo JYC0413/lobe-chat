@@ -1,4 +1,4 @@
-import { FewShots, LLMParams } from '@/types/llm';
+import {FewShots, LLMParams} from '@/types/llm';
 
 export type TTSServer = 'openai' | 'edge' | 'microsoft';
 

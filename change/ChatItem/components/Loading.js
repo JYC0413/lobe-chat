@@ -1,9 +1,10 @@
-import { Loader2 } from 'lucide-react';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {Loader2} from 'lucide-react';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 import Icon from "../../Icon";
-import { useStyles } from "../style";
-import { jsx as _jsx } from "react/jsx-runtime";
+import {useStyles} from "../style";
+import {jsx as _jsx} from "react/jsx-runtime";
+
 var Loading = /*#__PURE__*/memo(function (_ref) {
   var loading = _ref.loading,
     placement = _ref.placement;

@@ -1,4 +1,4 @@
-import { MetaData } from '@/types/meta';
+import {MetaData} from '@/types/meta';
 
 export const DEFAULT_AVATAR = '🤖';
 export const DEFAULT_USER_AVATAR = 'https://images.chinatimes.com/newsphoto/2019-01-04/656/20190104002897.jpg';

@@ -1,7 +1,7 @@
-import { CSSProperties, ReactNode, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {CSSProperties, memo, ReactNode} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
-import { MAX_SIZE_DESKTOP, MIN_IMAGE_SIZE, useStyles } from './style';
+import {MAX_SIZE_DESKTOP, MIN_IMAGE_SIZE, useStyles} from './style';
 
 interface GridProps {
   children: ReactNode;

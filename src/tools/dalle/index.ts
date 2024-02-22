@@ -1,4 +1,4 @@
-import { BuiltinToolManifest } from '@/types/tool';
+import {BuiltinToolManifest} from '@/types/tool';
 
 // import {SiOpenai} from "@icons-pack/react-simple-icons";
 

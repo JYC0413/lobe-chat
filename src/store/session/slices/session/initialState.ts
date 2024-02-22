@@ -1,8 +1,8 @@
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+import {AppRouterInstance} from 'next/dist/shared/lib/app-router-context.shared-runtime';
 
-import { DEFAULT_AGENT_META } from '@/const/meta';
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { CustomSessionGroup, LobeAgentSession, LobeSessionType } from '@/types/session';
+import {DEFAULT_AGENT_META} from '@/const/meta';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {CustomSessionGroup, LobeAgentSession, LobeSessionType} from '@/types/session';
 
 export const initLobeSession: LobeAgentSession = {
   config: DEFAULT_AGENT_CONFIG,

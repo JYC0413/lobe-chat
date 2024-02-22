@@ -1,5 +1,5 @@
-import { SessionState, initialSessionState } from './slices/session/initialState';
-import { SessionGroupState, initSessionGroupState } from './slices/sessionGroup/initialState';
+import {initialSessionState, SessionState} from './slices/session/initialState';
+import {initSessionGroupState, SessionGroupState} from './slices/sessionGroup/initialState';
 
 export interface SessionStoreState extends SessionGroupState, SessionState {}
 

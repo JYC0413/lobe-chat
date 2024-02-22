@@ -1,4 +1,4 @@
-import { Imgur } from './imgur';
+import {Imgur} from './imgur';
 
 const updateByImgur = async ({ url, blob }: { blob?: Blob; url?: string }) => {
   let imageBlob: Blob;

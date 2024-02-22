@@ -1,15 +1,9 @@
-import { Mock, describe, expect, it, vi } from 'vitest';
+import {describe, expect, it, Mock, vi} from 'vitest';
 
-import { CreateMessageParams, MessageModel } from '@/database/models/message';
-import {
-  ChatMessage,
-  ChatMessageError,
-  ChatPluginPayload,
-  ChatTTS,
-  ChatTranslate,
-} from '@/types/message';
+import {CreateMessageParams, MessageModel} from '@/database/models/message';
+import {ChatMessage, ChatMessageError, ChatPluginPayload,} from '@/types/message';
 
-import { messageService } from '../message';
+import {messageService} from '../message';
 
 // Mock the MessageModel
 vi.mock('@/database/models/message', () => {

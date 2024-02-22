@@ -1,9 +1,9 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { ChatMessage } from '@/types/message';
+import {useChatStore} from '@/store/chat';
+import {ChatMessage} from '@/types/message';
 
-import { RenderMessageExtra } from '../types';
+import {RenderMessageExtra} from '../types';
 import ExtraContainer from './ExtraContainer';
 import TTS from './TTS';
 import Translate from './Translate';

@@ -1,5 +1,5 @@
-import { ActionIcon, DiscordIcon, Icon } from '@lobehub/ui';
-import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
+import {ActionIcon, DiscordIcon, Icon} from '@lobehub/ui';
+import {Badge, ConfigProvider, Dropdown, MenuProps} from 'antd';
 import {
   Book,
   Feather,
@@ -11,16 +11,16 @@ import {
   Settings,
   Settings2,
 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {useRouter} from 'next/navigation';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, DISCORD, FEEDBACK, GITHUB, WIKI } from '@/const/url';
+import {ABOUT, CHANGELOG, DISCORD, FEEDBACK, GITHUB, WIKI} from '@/const/url';
 import DataImporter from '@/features/DataImporter';
-import { configService } from '@/services/config';
-import { GlobalStore, useGlobalStore } from '@/store/global';
-import { SettingsTabs, SidebarTabKey } from '@/store/global/initialState';
+import {configService} from '@/services/config';
+import {GlobalStore, useGlobalStore} from '@/store/global';
+import {SettingsTabs, SidebarTabKey} from '@/store/global/initialState';
 
 export interface BottomActionProps {
   setTab: GlobalStore['switchSideBar'];

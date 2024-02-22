@@ -1,10 +1,10 @@
-import { Button } from 'antd';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {Button} from 'antd';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
-import { ModelProvider } from '@/libs/agent-runtime';
-import { useChatStore } from '@/store/chat';
+import {ModelProvider} from '@/libs/agent-runtime';
+import {useChatStore} from '@/store/chat';
 
 import BedrockForm from './Bedrock';
 import GoogleForm from './Google';

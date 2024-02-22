@@ -1,15 +1,15 @@
 import dayjs from 'dayjs';
-import { produce } from 'immer';
-import { StateCreator } from 'zustand/vanilla';
+import {produce} from 'immer';
+import {StateCreator} from 'zustand/vanilla';
 
-import { DEFAULT_USER_AVATAR_URL } from '@/const/meta';
-import { shareGPTService } from '@/services/share';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ShareGPTConversation } from '@/types/share';
+import {DEFAULT_USER_AVATAR_URL} from '@/const/meta';
+import {shareGPTService} from '@/services/share';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ShareGPTConversation} from '@/types/share';
 
-import { chatSelectors } from '../../selectors';
-import { ChatStore } from '../../store';
+import {chatSelectors} from '../../selectors';
+import {ChatStore} from '../../store';
 
 interface ShareMessage {
   from: 'human' | 'gpt';

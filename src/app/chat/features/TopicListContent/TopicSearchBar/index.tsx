@@ -1,9 +1,9 @@
-import { SearchBar } from '@lobehub/ui';
-import { useResponsive } from 'antd-style';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {SearchBar} from '@lobehub/ui';
+import {useResponsive} from 'antd-style';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useChatStore } from '@/store/chat';
+import {useChatStore} from '@/store/chat';
 
 const TopicSearchBar = memo<{ onClear?: () => void }>(({ onClear }) => {
   const { t } = useTranslation('chat');

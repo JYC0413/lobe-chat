@@ -1,10 +1,10 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import {readFileSync, writeFileSync} from 'node:fs';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
-import { unified } from 'unified';
-import { visit } from 'unist-util-visit';
+import {unified} from 'unified';
+import {visit} from 'unist-util-visit';
 
-import { SPLIT } from './const';
+import {SPLIT} from './const';
 
 export const updateDocs = (path: string, content: string) => {
   const md = readFileSync(path, 'utf8');

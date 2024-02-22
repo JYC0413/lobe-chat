@@ -1,11 +1,11 @@
-import { Icon, Tag } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { BadgeCheck, CircleUser, Package } from 'lucide-react';
-import { rgba } from 'polished';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Icon, Tag} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {BadgeCheck, CircleUser, Package} from 'lucide-react';
+import {rgba} from 'polished';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { InstallPluginMeta } from '@/types/tool/plugin';
+import {InstallPluginMeta} from '@/types/tool/plugin';
 
 const useStyles = createStyles(({ css, token }) => ({
   community: css`

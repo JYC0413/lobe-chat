@@ -1,9 +1,9 @@
-import { importJWK, jwtVerify } from 'jose';
+import {importJWK, jwtVerify} from 'jose';
 
-import { getServerConfig } from '@/config/server';
-import { JWTPayload, JWT_SECRET_KEY, NON_HTTP_PREFIX } from '@/const/auth';
-import { AgentRuntimeError } from '@/libs/agent-runtime';
-import { ChatErrorType } from '@/types/fetch';
+import {getServerConfig} from '@/config/server';
+import {JWT_SECRET_KEY, JWTPayload, NON_HTTP_PREFIX} from '@/const/auth';
+import {AgentRuntimeError} from '@/libs/agent-runtime';
+import {ChatErrorType} from '@/types/fetch';
 
 export const getJWTPayload = async (token: string): Promise<JWTPayload> => {
   //如果是 HTTP 协议发起的请求，直接解析 token

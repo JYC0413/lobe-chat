@@ -1,4 +1,4 @@
-import { SignJWT } from 'jose';
+import {SignJWT} from 'jose';
 
 export const generateApiToken = async (apiKey?: string): Promise<string> => {
   if (!apiKey) {

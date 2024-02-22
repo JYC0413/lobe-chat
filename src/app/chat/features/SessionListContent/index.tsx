@@ -1,6 +1,6 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { useSessionStore } from '@/store/session';
+import {useSessionStore} from '@/store/session';
 
 import DefaultMode from './DefaultMode';
 import SearchMode from './SearchMode';

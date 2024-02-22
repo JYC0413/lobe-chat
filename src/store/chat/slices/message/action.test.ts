@@ -1,17 +1,17 @@
-import { act, renderHook, waitFor } from '@testing-library/react';
-import useSWR, { mutate } from 'swr';
-import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {act, renderHook, waitFor} from '@testing-library/react';
+import {mutate} from 'swr';
+import {afterEach, beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { LOADING_FLAT } from '@/const/message';
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { chatService } from '@/services/chat';
-import { messageService } from '@/services/message';
-import { topicService } from '@/services/topic';
-import { chatSelectors } from '@/store/chat/selectors';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
+import {LOADING_FLAT} from '@/const/message';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {chatService} from '@/services/chat';
+import {messageService} from '@/services/message';
+import {topicService} from '@/services/topic';
+import {chatSelectors} from '@/store/chat/selectors';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
 
-import { useChatStore } from '../../store';
+import {useChatStore} from '../../store';
 
 // Mock service
 vi.mock('@/services/message', () => ({

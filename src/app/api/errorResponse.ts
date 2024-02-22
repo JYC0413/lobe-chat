@@ -1,5 +1,5 @@
-import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
-import { ErrorResponse, ErrorType } from '@/types/fetch';
+import {AgentRuntimeErrorType, ILobeAgentRuntimeErrorType} from '@/libs/agent-runtime';
+import {ErrorResponse, ErrorType} from '@/types/fetch';
 
 const getStatus = (errorType: ILobeAgentRuntimeErrorType | ErrorType) => {
   // InvalidAccessCode / InvalidAzureAPIKey / InvalidOpenAIAPIKey / InvalidZhipuAPIKey ....

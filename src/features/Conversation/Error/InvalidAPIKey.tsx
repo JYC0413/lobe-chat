@@ -1,7 +1,7 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
 import APIKeyForm from './APIKeyForm';
-import { ErrorActionContainer } from './style';
+import {ErrorActionContainer} from './style';
 
 interface InvalidAPIKeyProps {
   id: string;

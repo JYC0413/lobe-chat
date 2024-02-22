@@ -1,9 +1,9 @@
-import { useTheme } from 'antd-style';
-import { PropsWithChildren, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {useTheme} from 'antd-style';
+import {memo, PropsWithChildren} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import SideBar from '@/features/SideBar';
-import { useIsPWA } from '@/hooks/useIsPWA';
+import {useIsPWA} from '@/hooks/useIsPWA';
 
 const AppLayoutDesktop = memo<PropsWithChildren>(({ children }) => {
   const isPWA = useIsPWA();

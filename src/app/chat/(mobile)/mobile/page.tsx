@@ -1,13 +1,13 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import ChatHeader from '@/app/chat/(mobile)/features/ChatHeader';
 import Conversation from '@/features/Conversation';
 import AppLayoutMobile from '@/layout/AppLayout.mobile';
-import { useSessionStore } from '@/store/session';
+import {useSessionStore} from '@/store/session';
 
 import ChatInput from '../features/ChatInput';
 

@@ -1,7 +1,7 @@
-import { FileModel } from '@/database/models/file';
-import { DB_File } from '@/database/schemas/files';
-import { URLS } from '@/services/_url';
-import { FilePreview } from '@/types/files';
+import {FileModel} from '@/database/models/file';
+import {DB_File} from '@/database/schemas/files';
+import {URLS} from '@/services/_url';
+import {FilePreview} from '@/types/files';
 import compressImage from '@/utils/compressImage';
 
 class FileService {

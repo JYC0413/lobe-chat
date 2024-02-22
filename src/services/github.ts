@@ -1,7 +1,7 @@
 import qs from 'query-string';
 import urlJoin from 'url-join';
 
-import { GITHUB } from '@/const/url';
+import {GITHUB} from '@/const/url';
 
 class GitHubService {
   submitDBV1UpgradeError = (version: number, error?: { message: string }) => {

@@ -1,14 +1,14 @@
-import { produce } from 'immer';
-import { StateCreator } from 'zustand/vanilla';
+import {produce} from 'immer';
+import {StateCreator} from 'zustand/vanilla';
 
-import { sessionService } from '@/services/session';
-import { useGlobalStore } from '@/store/global';
-import { agentSelectors } from '@/store/session/selectors';
-import { LobeAgentConfig } from '@/types/agent';
-import { MetaData } from '@/types/meta';
+import {sessionService} from '@/services/session';
+import {useGlobalStore} from '@/store/global';
+import {agentSelectors} from '@/store/session/selectors';
+import {LobeAgentConfig} from '@/types/agent';
+import {MetaData} from '@/types/meta';
 
-import { SessionStore } from '../../store';
-import { sessionSelectors } from '../session/selectors';
+import {SessionStore} from '../../store';
+import {sessionSelectors} from '../session/selectors';
 
 /**
  * 助手接口

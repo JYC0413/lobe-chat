@@ -1,7 +1,7 @@
-import { act, renderHook } from '@testing-library/react';
-import { RefObject } from 'react';
+import {act, renderHook} from '@testing-library/react';
+import {RefObject} from 'react';
 
-import { useAutoFocus } from '../useAutoFocus';
+import {useAutoFocus} from '../useAutoFocus';
 
 enum ElType {
   div,

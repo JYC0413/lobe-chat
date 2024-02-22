@@ -1,5 +1,5 @@
-import { getServerConfig } from '@/config/server';
-import { GlobalServerConfig } from '@/types/settings';
+import {getServerConfig} from '@/config/server';
+import {GlobalServerConfig} from '@/types/settings';
 
 export const runtime = 'edge';
 

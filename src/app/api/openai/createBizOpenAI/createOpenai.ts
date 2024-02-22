@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
-import { getServerConfig } from '@/config/server';
-import { ChatErrorType } from '@/types/fetch';
+import {getServerConfig} from '@/config/server';
+import {ChatErrorType} from '@/types/fetch';
 
 // create OpenAI instance
 export const createOpenai = (userApiKey: string | null, endpoint?: string | null) => {

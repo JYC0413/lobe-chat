@@ -1,8 +1,8 @@
-import { Modal } from '@lobehub/ui';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Modal} from '@lobehub/ui';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useGlobalStore } from '@/store/global';
+import {useGlobalStore} from '@/store/global';
 
 import TopicListContent from '../../features/TopicListContent';
 

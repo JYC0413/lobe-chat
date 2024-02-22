@@ -1,8 +1,6 @@
-import { describe, expect, it, vi } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { isLocaleNotSupport } from '@/const/locale';
-
-import { PluginStore } from './Store';
+import {PluginStore} from './Store';
 
 const baseURL = 'https://chat-plugins.lobehub.com';
 

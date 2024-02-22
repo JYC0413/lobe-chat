@@ -1,19 +1,19 @@
-import { produce } from 'immer';
+import {produce} from 'immer';
 import pMap from 'p-map';
-import { StateCreator } from 'zustand/vanilla';
+import {StateCreator} from 'zustand/vanilla';
 
-import { chainLangDetect } from '@/chains/langDetect';
-import { chainTranslate } from '@/chains/translate';
-import { supportLocales } from '@/locales/resources';
-import { chatService } from '@/services/chat';
-import { fileService } from '@/services/file';
-import { imageGenerationService } from '@/services/imageGeneration';
-import { messageService } from '@/services/message';
-import { chatSelectors } from '@/store/chat/selectors';
-import { ChatStore } from '@/store/chat/store';
-import { ChatTTS, ChatTranslate } from '@/types/message';
-import { DallEImageItem } from '@/types/tool/dalle';
-import { setNamespace } from '@/utils/storeDebug';
+import {chainLangDetect} from '@/chains/langDetect';
+import {chainTranslate} from '@/chains/translate';
+import {supportLocales} from '@/locales/resources';
+import {chatService} from '@/services/chat';
+import {fileService} from '@/services/file';
+import {imageGenerationService} from '@/services/imageGeneration';
+import {messageService} from '@/services/message';
+import {chatSelectors} from '@/store/chat/selectors';
+import {ChatStore} from '@/store/chat/store';
+import {ChatTranslate, ChatTTS} from '@/types/message';
+import {DallEImageItem} from '@/types/tool/dalle';
+import {setNamespace} from '@/utils/storeDebug';
 
 const n = setNamespace('enhance');
 

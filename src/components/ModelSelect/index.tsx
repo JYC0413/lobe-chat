@@ -1,15 +1,15 @@
-import { Icon, Tooltip } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { LucideEye, LucidePaperclip, ToyBrick } from 'lucide-react';
+import {Icon, Tooltip} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {LucideEye, LucidePaperclip, ToyBrick} from 'lucide-react';
 import numeral from 'numeral';
-import { rgba } from 'polished';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {rgba} from 'polished';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 import ModelIcon from 'src/components/ModelIcon';
 import ModelProviderIcon from 'src/components/ModelProviderIcon';
 
-import { ChatModelCard } from '@/types/llm';
+import {ChatModelCard} from '@/types/llm';
 
 const useStyles = createStyles(({ css, token }) => ({
   custom: css`

@@ -1,15 +1,15 @@
-import { ActionIcon, Alert, Highlighter } from '@lobehub/ui';
-import { Button, Dropdown } from 'antd';
-import { createStyles } from 'antd-style';
-import { Mic, MicOff } from 'lucide-react';
-import { memo, useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, Alert, Highlighter} from '@lobehub/ui';
+import {Button, Dropdown} from 'antd';
+import {createStyles} from 'antd-style';
+import {Mic, MicOff} from 'lucide-react';
+import {memo, useCallback, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useSTT } from '@/hooks/useSTT';
-import { useChatStore } from '@/store/chat';
-import { ChatMessageError } from '@/types/message';
-import { getMessageError } from '@/utils/fetch';
+import {useSTT} from '@/hooks/useSTT';
+import {useChatStore} from '@/store/chat';
+import {ChatMessageError} from '@/types/message';
+import {getMessageError} from '@/utils/fetch';
 
 const useStyles = createStyles(({ css, token }) => ({
   recording: css`

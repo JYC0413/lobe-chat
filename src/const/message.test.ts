@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { testFunctionMessageAtEnd } from './message';
+import {testFunctionMessageAtEnd} from './message';
 
 describe('testFunctionMessageAtEnd', () => {
   it('should extract tool_calls JSON when present', () => {

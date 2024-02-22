@@ -1,15 +1,13 @@
-import { ActionIcon, MobileNavBarTitle } from '@lobehub/ui';
-import { useTheme } from 'antd-style';
-import { ChevronDown } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {MobileNavBarTitle} from '@lobehub/ui';
+import {useTheme} from 'antd-style';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useChatStore } from '@/store/chat';
-import { topicSelectors } from '@/store/chat/selectors';
-import { useGlobalStore } from '@/store/global';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors, sessionSelectors } from '@/store/session/selectors';
+import {useChatStore} from '@/store/chat';
+import {topicSelectors} from '@/store/chat/selectors';
+import {useGlobalStore} from '@/store/global';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
 
 const ChatHeaderTitle = memo(() => {
   const { t } = useTranslation('chat');

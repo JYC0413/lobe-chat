@@ -1,9 +1,9 @@
-import { consola } from 'consola';
-import { markdownTable } from 'markdown-table';
+import {consola} from 'consola';
+import {markdownTable} from 'markdown-table';
 import qs from 'query-string';
 
-import { AGENT_REPO, AGENT_SPLIT, DataItem, MARKET_URL } from './const';
-import { fetchAgentIndex, genLink, genTags, readReadme, updateReadme, writeReadme } from './utlis';
+import {AGENT_REPO, AGENT_SPLIT, DataItem, MARKET_URL} from './const';
+import {fetchAgentIndex, genLink, genTags, readReadme, updateReadme, writeReadme} from './utlis';
 
 const genAgentTable = (data: DataItem[], lang: string) => {
   const isCN = lang === 'zh-CN';

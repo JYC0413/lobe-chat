@@ -1,20 +1,20 @@
-import { PluginErrorType } from '@lobehub/chat-plugin-sdk';
-import { t } from 'i18next';
-import { Md5 } from 'ts-md5';
-import { StateCreator } from 'zustand/vanilla';
+import {PluginErrorType} from '@lobehub/chat-plugin-sdk';
+import {t} from 'i18next';
+import {Md5} from 'ts-md5';
+import {StateCreator} from 'zustand/vanilla';
 
-import { PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR } from '@/const/plugin';
-import { CreateMessageParams } from '@/database/models/message';
-import { chatService } from '@/services/chat';
-import { messageService } from '@/services/message';
-import { ChatStore } from '@/store/chat/store';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
-import { ChatPluginPayload } from '@/types/message';
-import { OpenAIToolCall } from '@/types/openai/functionCall';
-import { setNamespace } from '@/utils/storeDebug';
+import {PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR} from '@/const/plugin';
+import {CreateMessageParams} from '@/database/models/message';
+import {chatService} from '@/services/chat';
+import {messageService} from '@/services/message';
+import {ChatStore} from '@/store/chat/store';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
+import {ChatPluginPayload} from '@/types/message';
+import {OpenAIToolCall} from '@/types/openai/functionCall';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { chatSelectors } from '../../selectors';
+import {chatSelectors} from '../../selectors';
 
 const n = setNamespace('plugin');
 

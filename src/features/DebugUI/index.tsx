@@ -1,9 +1,9 @@
-import { Icon } from '@lobehub/ui';
-import { App, FloatButton, Spin } from 'antd';
-import { DatabaseIcon, Loader2 } from 'lucide-react';
-import { memo, useState } from 'react';
+import {Icon} from '@lobehub/ui';
+import {App, FloatButton, Spin} from 'antd';
+import {DatabaseIcon, Loader2} from 'lucide-react';
+import {memo, useState} from 'react';
 
-import { debugService } from '@/services/debug';
+import {debugService} from '@/services/debug';
 
 const DebugUI = memo(() => {
   const [loading, setLoading] = useState(false);

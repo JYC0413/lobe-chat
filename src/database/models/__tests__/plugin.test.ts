@@ -1,7 +1,7 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 
-import { DB_Plugin } from '../../schemas/plugin';
-import { PluginModel } from '../plugin';
+import {DB_Plugin} from '../../schemas/plugin';
+import {PluginModel} from '../plugin';
 
 describe('PluginModel', () => {
   let pluginData: DB_Plugin;

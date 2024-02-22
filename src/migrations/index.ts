@@ -1,9 +1,9 @@
-import { MigrationV2ToV3 } from '@/migrations/FromV2ToV3';
-import { VersionController } from '@/migrations/VersionController';
-import { ConfigStateAll } from '@/types/exportConfig';
+import {MigrationV2ToV3} from '@/migrations/FromV2ToV3';
+import {VersionController} from '@/migrations/VersionController';
+import {ConfigStateAll} from '@/types/exportConfig';
 
-import { MigrationV0ToV1 } from './FromV0ToV1';
-import { MigrationV1ToV2 } from './FromV1ToV2';
+import {MigrationV0ToV1} from './FromV0ToV1';
+import {MigrationV1ToV2} from './FromV1ToV2';
 
 // 当前最新的版本号
 export const CURRENT_CONFIG_VERSION = 3;

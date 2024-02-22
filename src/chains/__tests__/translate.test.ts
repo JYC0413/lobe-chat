@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { chainTranslate } from '../translate';
+import {chainTranslate} from '../translate';
 
 describe('chainTranslate', () => {
   it('should create a payload with system and user messages for translation', () => {

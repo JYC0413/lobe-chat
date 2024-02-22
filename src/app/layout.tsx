@@ -1,15 +1,11 @@
-import { Viewport } from 'next';
-import { cookies } from 'next/headers';
-import { PropsWithChildren } from 'react';
-import { isRtlLang } from 'rtl-detect';
+import {Viewport} from 'next';
+import {cookies} from 'next/headers';
+import {PropsWithChildren} from 'react';
+import {isRtlLang} from 'rtl-detect';
 
 import Analytics from '@/components/Analytics';
-import { DEFAULT_LANG, LOBE_LOCALE_COOKIE } from '@/const/locale';
-import {
-  LOBE_THEME_APPEARANCE,
-  LOBE_THEME_NEUTRAL_COLOR,
-  LOBE_THEME_PRIMARY_COLOR,
-} from '@/const/theme';
+import {DEFAULT_LANG, LOBE_LOCALE_COOKIE} from '@/const/locale';
+import {LOBE_THEME_APPEARANCE, LOBE_THEME_NEUTRAL_COLOR, LOBE_THEME_PRIMARY_COLOR,} from '@/const/theme';
 import Layout from '@/layout/GlobalLayout';
 
 import StyleRegistry from './StyleRegistry';

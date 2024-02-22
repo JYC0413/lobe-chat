@@ -1,11 +1,11 @@
-import { PersistStorage } from 'zustand/middleware';
-import { StorageValue } from 'zustand/middleware/persist';
+import {PersistStorage} from 'zustand/middleware';
+import {StorageValue} from 'zustand/middleware/persist';
 
-import { createIndexedDB } from './indexedDB';
-import { createKeyMapper } from './keyMapper';
-import { createLocalStorage } from './localStorage';
-import { HyperStorageOptions } from './type';
-import { creatUrlStorage } from './urlStorage';
+import {createIndexedDB} from './indexedDB';
+import {createKeyMapper} from './keyMapper';
+import {createLocalStorage} from './localStorage';
+import {HyperStorageOptions} from './type';
+import {creatUrlStorage} from './urlStorage';
 
 export const createHyperStorage = <T extends object>(
   options: HyperStorageOptions,

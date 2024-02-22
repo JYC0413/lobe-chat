@@ -1,16 +1,16 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { ActionIcon, FormItem, Input } from '@lobehub/ui';
-import { Checkbox, Form, FormInstance } from 'antd';
-import { FileCode, RotateCwIcon } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {LobeChatPluginManifest} from '@lobehub/chat-plugin-sdk';
+import {ActionIcon, FormItem, Input} from '@lobehub/ui';
+import {Checkbox, Form, FormInstance} from 'antd';
+import {FileCode, RotateCwIcon} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import ManifestPreviewer from '@/components/ManifestPreviewer';
-import { pluginService } from '@/services/plugin';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
-import { PluginInstallError } from '@/types/tool/plugin';
+import {pluginService} from '@/services/plugin';
+import {useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
+import {PluginInstallError} from '@/types/tool/plugin';
 
 interface ProxyCheckerProps {
   onChange?: (value: boolean) => void;

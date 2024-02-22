@@ -1,11 +1,11 @@
-import { Input, Modal, type ModalProps } from '@lobehub/ui';
-import { App } from 'antd';
+import {Input, Modal, type ModalProps} from '@lobehub/ui';
+import {App} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useSessionStore } from '@/store/session';
-import { sessionGroupSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {sessionGroupSelectors} from '@/store/session/selectors';
 
 interface RenameGroupModalProps extends ModalProps {
   id: string;

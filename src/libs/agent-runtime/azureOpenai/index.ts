@@ -1,17 +1,12 @@
-import {
-  AzureKeyCredential,
-  ChatRequestMessage,
-  GetChatCompletionsOptions,
-  OpenAIClient,
-} from '@azure/openai';
-import { OpenAIStream, StreamingTextResponse } from 'ai';
+import {AzureKeyCredential, ChatRequestMessage, GetChatCompletionsOptions, OpenAIClient,} from '@azure/openai';
+import {OpenAIStream, StreamingTextResponse} from 'ai';
 
-import { LobeRuntimeAI } from '../BaseAI';
-import { AgentRuntimeErrorType } from '../error';
-import { ChatStreamPayload, ModelProvider } from '../types';
-import { AgentRuntimeError } from '../utils/createError';
-import { debugStream } from '../utils/debugStream';
-import { DEBUG_CHAT_COMPLETION } from '../utils/env';
+import {LobeRuntimeAI} from '../BaseAI';
+import {AgentRuntimeErrorType} from '../error';
+import {ChatStreamPayload, ModelProvider} from '../types';
+import {AgentRuntimeError} from '../utils/createError';
+import {debugStream} from '../utils/debugStream';
+import {DEBUG_CHAT_COMPLETION} from '../utils/env';
 
 export class LobeAzureOpenAI implements LobeRuntimeAI {
   private _client: OpenAIClient;

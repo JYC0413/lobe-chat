@@ -1,16 +1,16 @@
-import Dexie, { Transaction } from 'dexie';
+import Dexie, {Transaction} from 'dexie';
 
-import { DB_File } from '@/database/schemas/files';
-import { DB_Message } from '@/database/schemas/message';
-import { DB_Plugin } from '@/database/schemas/plugin';
-import { DB_Session } from '@/database/schemas/session';
-import { DB_SessionGroup } from '@/database/schemas/sessionGroup';
-import { DB_Topic } from '@/database/schemas/topic';
-import { DB_User } from '@/database/schemas/user';
+import {DB_File} from '@/database/schemas/files';
+import {DB_Message} from '@/database/schemas/message';
+import {DB_Plugin} from '@/database/schemas/plugin';
+import {DB_Session} from '@/database/schemas/session';
+import {DB_SessionGroup} from '@/database/schemas/sessionGroup';
+import {DB_Topic} from '@/database/schemas/topic';
+import {DB_User} from '@/database/schemas/user';
 
-import { migrateSettingsToUser } from './migrations/migrateSettingsToUser';
-import { dbSchemaV1, dbSchemaV2, dbSchemaV3, dbSchemaV4, dbSchemaV5 } from './schemas';
-import { DBModel, LOBE_CHAT_LOCAL_DB_NAME } from './types/db';
+import {migrateSettingsToUser} from './migrations/migrateSettingsToUser';
+import {dbSchemaV1, dbSchemaV2, dbSchemaV3, dbSchemaV4, dbSchemaV5} from './schemas';
+import {DBModel, LOBE_CHAT_LOCAL_DB_NAME} from './types/db';
 
 interface LobeDBSchemaMap {
   files: DB_File;

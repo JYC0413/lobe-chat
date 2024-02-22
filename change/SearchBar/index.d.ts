@@ -1,5 +1,6 @@
 /// <reference types="react" />
-import { type InputProps } from "@lobehub/ui/es/Input";
+import {type InputProps} from "@lobehub/ui/es/Input";
+
 export interface SearchBarProps extends InputProps {
     defaultValue?: string;
     /**

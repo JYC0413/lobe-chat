@@ -1,14 +1,14 @@
-import { ConfigProvider } from 'antd';
-import { PropsWithChildren, memo, useEffect, useState } from 'react';
-import { isRtlLang } from 'rtl-detect';
+import {ConfigProvider} from 'antd';
+import {memo, PropsWithChildren, useEffect, useState} from 'react';
+import {isRtlLang} from 'rtl-detect';
 import useSWR from 'swr';
 
-import { createI18nNext } from '@/locales/create';
-import { normalizeLocale } from '@/locales/resources';
-import { useOnFinishHydrationGlobal } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { isOnServerSide } from '@/utils/env';
-import { switchLang } from '@/utils/switchLang';
+import {createI18nNext} from '@/locales/create';
+import {normalizeLocale} from '@/locales/resources';
+import {useOnFinishHydrationGlobal} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {isOnServerSide} from '@/utils/env';
+import {switchLang} from '@/utils/switchLang';
 
 const getAntdLocale = async (lang?: string) => {
   let normalLang = normalizeLocale(lang);

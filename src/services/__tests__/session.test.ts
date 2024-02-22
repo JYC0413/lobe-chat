@@ -1,11 +1,11 @@
-import { Mock, beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { SessionModel } from '@/database/models/session';
-import { SessionGroupModel } from '@/database/models/sessionGroup';
-import { LobeAgentConfig } from '@/types/agent';
-import { LobeAgentSession, LobeSessionType, SessionGroups } from '@/types/session';
+import {SessionModel} from '@/database/models/session';
+import {SessionGroupModel} from '@/database/models/sessionGroup';
+import {LobeAgentConfig} from '@/types/agent';
+import {LobeAgentSession, LobeSessionType, SessionGroups} from '@/types/session';
 
-import { sessionService } from '../session';
+import {sessionService} from '../session';
 
 // Mock the SessionModel
 vi.mock('@/database/models/session', () => {

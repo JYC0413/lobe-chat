@@ -1,12 +1,12 @@
-import { Modal, TabsNav } from '@lobehub/ui';
-import { Divider, TabsProps } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center } from 'react-layout-kit';
+import {Modal, TabsNav} from '@lobehub/ui';
+import {Divider, TabsProps} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center} from 'react-layout-kit';
 import useMergeState from 'use-merge-value';
 
 import PluginSettingsConfig from '@/features/PluginSettings';
-import { pluginHelpers } from '@/store/tool';
+import {pluginHelpers} from '@/store/tool';
 
 import APIs from './APIs';
 import Meta from './Meta';

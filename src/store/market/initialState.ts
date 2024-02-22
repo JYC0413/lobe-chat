@@ -1,4 +1,4 @@
-import { AgentsMarketIndexItem, AgentsMarketItem } from '@/types/market';
+import {AgentsMarketIndexItem, AgentsMarketItem} from '@/types/market';
 
 export type MarketAgentMap = Record<string, AgentsMarketItem>;
 

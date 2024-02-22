@@ -1,13 +1,13 @@
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import ModelTag from '@/components/ModelTag';
-import { useChatStore } from '@/store/chat';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/message';
+import {useChatStore} from '@/store/chat';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ChatMessage} from '@/types/message';
 
-import { RenderMessageExtra } from '../types';
+import {RenderMessageExtra} from '../types';
 import ExtraContainer from './ExtraContainer';
 import TTS from './TTS';
 import Translate from './Translate';

@@ -1,13 +1,13 @@
-import { ActionIcon, Icon, Tooltip } from '@lobehub/ui';
-import { Button } from 'antd';
-import { LucideGalleryVerticalEnd, LucideMessageSquarePlus } from 'lucide-react';
-import { memo } from 'react';
-import { useHotkeys } from 'react-hotkeys-hook';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon, Icon, Tooltip} from '@lobehub/ui';
+import {Button} from 'antd';
+import {LucideGalleryVerticalEnd, LucideMessageSquarePlus} from 'lucide-react';
+import {memo} from 'react';
+import {useHotkeys} from 'react-hotkeys-hook';
+import {useTranslation} from 'react-i18next';
 
 import HotKeys from '@/components/HotKeys';
-import { PREFIX_KEY, SAVE_TOPIC_KEY } from '@/const/hotkeys';
-import { useChatStore } from '@/store/chat';
+import {PREFIX_KEY, SAVE_TOPIC_KEY} from '@/const/hotkeys';
+import {useChatStore} from '@/store/chat';
 
 const SaveTopic = memo<{ mobile?: boolean }>(({ mobile }) => {
   const { t } = useTranslation('chat');

@@ -1,20 +1,20 @@
-import { Alert, Highlighter, Icon } from '@lobehub/ui';
-import { Button, Popconfirm, Result } from 'antd';
-import { useTheme } from 'antd-style';
-import { createStore, del, get, set } from 'idb-keyval';
-import { ShieldAlert } from 'lucide-react';
+import {Alert, Highlighter, Icon} from '@lobehub/ui';
+import {Button, Popconfirm, Result} from 'antd';
+import {useTheme} from 'antd-style';
+import {createStore, del, get, set} from 'idb-keyval';
+import {ShieldAlert} from 'lucide-react';
 import Link from 'next/link';
-import { lighten } from 'polished';
-import { memo } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {lighten} from 'polished';
+import {memo} from 'react';
+import {Trans, useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 import Balancer from 'react-wrap-balancer';
 
-import { githubService } from '@/services/github';
+import {githubService} from '@/services/github';
 
 import ExportConfigButton from './ExportConfigButton';
 import UpgradeButton from './UpgradeButton';
-import { MigrationError, UpgradeStatus, V1DB_NAME, V1DB_TABLE_NAME } from './const';
+import {MigrationError, UpgradeStatus, V1DB_NAME, V1DB_TABLE_NAME} from './const';
 
 const clearLocal = async () => {
   const store = createStore(V1DB_NAME, V1DB_TABLE_NAME);

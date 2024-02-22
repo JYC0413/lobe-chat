@@ -1,6 +1,6 @@
-import { LobeAgentConfig } from '@/types/agent';
+import {LobeAgentConfig} from '@/types/agent';
 
-import { BaseDataModel, MetaData } from './meta';
+import {BaseDataModel, MetaData} from './meta';
 
 export enum LobeSessionType {
   Agent = 'agent',

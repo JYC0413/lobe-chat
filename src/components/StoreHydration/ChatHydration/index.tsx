@@ -1,10 +1,10 @@
 'use client';
 
-import { useQueryState } from 'nuqs';
-import { memo, useEffect } from 'react';
-import { createStoreUpdater } from 'zustand-utils';
+import {useQueryState} from 'nuqs';
+import {memo, useEffect} from 'react';
+import {createStoreUpdater} from 'zustand-utils';
 
-import { useChatStore } from '@/store/chat';
+import {useChatStore} from '@/store/chat';
 
 // sync outside state to useChatStore
 const ChatHydration = memo(() => {

@@ -1,10 +1,10 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import {afterEach, describe, expect, it, vi} from 'vitest';
 
-import { createHyperStorage } from './index';
-import { createIndexedDB } from './indexedDB';
-import { createKeyMapper } from './keyMapper';
-import { createLocalStorage } from './localStorage';
-import { creatUrlStorage } from './urlStorage';
+import {createHyperStorage} from './index';
+import {createIndexedDB} from './indexedDB';
+import {createKeyMapper} from './keyMapper';
+import {createLocalStorage} from './localStorage';
+import {creatUrlStorage} from './urlStorage';
 
 // Mock the dependent modules
 vi.mock('./indexedDB', () => {

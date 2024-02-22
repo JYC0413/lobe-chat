@@ -1,13 +1,13 @@
-import { devtools } from 'zustand/middleware';
-import { shallow } from 'zustand/shallow';
-import { createWithEqualityFn } from 'zustand/traditional';
-import { StateCreator } from 'zustand/vanilla';
+import {devtools} from 'zustand/middleware';
+import {shallow} from 'zustand/shallow';
+import {createWithEqualityFn} from 'zustand/traditional';
+import {StateCreator} from 'zustand/vanilla';
 
-import { isDev } from '@/utils/env';
+import {isDev} from '@/utils/env';
 
-import { FilesStoreState, initialState } from './initialState';
-import { FileAction, createFileSlice } from './slices/images';
-import { TTSFileAction, createTTSFileSlice } from './slices/tts';
+import {FilesStoreState, initialState} from './initialState';
+import {createFileSlice, FileAction} from './slices/images';
+import {createTTSFileSlice, TTSFileAction} from './slices/tts';
 
 //  ===============  聚合 createStoreFn ============ //
 

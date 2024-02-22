@@ -1,14 +1,14 @@
-import { memo, useMemo, useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
-import { shallow } from 'zustand/shallow';
+import {memo, useMemo, useState} from 'react';
+import {Flexbox} from 'react-layout-kit';
+import {shallow} from 'zustand/shallow';
 
 import ModelTag from '@/components/ModelTag';
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { sessionHelpers } from '@/store/session/helpers';
-import { agentSelectors, sessionSelectors } from '@/store/session/selectors';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {sessionHelpers} from '@/store/session/helpers';
+import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
 
 import ListItem from '../../ListItem';
 import CreateGroupModal from '../../Modals/CreateGroupModal';

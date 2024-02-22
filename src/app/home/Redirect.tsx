@@ -1,13 +1,13 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { memo, useEffect } from 'react';
+import {useRouter} from 'next/navigation';
+import {memo, useEffect} from 'react';
 
-import { messageService } from '@/services/message';
-import { sessionService } from '@/services/session';
-import { useGlobalStore } from '@/store/global';
-import { SidebarTabKey } from '@/store/global/initialState';
-import { useSessionStore } from '@/store/session';
+import {messageService} from '@/services/message';
+import {sessionService} from '@/services/session';
+import {useGlobalStore} from '@/store/global';
+import {SidebarTabKey} from '@/store/global/initialState';
+import {useSessionStore} from '@/store/session';
 
 const checkHasConversation = async () => {
   const hasMessages = await messageService.hasMessages();

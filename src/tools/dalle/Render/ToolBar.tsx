@@ -1,13 +1,13 @@
-import { Button, Checkbox } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Button, Checkbox} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
-import { chatEnhanceSelectors } from '@/store/chat/selectors';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { DallEImageItem } from '@/types/tool/dalle';
+import {useChatStore} from '@/store/chat';
+import {chatEnhanceSelectors} from '@/store/chat/selectors';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {DallEImageItem} from '@/types/tool/dalle';
 
 interface ToolBarProps {
   content: DallEImageItem[];

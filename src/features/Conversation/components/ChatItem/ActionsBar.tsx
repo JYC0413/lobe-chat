@@ -1,14 +1,14 @@
-import { ActionEvent, ActionIconGroup, type ActionIconGroupProps } from '@lobehub/ui';
+import {ActionEvent, ActionIconGroup, type ActionIconGroupProps} from '@lobehub/ui';
 import isEqual from 'fast-deep-equal';
-import { memo, useCallback } from 'react';
+import {memo, useCallback} from 'react';
 
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
-import { renderActions, useActionsClick } from '../../Actions';
-import { useChatListActionsBar } from '../../hooks/useChatListActionsBar';
+import {renderActions, useActionsClick} from '../../Actions';
+import {useChatListActionsBar} from '../../hooks/useChatListActionsBar';
 
 export type ActionsBarProps = ActionIconGroupProps;
 

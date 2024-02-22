@@ -1,8 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
-import { chainPickEmoji } from '../pickEmoji';
+import {chainPickEmoji} from '../pickEmoji';
 
 // 描述测试块
 describe('chainPickEmoji', () => {

@@ -1,4 +1,4 @@
-import { produce } from 'immer';
+import {produce} from 'immer';
 
 import {
   BedrockProvider,
@@ -8,11 +8,11 @@ import {
   OpenAIProvider,
   ZhiPuProvider,
 } from '@/config/modelProviders';
-import { ChatModelCard, ModelProviderCard } from '@/types/llm';
-import { parseModelString } from '@/utils/parseModels';
+import {ChatModelCard, ModelProviderCard} from '@/types/llm';
+import {parseModelString} from '@/utils/parseModels';
 
-import { GlobalStore } from '../../../store';
-import { currentSettings } from './settings';
+import {GlobalStore} from '../../../store';
+import {currentSettings} from './settings';
 
 const modelProvider = (s: GlobalStore) => currentSettings(s).languageModel;
 const openAIConfig = (s: GlobalStore) => modelProvider(s).openAI;

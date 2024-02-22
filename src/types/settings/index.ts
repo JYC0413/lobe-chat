@@ -1,10 +1,10 @@
-import { DeepPartial } from 'utility-types';
+import {DeepPartial} from 'utility-types';
 
-import type { LobeAgentSession } from '@/types/session';
+import type {LobeAgentSession} from '@/types/session';
 
-import { GlobalBaseSettings } from './base';
-import { GlobalLLMConfig } from './modelProvider';
-import { GlobalTTSConfig } from './tts';
+import {GlobalBaseSettings} from './base';
+import {GlobalLLMConfig} from './modelProvider';
+import {GlobalTTSConfig} from './tts';
 
 export type GlobalDefaultAgent = Pick<LobeAgentSession, 'config' | 'meta'>;
 

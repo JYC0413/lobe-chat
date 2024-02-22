@@ -1,16 +1,16 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { uniqBy } from 'lodash-es';
-import { Md5 } from 'ts-md5';
+import {LobeChatPluginManifest} from '@lobehub/chat-plugin-sdk';
+import {uniqBy} from 'lodash-es';
+import {Md5} from 'ts-md5';
 
-import { PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR } from '@/const/plugin';
-import { MetaData } from '@/types/meta';
-import { ChatCompletionTool } from '@/types/openai/chat';
-import { LobeToolMeta } from '@/types/tool/tool';
+import {PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR} from '@/const/plugin';
+import {MetaData} from '@/types/meta';
+import {ChatCompletionTool} from '@/types/openai/chat';
+import {LobeToolMeta} from '@/types/tool/tool';
 
-import { pluginHelpers } from '../helpers';
-import { ToolStoreState } from '../initialState';
-import { builtinToolSelectors } from '../slices/builtin/selectors';
-import { pluginSelectors } from '../slices/plugin/selectors';
+import {pluginHelpers} from '../helpers';
+import {ToolStoreState} from '../initialState';
+import {builtinToolSelectors} from '../slices/builtin/selectors';
+import {pluginSelectors} from '../slices/plugin/selectors';
 
 const getAPIName = (identifier: string, name: string, type?: string) => {
   const pluginType = type && type !== 'default' ? `${PLUGIN_SCHEMA_SEPARATOR + type}` : '';

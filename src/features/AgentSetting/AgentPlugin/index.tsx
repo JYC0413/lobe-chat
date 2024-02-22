@@ -1,18 +1,18 @@
-import { Avatar, Form, Icon, Tooltip } from '@lobehub/ui';
-import { Button, Empty, Space, Switch, Tag, Typography } from 'antd';
+import {Avatar, Form, Icon, Tooltip} from '@lobehub/ui';
+import {Button, Empty, Space, Switch, Tag, Typography} from 'antd';
 import isEqual from 'fast-deep-equal';
-import { LucideToyBrick, LucideTrash2, Store } from 'lucide-react';
-import { memo, useState } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {LucideToyBrick, LucideTrash2, Store} from 'lucide-react';
+import {memo, useState} from 'react';
+import {Trans, useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
-import { FORM_STYLE } from '@/const/layoutTokens';
+import {FORM_STYLE} from '@/const/layoutTokens';
 import PluginStore from '@/features/PluginStore';
 import PluginTag from '@/features/PluginStore/PluginItem/PluginTag';
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { toolSelectors } from '@/store/tool/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {toolSelectors} from '@/store/tool/selectors';
 
-import { useStore } from '../store';
+import {useStore} from '../store';
 import AddPluginButton from './AddPluginButton';
 import LoadingList from './LoadingList';
 import LocalPluginItem from './LocalPluginItem';

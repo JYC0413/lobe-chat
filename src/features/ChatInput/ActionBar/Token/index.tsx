@@ -1,10 +1,10 @@
 import dynamic from 'next/dynamic';
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 const LargeTokenContent = dynamic(() => import('./TokenTag'), { ssr: false });
 

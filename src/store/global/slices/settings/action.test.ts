@@ -1,14 +1,12 @@
-import { act, renderHook, waitFor } from '@testing-library/react';
-import { DeepPartial } from 'utility-types';
-import { describe, expect, it, vi } from 'vitest';
-import { withSWR } from '~test-utils';
+import {act, renderHook} from '@testing-library/react';
+import {describe, expect, it, vi} from 'vitest';
 
-import { DEFAULT_AGENT, DEFAULT_SETTINGS } from '@/const/settings';
-import { userService } from '@/services/user';
-import { useGlobalStore } from '@/store/global';
-import { SettingsTabs } from '@/store/global/initialState';
-import { LobeAgentSettings } from '@/types/session';
-import { GlobalSettings, OpenAIConfig } from '@/types/settings';
+import {DEFAULT_SETTINGS} from '@/const/settings';
+import {userService} from '@/services/user';
+import {useGlobalStore} from '@/store/global';
+import {SettingsTabs} from '@/store/global/initialState';
+import {LobeAgentSettings} from '@/types/session';
+import {GlobalSettings, OpenAIConfig} from '@/types/settings';
 
 // Mock userService
 vi.mock('@/services/user', () => ({

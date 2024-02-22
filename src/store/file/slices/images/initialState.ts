@@ -1,4 +1,4 @@
-import { FilePreview } from '@/types/files';
+import {FilePreview} from '@/types/files';
 
 export interface ImageFileState {
   imagesMap: Record<string, FilePreview>;

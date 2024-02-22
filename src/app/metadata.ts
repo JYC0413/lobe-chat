@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
+import {Metadata} from 'next';
 
-import { getServerConfig } from '@/config/server';
+import {getServerConfig} from '@/config/server';
 
 import pkg from '../../package.json';
 

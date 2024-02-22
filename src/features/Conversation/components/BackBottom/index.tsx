@@ -1,10 +1,10 @@
-import { Icon } from '@lobehub/ui';
-import { Button } from 'antd';
-import { ListEnd } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {Icon} from '@lobehub/ui';
+import {Button} from 'antd';
+import {ListEnd} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useStyles } from './style';
+import {useStyles} from './style';
 
 export interface BackBottomProps {
   onScrollToBottom: () => void;

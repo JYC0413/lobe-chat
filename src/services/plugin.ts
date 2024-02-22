@@ -1,15 +1,11 @@
-import {
-  LobeChatPluginManifest,
-  LobeChatPluginsMarketIndex,
-  pluginManifestSchema,
-} from '@lobehub/chat-plugin-sdk';
+import {LobeChatPluginManifest, LobeChatPluginsMarketIndex, pluginManifestSchema,} from '@lobehub/chat-plugin-sdk';
 
-import { PluginModel } from '@/database/models/plugin';
-import { PLUGINS_URLS, URLS } from '@/services/_url';
-import { globalHelpers } from '@/store/global/helpers';
-import { OpenAIPluginManifest } from '@/types/openai/plugin';
-import { LobeTool } from '@/types/tool';
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {PluginModel} from '@/database/models/plugin';
+import {PLUGINS_URLS, URLS} from '@/services/_url';
+import {globalHelpers} from '@/store/global/helpers';
+import {OpenAIPluginManifest} from '@/types/openai/plugin';
+import {LobeTool} from '@/types/tool';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
 export interface InstallPluginParams {
   identifier: string;

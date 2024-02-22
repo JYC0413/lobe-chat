@@ -1,9 +1,9 @@
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
-import { formatTime } from "@lobehub/ui/es/utils/formatTime";
-import { useStyles } from "../style";
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
+import {formatTime} from "@lobehub/ui/es/utils/formatTime";
+import {useStyles} from "../style";
+import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
+
 var Title = /*#__PURE__*/memo(function (_ref) {
   var showTitle = _ref.showTitle,
     placement = _ref.placement,

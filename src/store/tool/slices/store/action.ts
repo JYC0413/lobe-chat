@@ -1,18 +1,18 @@
-import { LobeChatPluginsMarketIndex } from '@lobehub/chat-plugin-sdk';
-import { notification } from 'antd';
-import { t } from 'i18next';
-import { produce } from 'immer';
-import useSWR, { SWRResponse, mutate } from 'swr';
-import { StateCreator } from 'zustand/vanilla';
+import {LobeChatPluginsMarketIndex} from '@lobehub/chat-plugin-sdk';
+import {notification} from 'antd';
+import {t} from 'i18next';
+import {produce} from 'immer';
+import useSWR, {mutate, SWRResponse} from 'swr';
+import {StateCreator} from 'zustand/vanilla';
 
-import { pluginService } from '@/services/plugin';
-import { pluginStoreSelectors } from '@/store/tool/selectors';
-import { LobeTool } from '@/types/tool';
-import { PluginInstallError } from '@/types/tool/plugin';
-import { setNamespace } from '@/utils/storeDebug';
+import {pluginService} from '@/services/plugin';
+import {pluginStoreSelectors} from '@/store/tool/selectors';
+import {LobeTool} from '@/types/tool';
+import {PluginInstallError} from '@/types/tool/plugin';
+import {setNamespace} from '@/utils/storeDebug';
 
-import { ToolStore } from '../../store';
-import { PluginStoreState } from './initialState';
+import {ToolStore} from '../../store';
+import {PluginStoreState} from './initialState';
 
 const n = setNamespace('pluginStore');
 

@@ -1,4 +1,4 @@
-import { PropsWithChildren, memo } from 'react';
+import {memo, PropsWithChildren} from 'react';
 
 import AppLayoutMobile from '@/layout/AppLayout.mobile';
 

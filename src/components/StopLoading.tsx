@@ -1,5 +1,5 @@
-import { useTheme } from 'antd-style';
-import { memo } from 'react';
+import {useTheme} from 'antd-style';
+import {memo} from 'react';
 
 const StopLoadingIcon = memo(() => {
   const theme = useTheme();

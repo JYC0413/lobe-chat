@@ -1,10 +1,10 @@
-import Dexie, { BulkError } from 'dexie';
-import { ZodObject } from 'zod';
+import Dexie, {BulkError} from 'dexie';
+import {ZodObject} from 'zod';
 
-import { DBBaseFieldsSchema } from '@/database/core/types/db';
-import { nanoid } from '@/utils/uuid';
+import {DBBaseFieldsSchema} from '@/database/core/types/db';
+import {nanoid} from '@/utils/uuid';
 
-import { LocalDB, LocalDBInstance, LocalDBSchema } from './db';
+import {LocalDB, LocalDBInstance, LocalDBSchema} from './db';
 
 export class BaseModel<N extends keyof LocalDBSchema = any, T = LocalDBSchema[N]['table']> {
   protected readonly db: LocalDB;

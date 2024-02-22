@@ -1,10 +1,10 @@
-import { DraggablePanel, DraggablePanelContainer } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
+import {DraggablePanel, DraggablePanelContainer} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { PropsWithChildren, memo, useState } from 'react';
+import {memo, PropsWithChildren, useState} from 'react';
 
-import { FOLDER_WIDTH } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
+import {FOLDER_WIDTH} from '@/const/layoutTokens';
+import {useGlobalStore} from '@/store/global';
 
 export const useStyles = createStyles(({ css, token }) => ({
   panel: css`

@@ -1,8 +1,8 @@
-import { produce } from 'immer';
+import {produce} from 'immer';
 
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { LobeAgentConfig } from '@/types/agent';
-import { merge } from '@/utils/merge';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {LobeAgentConfig} from '@/types/agent';
+import {merge} from '@/utils/merge';
 
 export type ConfigDispatch =
   | { config: Partial<any>; type: 'update' }

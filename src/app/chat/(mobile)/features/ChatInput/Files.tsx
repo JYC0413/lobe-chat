@@ -1,7 +1,7 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
 import EditableFileList from '@/components/FileList/EditableFileList';
-import { useFileStore } from '@/store/file';
+import {useFileStore} from '@/store/file';
 
 const Files = memo(() => {
   const inputFilesList = useFileStore((s) => s.inputFilesList);

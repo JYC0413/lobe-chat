@@ -1,12 +1,12 @@
 // This file is for debugging purposes only.
 // DON'T USE IT IN PRODUCTION.
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { DBModel } from '@/database/core/types/db';
-import { DB_Message } from '@/database/schemas/message';
-import { DB_Topic } from '@/database/schemas/topic';
+import {DEFAULT_AGENT_CONFIG} from '@/const/settings';
+import {DBModel} from '@/database/core/types/db';
+import {DB_Message} from '@/database/schemas/message';
+import {DB_Topic} from '@/database/schemas/topic';
 
-import { BaseModel } from '../core';
-import { DB_Session, DB_SessionSchema } from '../schemas/session';
+import {BaseModel} from '../core';
+import {DB_Session, DB_SessionSchema} from '../schemas/session';
 
 class _DEBUG_MODEL extends BaseModel<'sessions'> {
   constructor() {

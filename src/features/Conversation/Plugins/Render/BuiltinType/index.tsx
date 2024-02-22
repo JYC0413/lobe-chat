@@ -1,9 +1,9 @@
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { BuiltinToolsRenders } from '@/tools/renders';
+import {BuiltinToolsRenders} from '@/tools/renders';
 
 import Loading from '../Loading';
-import { useParseContent } from '../useParseContent';
+import {useParseContent} from '../useParseContent';
 
 export interface BuiltinTypeProps {
   content: string;

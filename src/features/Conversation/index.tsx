@@ -1,14 +1,14 @@
-import { createStyles } from 'antd-style';
-import { ReactNode, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {createStyles} from 'antd-style';
+import {memo, ReactNode} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import ChatHydration from '@/components/StoreHydration/ChatHydration';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
 
 import SkeletonList from './components/SkeletonList';
 import ChatList from './components/VirtualizedList';
-import { useInitConversation } from './hooks/useInitConversation';
+import {useInitConversation} from './hooks/useInitConversation';
 
 const useStyles = createStyles(({ css, responsive, stylish, cx }, fontSize: number = 14) =>
   cx(

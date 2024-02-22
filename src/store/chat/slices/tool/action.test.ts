@@ -1,16 +1,15 @@
-import { act, renderHook } from '@testing-library/react';
-import { Md5 } from 'ts-md5';
-import { Mock, describe, expect, it, vi } from 'vitest';
+import {act, renderHook} from '@testing-library/react';
+import {Md5} from 'ts-md5';
+import {describe, expect, it, Mock, vi} from 'vitest';
 
-import { PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR } from '@/const/plugin';
-import { chatService } from '@/services/chat';
-import { messageService } from '@/services/message';
-import { chatSelectors } from '@/store/chat/selectors';
-import { useChatStore } from '@/store/chat/store';
-import { useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
-import { ChatPluginPayload } from '@/types/message';
-import { LobeTool } from '@/types/tool';
+import {PLUGIN_SCHEMA_API_MD5_PREFIX, PLUGIN_SCHEMA_SEPARATOR} from '@/const/plugin';
+import {chatService} from '@/services/chat';
+import {messageService} from '@/services/message';
+import {chatSelectors} from '@/store/chat/selectors';
+import {useChatStore} from '@/store/chat/store';
+import {useToolStore} from '@/store/tool';
+import {ChatPluginPayload} from '@/types/message';
+import {LobeTool} from '@/types/tool';
 
 const invokeStandaloneTypePlugin = useChatStore.getState().invokeStandaloneTypePlugin;
 

@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
-import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import {afterEach, beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { LobeOpenAI } from './index';
+import {LobeOpenAI} from './index';
 
 // Mock the console.error to avoid polluting test output
 vi.spyOn(console, 'error').mockImplementation(() => {});

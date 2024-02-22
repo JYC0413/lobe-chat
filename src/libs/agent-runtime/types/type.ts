@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
-import { ILobeAgentRuntimeErrorType } from '../error';
-import { ChatStreamPayload } from './chat';
+import {ILobeAgentRuntimeErrorType} from '../error';
+import {ChatStreamPayload} from './chat';
 
 export interface AgentInitErrorPayload {
   error: object;

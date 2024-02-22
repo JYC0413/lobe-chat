@@ -1,7 +1,7 @@
-import { Skeleton } from 'antd';
-import { createStyles } from 'antd-style';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {Skeleton} from 'antd';
+import {createStyles} from 'antd-style';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 const useStyles = createStyles(({ css, prefixCls }) => ({
   user: css`

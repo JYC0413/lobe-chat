@@ -1,5 +1,5 @@
-import { ShareGPTConversation } from '@/types/share';
-import { parseMarkdown } from '@/utils/parseMarkdown';
+import {ShareGPTConversation} from '@/types/share';
+import {parseMarkdown} from '@/utils/parseMarkdown';
 
 export const SHARE_GPT_URL = 'https://sharegpt.com/api/conversations';
 

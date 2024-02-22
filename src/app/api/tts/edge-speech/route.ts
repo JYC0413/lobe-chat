@@ -1,4 +1,4 @@
-import { EdgeSpeechPayload, EdgeSpeechTTS } from '@lobehub/tts';
+import {EdgeSpeechPayload, EdgeSpeechTTS} from '@lobehub/tts';
 
 export const runtime = 'edge';
 

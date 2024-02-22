@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
-import { desensitizeUrl } from './desensitizeUrl';
+import {desensitizeUrl} from './desensitizeUrl';
 
 describe('desensitizeUrl', () => {
   it('should desensitize a URL with a subdomain', () => {

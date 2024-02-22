@@ -1,4 +1,5 @@
-import { CSSProperties, ReactNode } from 'react';
+import {CSSProperties, ReactNode} from 'react';
+
 export interface MobileNavBarProps {
     center?: ReactNode;
     className?: string;

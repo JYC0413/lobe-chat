@@ -1,11 +1,11 @@
-import { ActionIcon, SliderWithInput } from '@lobehub/ui';
-import { Popover } from 'antd';
-import { Thermometer } from 'lucide-react';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {ActionIcon, SliderWithInput} from '@lobehub/ui';
+import {Popover} from 'antd';
+import {Thermometer} from 'lucide-react';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 const Temperature = memo(() => {
   const { t } = useTranslation('setting');

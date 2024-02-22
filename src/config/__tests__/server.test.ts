@@ -1,6 +1,6 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { getServerConfig } from '../server';
+import {getServerConfig} from '../server';
 
 // Stub the global process object to safely mock environment variables
 vi.stubGlobal('process', {

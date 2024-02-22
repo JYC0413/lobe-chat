@@ -1,17 +1,17 @@
-import { Avatar, ChatHeaderTitle, Logo, Markdown } from '@lobehub/ui';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Avatar, ChatHeaderTitle, Logo, Markdown} from '@lobehub/ui';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import pkg from '@/../package.json';
 import ModelTag from '@/components/ModelTag';
 import ChatList from '@/features/Conversation/components/ChatList';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors, sessionSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
 
 import PluginTag from '../../ChatHeader/PluginTag';
-import { useStyles } from './style';
-import { FieldType } from './type';
+import {useStyles} from './style';
+import {FieldType} from './type';
 
 const Preview = memo<FieldType & { title?: string }>(
   ({ title, withSystemRole, withBackground, withFooter }) => {

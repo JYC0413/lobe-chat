@@ -1,9 +1,9 @@
-import { V1Config, V1ConfigState, V1Session } from '@/migrations/FromV1ToV2/types/v1';
-import { MigrationData, VersionController } from '@/migrations/VersionController';
+import {V1Config, V1ConfigState} from '@/migrations/FromV1ToV2/types/v1';
+import {MigrationData, VersionController} from '@/migrations/VersionController';
 
 import inputV1Data from './fixtures/input-v1-session.json';
 import outputV2Data from './fixtures/output-v2.json';
-import { MigrationV1ToV2 } from './index';
+import {MigrationV1ToV2} from './index';
 
 describe('MigrationV1ToV2', () => {
   let migrations;

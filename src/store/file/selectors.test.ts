@@ -1,7 +1,7 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import {beforeEach, describe, expect, it} from 'vitest';
 
-import { FilesStoreState } from './initialState';
-import { filesSelectors } from './selectors';
+import {FilesStoreState} from './initialState';
+import {filesSelectors} from './selectors';
 
 describe('filesSelectors', () => {
   let state: FilesStoreState;

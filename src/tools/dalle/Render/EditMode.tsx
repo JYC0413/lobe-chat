@@ -1,10 +1,10 @@
-import { TextArea } from '@lobehub/ui';
-import { Button, Radio, Select } from 'antd';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {TextArea} from '@lobehub/ui';
+import {Button, Radio, Select} from 'antd';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { DallEImageItem } from '@/types/tool/dalle';
+import {DallEImageItem} from '@/types/tool/dalle';
 
 interface EditModeProps extends DallEImageItem {
   setEdit: (edit: boolean) => void;

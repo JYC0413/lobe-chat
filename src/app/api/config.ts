@@ -1,4 +1,4 @@
-import { getServerConfig } from '@/config/server';
+import {getServerConfig} from '@/config/server';
 
 export const getPreferredRegion = (region: string | string[] = 'auto') => {
   try {

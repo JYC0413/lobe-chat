@@ -1,11 +1,11 @@
-import { createGatewayOnEdgeRuntime } from '@lobehub/chat-plugins-gateway';
+import {createGatewayOnEdgeRuntime} from '@lobehub/chat-plugins-gateway';
 
-import { createErrorResponse } from '@/app/api/errorResponse';
-import { getServerConfig } from '@/config/server';
-import { getOpenAIAuthFromRequest } from '@/const/fetch';
-import { ChatErrorType, ErrorType } from '@/types/fetch';
+import {createErrorResponse} from '@/app/api/errorResponse';
+import {getServerConfig} from '@/config/server';
+import {getOpenAIAuthFromRequest} from '@/const/fetch';
+import {ChatErrorType, ErrorType} from '@/types/fetch';
 
-import { parserPluginSettings } from './settings';
+import {parserPluginSettings} from './settings';
 
 const checkAuth = (accessCode: string | null) => {
   const { ACCESS_CODES, PLUGIN_SETTINGS } = getServerConfig();

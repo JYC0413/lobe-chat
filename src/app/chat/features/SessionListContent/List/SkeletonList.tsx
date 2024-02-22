@@ -1,6 +1,6 @@
-import { Skeleton } from 'antd';
-import { createStyles } from 'antd-style';
-import { Flexbox } from 'react-layout-kit';
+import {Skeleton} from 'antd';
+import {createStyles} from 'antd-style';
+import {Flexbox} from 'react-layout-kit';
 
 const useStyles = createStyles(({ css }) => ({
   avatar: css``,

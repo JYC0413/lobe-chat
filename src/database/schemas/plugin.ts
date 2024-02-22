@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix  */
-import { z } from 'zod';
+import {z} from 'zod';
 
 export const DB_PluginSchema = z.object({
   identifier: z.string(),

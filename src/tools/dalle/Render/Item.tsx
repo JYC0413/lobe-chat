@@ -1,15 +1,15 @@
-import { Icon, Image, Tooltip } from '@lobehub/ui';
-import { Spin } from 'antd';
-import { createStyles } from 'antd-style';
-import { Loader2 } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {Icon, Image, Tooltip} from '@lobehub/ui';
+import {Spin} from 'antd';
+import {createStyles} from 'antd-style';
+import {Loader2} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import ImageFileItem from '@/components/FileList/ImageFileItem';
-import { useChatStore } from '@/store/chat';
-import { chatEnhanceSelectors } from '@/store/chat/selectors';
-import { DallEImageItem } from '@/types/tool/dalle';
+import {useChatStore} from '@/store/chat';
+import {chatEnhanceSelectors} from '@/store/chat/selectors';
+import {DallEImageItem} from '@/types/tool/dalle';
 
 import EditMode from './EditMode';
 

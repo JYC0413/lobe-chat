@@ -1,13 +1,13 @@
-import { ActionIcon, Icon, Markdown, Tag, copyToClipboard } from '@lobehub/ui';
-import { App } from 'antd';
-import { createStyles } from 'antd-style';
-import { ChevronDown, ChevronUp, ChevronsRight, CopyIcon, TrashIcon } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ActionIcon, copyToClipboard, Icon, Markdown, Tag} from '@lobehub/ui';
+import {App} from 'antd';
+import {createStyles} from 'antd-style';
+import {ChevronDown, ChevronsRight, ChevronUp, CopyIcon, TrashIcon} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
-import { useChatStore } from '@/store/chat';
-import { ChatTranslate } from '@/types/message';
+import {useChatStore} from '@/store/chat';
+import {ChatTranslate} from '@/types/message';
 
 import BubblesLoading from '../components/BubblesLoading';
 

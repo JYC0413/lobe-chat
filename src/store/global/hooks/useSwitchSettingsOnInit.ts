@@ -1,6 +1,6 @@
-import { useOnFinishHydrationGlobal } from '@/store/global';
+import {useOnFinishHydrationGlobal} from '@/store/global';
 
-import { SettingsTabs } from '../initialState';
+import {SettingsTabs} from '../initialState';
 
 /**
  * 切换设置侧边栏选项

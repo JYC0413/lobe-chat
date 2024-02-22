@@ -1,15 +1,15 @@
-import { OpenAI } from '@lobehub/icons';
-import { Icon } from '@lobehub/ui';
-import { Button, Input } from 'antd';
-import { useTheme } from 'antd-style';
-import { Network } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {OpenAI} from '@lobehub/icons';
+import {Icon} from '@lobehub/ui';
+import {Button, Input} from 'antd';
+import {useTheme} from 'antd-style';
+import {Network} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
 
-import { FormAction } from '../style';
+import {FormAction} from '../style';
 
 const OpenAIForm = memo(() => {
   const { t } = useTranslation('error');

@@ -1,7 +1,7 @@
-import { delMany, getMany, setMany } from 'idb-keyval';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import {delMany, getMany, setMany} from 'idb-keyval';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import { createIndexedDB } from './indexedDB';
+import {createIndexedDB} from './indexedDB';
 
 // Mock idb-keyval methods
 vi.mock('idb-keyval', () => ({

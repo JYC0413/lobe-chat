@@ -1,8 +1,8 @@
-import { Highlighter } from '@lobehub/ui';
-import { memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {Highlighter} from '@lobehub/ui';
+import {memo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
-import { ChatMessageError } from '@/types/message';
+import {ChatMessageError} from '@/types/message';
 
 interface ErrorJSONViewerProps {
   error?: ChatMessageError;

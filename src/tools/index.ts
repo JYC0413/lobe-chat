@@ -1,6 +1,6 @@
-import { LobeBuiltinTool } from '@/types/tool';
+import {LobeBuiltinTool} from '@/types/tool';
 
-import { DalleManifest } from './dalle';
+import {DalleManifest} from './dalle';
 
 export const builtinTools: LobeBuiltinTool[] = [
   {

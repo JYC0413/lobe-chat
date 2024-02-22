@@ -1,9 +1,9 @@
-import { SearchBar } from '@lobehub/ui';
-import { useResponsive } from 'antd-style';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {SearchBar} from '@lobehub/ui';
+import {useResponsive} from 'antd-style';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { useSessionStore } from '@/store/session';
+import {useSessionStore} from '@/store/session';
 
 const SessionSearchBar = memo(() => {
   const { t } = useTranslation('chat');

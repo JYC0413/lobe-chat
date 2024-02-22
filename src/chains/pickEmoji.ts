@@ -1,4 +1,4 @@
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
 /**
  * pick emoji for user prompt

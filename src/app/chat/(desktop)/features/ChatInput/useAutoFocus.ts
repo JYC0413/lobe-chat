@@ -1,5 +1,5 @@
-import { TextAreaRef } from 'antd/es/input/TextArea';
-import { RefObject, useEffect } from 'react';
+import {TextAreaRef} from 'antd/es/input/TextArea';
+import {RefObject, useEffect} from 'react';
 
 export const useAutoFocus = (inputRef: RefObject<TextAreaRef>) => {
   useEffect(() => {

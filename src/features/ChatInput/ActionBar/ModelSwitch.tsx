@@ -1,17 +1,17 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Dropdown } from 'antd';
-import { createStyles } from 'antd-style';
+import {ActionIcon} from '@lobehub/ui';
+import {Dropdown} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { BrainCog } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {BrainCog} from 'lucide-react';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { ModelItemRender, ProviderItemRender } from '@/components/ModelSelect';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { ModelProviderCard } from '@/types/llm';
+import {ModelItemRender, ProviderItemRender} from '@/components/ModelSelect';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {ModelProviderCard} from '@/types/llm';
 
 const useStyles = createStyles(({ css, prefixCls }) => ({
   menu: css`

@@ -1,13 +1,13 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { Mock, beforeEach, describe, expect, it, vi } from 'vitest';
+import {LobeChatPluginManifest} from '@lobehub/chat-plugin-sdk';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { PluginModel } from '@/database/models/plugin';
-import { DB_Plugin } from '@/database/schemas/plugin';
-import { globalHelpers } from '@/store/global/helpers';
-import { LobeTool } from '@/types/tool';
-import { LobeToolCustomPlugin } from '@/types/tool/plugin';
+import {PluginModel} from '@/database/models/plugin';
+import {DB_Plugin} from '@/database/schemas/plugin';
+import {globalHelpers} from '@/store/global/helpers';
+import {LobeTool} from '@/types/tool';
+import {LobeToolCustomPlugin} from '@/types/tool/plugin';
 
-import { InstallPluginParams, pluginService } from '../plugin';
+import {InstallPluginParams, pluginService} from '../plugin';
 import openAPIV3 from './openai/OpenAPI_V3.json';
 import OpenAIPlugin from './openai/plugin.json';
 

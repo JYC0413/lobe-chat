@@ -1,9 +1,9 @@
 'use client';
 
 import Script from 'next/script';
-import { memo } from 'react';
+import {memo} from 'react';
 
-import { getClientConfig } from '@/config/client';
+import {getClientConfig} from '@/config/client';
 
 const { PLAUSIBLE_DOMAIN, PLAUSIBLE_SCRIPT_BASE_URL } = getClientConfig();
 

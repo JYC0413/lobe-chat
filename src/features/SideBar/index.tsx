@@ -1,10 +1,8 @@
-import { SideNav } from '@lobehub/ui';
-import { memo } from 'react';
+import {SideNav} from '@lobehub/ui';
+import {memo} from 'react';
 
 import AvatarWithUpload from '@/features/AvatarWithUpload';
-import { useGlobalStore } from '@/store/global';
-
-import BottomActions from './BottomActions';
+import {useGlobalStore} from '@/store/global';
 import TopActions from './TopActions';
 
 export default memo(() => {

@@ -1,4 +1,4 @@
-import { GlobalStore } from '@/store/global';
+import {GlobalStore} from '@/store/global';
 
 const sessionGroupKeys = (s: GlobalStore): string[] => s.preference.expandSessionGroupKeys || [];
 

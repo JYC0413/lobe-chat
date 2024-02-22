@@ -1,4 +1,4 @@
-import { SessionStore } from '@/store/session';
+import {SessionStore} from '@/store/session';
 
 const sessionGroupItems = (s: SessionStore) =>
   s.customSessionGroups.map((group) => ({

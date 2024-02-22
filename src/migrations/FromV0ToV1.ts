@@ -1,4 +1,4 @@
-import type { Migration, MigrationData } from './VersionController';
+import type {Migration, MigrationData} from './VersionController';
 
 export class MigrationV0ToV1 implements Migration {
   // from this version to start migration

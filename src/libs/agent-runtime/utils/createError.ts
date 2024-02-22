@@ -1,5 +1,5 @@
-import { ILobeAgentRuntimeErrorType } from '../error';
-import { AgentInitErrorPayload, ChatCompletionErrorPayload } from '../types';
+import {ILobeAgentRuntimeErrorType} from '../error';
+import {AgentInitErrorPayload, ChatCompletionErrorPayload} from '../types';
 
 export const AgentRuntimeError = {
   chat: (error: ChatCompletionErrorPayload): ChatCompletionErrorPayload => error,

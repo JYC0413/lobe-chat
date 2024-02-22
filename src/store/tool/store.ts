@@ -1,15 +1,15 @@
-import { devtools } from 'zustand/middleware';
-import { shallow } from 'zustand/shallow';
-import { createWithEqualityFn } from 'zustand/traditional';
-import { StateCreator } from 'zustand/vanilla';
+import {devtools} from 'zustand/middleware';
+import {shallow} from 'zustand/shallow';
+import {createWithEqualityFn} from 'zustand/traditional';
+import {StateCreator} from 'zustand/vanilla';
 
-import { isDev } from '@/utils/env';
+import {isDev} from '@/utils/env';
 
-import { ToolStoreState, initialState } from './initialState';
-import { BuiltinToolAction, createBuiltinToolSlice } from './slices/builtin';
-import { CustomPluginAction, createCustomPluginSlice } from './slices/customPlugin';
-import { PluginAction, createPluginSlice } from './slices/plugin';
-import { PluginStoreAction, createPluginStoreSlice } from './slices/store';
+import {initialState, ToolStoreState} from './initialState';
+import {BuiltinToolAction, createBuiltinToolSlice} from './slices/builtin';
+import {createCustomPluginSlice, CustomPluginAction} from './slices/customPlugin';
+import {createPluginSlice, PluginAction} from './slices/plugin';
+import {createPluginStoreSlice, PluginStoreAction} from './slices/store';
 
 //  ===============  聚合 createStoreFn ============ //
 

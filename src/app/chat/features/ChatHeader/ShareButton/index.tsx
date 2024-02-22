@@ -1,12 +1,12 @@
-import { ActionIcon } from '@lobehub/ui';
-import { Share2 } from 'lucide-react';
+import {ActionIcon} from '@lobehub/ui';
+import {Share2} from 'lucide-react';
 import dynamic from 'next/dynamic';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 import useMergeState from 'use-merge-value';
 
-import { DESKTOP_HEADER_ICON_SIZE, MOBILE_HEADER_ICON_SIZE } from '@/const/layoutTokens';
-import { useChatStore } from '@/store/chat';
+import {DESKTOP_HEADER_ICON_SIZE, MOBILE_HEADER_ICON_SIZE} from '@/const/layoutTokens';
+import {useChatStore} from '@/store/chat';
 
 const ShareModal = dynamic(() => import('./ShareModal'));
 interface ShareButtonProps {

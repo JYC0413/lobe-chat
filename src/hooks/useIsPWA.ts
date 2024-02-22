@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 
-import { isInStandaloneMode } from '@/utils/matchMedia';
+import {isInStandaloneMode} from '@/utils/matchMedia';
 
 export const useIsPWA = () => {
   const [isPWA, setIsPWA] = useState(false);

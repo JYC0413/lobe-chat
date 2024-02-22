@@ -1,4 +1,4 @@
-import { FilesStoreState } from '../../initialState';
+import {FilesStoreState} from '../../initialState';
 
 const getImageDetailByList = (list: string[]) => (s: FilesStoreState) =>
   list.map((i) => s.imagesMap[i]).filter(Boolean);

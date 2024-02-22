@@ -1,19 +1,19 @@
-import { ActionIcon, Icon } from '@lobehub/ui';
-import { Dropdown } from 'antd';
-import { createStyles } from 'antd-style';
+import {ActionIcon, Icon} from '@lobehub/ui';
+import {Dropdown} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { ArrowRight, Blocks, Store, ToyBrick } from 'lucide-react';
-import { memo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
+import {ArrowRight, Blocks, Store} from 'lucide-react';
+import {memo, useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
 
 import PluginStore from '@/features/PluginStore';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { builtinToolSelectors, pluginSelectors } from '@/store/tool/selectors';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {builtinToolSelectors, pluginSelectors} from '@/store/tool/selectors';
 
 import ToolItem from './ToolItem';
 

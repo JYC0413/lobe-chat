@@ -1,18 +1,18 @@
-import { Avatar } from '@lobehub/ui';
-import { Button, Divider } from 'antd';
-import { useTheme } from 'antd-style';
+import {Avatar} from '@lobehub/ui';
+import {Button, Divider} from 'antd';
+import {useTheme} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
 import PluginSettingsConfig from '@/features/PluginSettings';
-import { useChatStore } from '@/store/chat';
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
-import { ChatPluginPayload } from '@/types/message';
+import {useChatStore} from '@/store/chat';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
+import {ChatPluginPayload} from '@/types/message';
 
-import { ErrorActionContainer, useStyles } from './style';
+import {ErrorActionContainer, useStyles} from './style';
 
 interface PluginSettingsProps {
   id: string;

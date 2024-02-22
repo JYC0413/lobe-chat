@@ -1,13 +1,13 @@
 import isEqual from 'fast-deep-equal';
-import { produce } from 'immer';
-import useSWR, { SWRResponse } from 'swr';
-import type { StateCreator } from 'zustand/vanilla';
+import {produce} from 'immer';
+import useSWR, {SWRResponse} from 'swr';
+import type {StateCreator} from 'zustand/vanilla';
 
-import { marketService } from '@/services/market';
-import { globalHelpers } from '@/store/global/helpers';
-import { AgentsMarketItem, LobeChatAgentsMarketIndex } from '@/types/market';
+import {marketService} from '@/services/market';
+import {globalHelpers} from '@/store/global/helpers';
+import {AgentsMarketItem, LobeChatAgentsMarketIndex} from '@/types/market';
 
-import type { Store } from './store';
+import type {Store} from './store';
 
 export interface StoreAction {
   activateAgent: (identifier: string) => void;

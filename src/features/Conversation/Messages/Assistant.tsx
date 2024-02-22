@@ -1,12 +1,12 @@
-import { ReactNode, memo } from 'react';
+import {memo, ReactNode} from 'react';
 
-import { isFunctionMessageAtStart } from '@/const/message';
-import { useChatStore } from '@/store/chat';
-import { chatSelectors } from '@/store/chat/selectors';
-import { ChatMessage } from '@/types/message';
+import {isFunctionMessageAtStart} from '@/const/message';
+import {useChatStore} from '@/store/chat';
+import {chatSelectors} from '@/store/chat/selectors';
+import {ChatMessage} from '@/types/message';
 
 import Inspector from '../Plugins/Inspector';
-import { DefaultMessage } from './Default';
+import {DefaultMessage} from './Default';
 
 export const AssistantMessage = memo<
   ChatMessage & {

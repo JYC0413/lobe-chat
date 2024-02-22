@@ -1,6 +1,6 @@
-import { createErrorResponse } from '@/app/api/errorResponse';
-import { getServerConfig } from '@/config/server';
-import { LOBE_CHAT_AUTH_HEADER } from '@/const/auth';
+import {createErrorResponse} from '@/app/api/errorResponse';
+import {getServerConfig} from '@/config/server';
+import {LOBE_CHAT_AUTH_HEADER} from '@/const/auth';
 import {
   AgentInitErrorPayload,
   AgentRuntimeError,
@@ -8,10 +8,10 @@ import {
   ILobeAgentRuntimeErrorType,
   LobeGoogleAI,
 } from '@/libs/agent-runtime';
-import { ChatErrorType } from '@/types/fetch';
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {ChatErrorType} from '@/types/fetch';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
-import { checkPasswordOrUseUserApiKey, getJWTPayload } from '../auth';
+import {checkPasswordOrUseUserApiKey, getJWTPayload} from '../auth';
 
 // due to the Chinese region does not support accessing Google
 // we need to use proxy to access it

@@ -1,9 +1,9 @@
-import { Mock, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
+import {beforeEach, describe, expect, it, Mock, vi} from 'vitest';
 
-import { CreateTopicParams, TopicModel } from '@/database/models/topic';
-import { ChatTopic } from '@/types/topic';
+import {CreateTopicParams, TopicModel} from '@/database/models/topic';
+import {ChatTopic} from '@/types/topic';
 
-import { topicService } from '../topic';
+import {topicService} from '../topic';
 
 // Mock the TopicModel
 vi.mock('@/database/models/topic', () => {

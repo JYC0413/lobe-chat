@@ -1,9 +1,9 @@
-import { useResponsive } from 'antd-style';
-import { ReactNode, memo, useMemo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {useResponsive} from 'antd-style';
+import {memo, ReactNode, useMemo} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import Grid from './Grid';
-import { MAX_SIZE_DESKTOP, MAX_SIZE_MOBILE } from './style';
+import {MAX_SIZE_DESKTOP, MAX_SIZE_MOBILE} from './style';
 
 interface GalleyGridProps<T = any> {
   items: T[];

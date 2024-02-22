@@ -1,4 +1,4 @@
-import { remark } from 'remark';
+import {remark} from 'remark';
 import remarkGfm from 'remark-gfm';
 import remarkHtml from 'remark-html';
 

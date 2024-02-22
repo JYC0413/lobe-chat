@@ -1,6 +1,6 @@
-import { createHeaderWithOpenAI } from '@/services/_header';
-import { OPENAI_URLS } from '@/services/_url';
-import { OpenAIImagePayload } from '@/types/openai/image';
+import {createHeaderWithOpenAI} from '@/services/_header';
+import {OPENAI_URLS} from '@/services/_url';
+import {OpenAIImagePayload} from '@/types/openai/image';
 
 interface FetchOptions {
   signal?: AbortSignal | undefined;

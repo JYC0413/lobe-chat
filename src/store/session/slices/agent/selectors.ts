@@ -1,17 +1,17 @@
-import { VoiceList } from '@lobehub/tts';
-import { t } from 'i18next';
+import {VoiceList} from '@lobehub/tts';
+import {t} from 'i18next';
 
-import { DEFAULT_AVATAR, DEFAULT_BACKGROUND_COLOR, DEFAULT_INBOX_AVATAR } from '@/const/meta';
-import { DEFAULT_AGENT_CONFIG, DEFAUTT_AGENT_TTS_CONFIG } from '@/const/settings';
-import { useGlobalStore } from '@/store/global';
-import { settingsSelectors } from '@/store/global/selectors';
-import { SessionStore } from '@/store/session';
-import { LobeAgentTTSConfig } from '@/types/agent';
-import { LanguageModel } from '@/types/llm';
-import { MetaData } from '@/types/meta';
-import { merge } from '@/utils/merge';
+import {DEFAULT_AVATAR, DEFAULT_BACKGROUND_COLOR, DEFAULT_INBOX_AVATAR} from '@/const/meta';
+import {DEFAULT_AGENT_CONFIG, DEFAUTT_AGENT_TTS_CONFIG} from '@/const/settings';
+import {useGlobalStore} from '@/store/global';
+import {settingsSelectors} from '@/store/global/selectors';
+import {SessionStore} from '@/store/session';
+import {LobeAgentTTSConfig} from '@/types/agent';
+import {LanguageModel} from '@/types/llm';
+import {MetaData} from '@/types/meta';
+import {merge} from '@/utils/merge';
 
-import { sessionSelectors } from '../session/selectors';
+import {sessionSelectors} from '../session/selectors';
 
 // ==========   Config   ============== //
 const currentAgentConfig = (s: SessionStore) => {

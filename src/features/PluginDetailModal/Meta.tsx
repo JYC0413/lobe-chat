@@ -1,12 +1,12 @@
-import { Avatar, Tag } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
+import {Avatar, Tag} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { startCase } from 'lodash-es';
-import { memo } from 'react';
-import { Center } from 'react-layout-kit';
+import {startCase} from 'lodash-es';
+import {memo} from 'react';
+import {Center} from 'react-layout-kit';
 
-import { pluginHelpers, useToolStore } from '@/store/tool';
-import { pluginSelectors } from '@/store/tool/selectors';
+import {pluginHelpers, useToolStore} from '@/store/tool';
+import {pluginSelectors} from '@/store/tool/selectors';
 
 const useStyles = createStyles(({ css, token, stylish }) => ({
   avatar: css`

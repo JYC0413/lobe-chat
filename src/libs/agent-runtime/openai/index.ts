@@ -1,17 +1,17 @@
-import { OpenAIStream, StreamingTextResponse } from 'ai';
-import OpenAI, { ClientOptions } from 'openai';
+import {OpenAIStream, StreamingTextResponse} from 'ai';
+import OpenAI, {ClientOptions} from 'openai';
 import urlJoin from 'url-join';
 
-import { ChatStreamPayload } from '@/types/openai/chat';
+import {ChatStreamPayload} from '@/types/openai/chat';
 
-import { LobeRuntimeAI } from '../BaseAI';
-import { AgentRuntimeErrorType } from '../error';
-import { ModelProvider } from '../types';
-import { AgentRuntimeError } from '../utils/createError';
-import { debugStream } from '../utils/debugStream';
-import { desensitizeUrl } from '../utils/desensitizeUrl';
-import { DEBUG_CHAT_COMPLETION } from '../utils/env';
-import { handleOpenAIError } from '../utils/handleOpenAIError';
+import {LobeRuntimeAI} from '../BaseAI';
+import {AgentRuntimeErrorType} from '../error';
+import {ModelProvider} from '../types';
+import {AgentRuntimeError} from '../utils/createError';
+import {debugStream} from '../utils/debugStream';
+import {desensitizeUrl} from '../utils/desensitizeUrl';
+import {DEBUG_CHAT_COMPLETION} from '../utils/env';
+import {handleOpenAIError} from '../utils/handleOpenAIError';
 
 const DEFAULT_BASE_URL = 'https://api.openai.com/v1';
 

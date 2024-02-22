@@ -1,12 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import {describe, expect, it} from 'vitest';
+import {merge} from '@/utils/merge';
 
-import { DEFAULT_SETTINGS } from '@/const/settings';
-import { agentSelectors } from '@/store/session/slices/agent';
-import { merge } from '@/utils/merge';
-
-import { GlobalStore, useGlobalStore } from '../../../store';
-import { initialSettingsState } from '../initialState';
-import { modelProviderSelectors } from './modelProvider';
+import {GlobalStore, useGlobalStore} from '../../../store';
+import {initialSettingsState} from '../initialState';
+import {modelProviderSelectors} from './modelProvider';
 
 describe('modelProviderSelectors', () => {
   describe('CUSTOM_MODELS', () => {

@@ -1,12 +1,12 @@
-import { ActionIcon, Image } from '@lobehub/ui';
-import { createStyles } from 'antd-style';
-import { Trash } from 'lucide-react';
-import { CSSProperties, memo, useCallback } from 'react';
+import {ActionIcon, Image} from '@lobehub/ui';
+import {createStyles} from 'antd-style';
+import {Trash} from 'lucide-react';
+import {CSSProperties, memo, useCallback} from 'react';
 
-import { usePlatform } from '@/hooks/usePlatform';
-import { useFileStore } from '@/store/file';
+import {usePlatform} from '@/hooks/usePlatform';
+import {useFileStore} from '@/store/file';
 
-import { MIN_IMAGE_SIZE } from './style';
+import {MIN_IMAGE_SIZE} from './style';
 
 export const useStyles = createStyles(({ css, token }) => ({
   deleteButton: css`

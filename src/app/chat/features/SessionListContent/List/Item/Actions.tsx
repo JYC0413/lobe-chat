@@ -1,6 +1,6 @@
-import { ActionIcon, Icon } from '@lobehub/ui';
-import { App, Dropdown, type MenuProps } from 'antd';
-import { createStyles } from 'antd-style';
+import {ActionIcon, Icon} from '@lobehub/ui';
+import {App, Dropdown, type MenuProps} from 'antd';
+import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
 import {
   Check,
@@ -13,14 +13,14 @@ import {
   PinOff,
   Trash,
 } from 'lucide-react';
-import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo, useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 
-import { configService } from '@/services/config';
-import { useSessionStore } from '@/store/session';
-import { sessionHelpers } from '@/store/session/helpers';
-import { sessionGroupSelectors, sessionSelectors } from '@/store/session/selectors';
-import { SessionDefaultGroup } from '@/types/session';
+import {configService} from '@/services/config';
+import {useSessionStore} from '@/store/session';
+import {sessionHelpers} from '@/store/session/helpers';
+import {sessionGroupSelectors, sessionSelectors} from '@/store/session/selectors';
+import {SessionDefaultGroup} from '@/types/session';
 
 const useStyles = createStyles(({ css }) => ({
   modalRoot: css`

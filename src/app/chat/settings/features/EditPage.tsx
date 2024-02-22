@@ -1,13 +1,13 @@
 'use client';
 
 import isEqual from 'fast-deep-equal';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
 
 import PageTitle from '@/components/PageTitle';
 import AgentSetting from '@/features/AgentSetting';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
 
 const EditPage = memo(() => {
   const { t } = useTranslation('setting');

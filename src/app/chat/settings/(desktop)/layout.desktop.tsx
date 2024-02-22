@@ -1,8 +1,8 @@
-import { PropsWithChildren, memo } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import {memo, PropsWithChildren} from 'react';
+import {Flexbox} from 'react-layout-kit';
 
 import SafeSpacing from '@/components/SafeSpacing';
-import { HEADER_HEIGHT } from '@/const/layoutTokens';
+import {HEADER_HEIGHT} from '@/const/layoutTokens';
 
 import Layout from '../../(desktop)/layout.desktop';
 import Header from './features/Header';

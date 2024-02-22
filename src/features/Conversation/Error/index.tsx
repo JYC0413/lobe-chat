@@ -1,10 +1,10 @@
-import { IPluginErrorType, PluginErrorType } from '@lobehub/chat-plugin-sdk';
-import type { AlertProps } from '@lobehub/ui';
-import { memo } from 'react';
+import {IPluginErrorType, PluginErrorType} from '@lobehub/chat-plugin-sdk';
+import type {AlertProps} from '@lobehub/ui';
+import {memo} from 'react';
 
-import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
-import { ChatErrorType, ErrorType } from '@/types/fetch';
-import { ChatMessage, ChatMessageError } from '@/types/message';
+import {AgentRuntimeErrorType, ILobeAgentRuntimeErrorType} from '@/libs/agent-runtime';
+import {ChatErrorType, ErrorType} from '@/types/fetch';
+import {ChatMessage, ChatMessageError} from '@/types/message';
 
 import ErrorJsonViewer from './ErrorJsonViewer';
 import InvalidAPIKey from './InvalidAPIKey';
