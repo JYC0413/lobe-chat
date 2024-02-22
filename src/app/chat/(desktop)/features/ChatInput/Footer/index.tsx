@@ -1,32 +1,25 @@
-import { Icon } from '@lobehub/ui';
-import { Button, Dropdown, Space } from 'antd';
-import { createStyles } from 'antd-style';
-import {
-  ChevronUp,
-  CornerDownLeft,
-  LucideCheck,
-  LucideChevronDown,
-  LucideCommand,
-  LucidePlus,
-} from 'lucide-react';
-import { rgba } from 'polished';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Center, Flexbox } from 'react-layout-kit';
+import {Icon} from '@lobehub/ui';
+import {Button, Dropdown, Space} from 'antd';
+import {createStyles} from 'antd-style';
+import {ChevronUp, CornerDownLeft, LucideCheck, LucideChevronDown, LucideCommand, LucidePlus,} from 'lucide-react';
+import {rgba} from 'polished';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Center, Flexbox} from 'react-layout-kit';
 
 import StopLoadingIcon from '@/components/StopLoading';
-import { useSendMessage } from '@/features/ChatInput/useSend';
-import { useChatStore } from '@/store/chat';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors, preferenceSelectors } from '@/store/global/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors } from '@/store/session/selectors';
-import { isMacOS } from '@/utils/platform';
+import {useSendMessage} from '@/features/ChatInput/useSend';
+import {useChatStore} from '@/store/chat';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors, preferenceSelectors} from '@/store/global/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors} from '@/store/session/selectors';
+import {isMacOS} from '@/utils/platform';
 
 import DragUpload from './DragUpload';
-import { LocalFiles } from './LocalFiles';
+import {LocalFiles} from './LocalFiles';
 
-const useStyles = createStyles(({ css, prefixCls, token }) => {
+const useStyles = createStyles(({css, prefixCls, token}) => {
   return {
     arrow: css`
       &.${prefixCls}-btn.${prefixCls}-btn-icon-only {
@@ -55,10 +48,10 @@ const useStyles = createStyles(({ css, prefixCls, token }) => {
 
 const isMac = isMacOS();
 
-const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) => {
-  const { t } = useTranslation('chat');
+const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({setExpand}) => {
+  const {t} = useTranslation('chat');
 
-  const { theme, styles } = useStyles();
+  const {styles} = useStyles();
 
   const [loading, stopGenerateMessage] = useChatStore((s) => [
     !!s.chatLoadingId,
@@ -76,14 +69,14 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
 
   const cmdEnter = (
     <Flexbox gap={2} horizontal>
-      <Icon icon={isMac ? LucideCommand : ChevronUp} />
-      <Icon icon={CornerDownLeft} />
+      <Icon icon={isMac ? LucideCommand : ChevronUp}/>
+      <Icon icon={CornerDownLeft}/>
     </Flexbox>
   );
 
   const enter = (
     <Center>
-      <Icon icon={CornerDownLeft} />
+      <Icon icon={CornerDownLeft}/>
     </Center>
   );
 
@@ -104,8 +97,8 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
       <Flexbox align={'center'} gap={8} horizontal>
         {canUpload && (
           <>
-            <DragUpload />
-            <LocalFiles />
+            <DragUpload/>
+            <LocalFiles/>
           </>
         )}
       </Flexbox>
@@ -113,7 +106,7 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
         <Flexbox
           gap={4}
           horizontal
-          style={{ color: "white", fontSize: 12, marginRight: 12 }}
+          style={{color: "white", fontSize: 12, marginRight: 12}}
         >
           {sendShortcut}
           <span>{t('input.send')}</span>
@@ -122,11 +115,11 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
           <span>{t('input.warp')}</span>
         </Flexbox>
         {/*<SaveTopic />*/}
-        <Flexbox style={{ minWidth: 92 }}>
+        <Flexbox style={{minWidth: 92}}>
           {loading ? (
             <Button
               className={styles.loadingButton}
-              icon={<StopLoadingIcon />}
+              icon={<StopLoadingIcon/>}
               onClick={stopGenerateMessage}
             >
               {t('input.stop')}
@@ -146,26 +139,26 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
                 menu={{
                   items: [
                     {
-                      icon: !useCmdEnterToSend ? <Icon icon={LucideCheck} /> : <div />,
+                      icon: !useCmdEnterToSend ? <Icon icon={LucideCheck}/> : <div/>,
                       key: 'sendWithEnter',
                       label: t('input.sendWithEnter'),
                       onClick: () => {
-                        updatePreference({ useCmdEnterToSend: false });
+                        updatePreference({useCmdEnterToSend: false});
                       },
                     },
                     {
-                      icon: useCmdEnterToSend ? <Icon icon={LucideCheck} /> : <div />,
+                      icon: useCmdEnterToSend ? <Icon icon={LucideCheck}/> : <div/>,
                       key: 'sendWithCmdEnter',
                       label: t('input.sendWithCmdEnter', {
                         meta: isMac ? 'Cmd' : 'Ctrl',
                       }),
                       onClick: () => {
-                        updatePreference({ useCmdEnterToSend: true });
+                        updatePreference({useCmdEnterToSend: true});
                       },
                     },
-                    { type: 'divider' },
+                    {type: 'divider'},
                     {
-                      icon: <Icon icon={LucidePlus} />,
+                      icon: <Icon icon={LucidePlus}/>,
                       key: 'onlyAdd',
                       label: t('input.onlyAdd'),
                       onClick: () => {
@@ -179,7 +172,7 @@ const Footer = memo<{ setExpand?: (expand: boolean) => void }>(({ setExpand }) =
               >
                 <Button
                   className={styles.arrow}
-                  icon={<Icon icon={LucideChevronDown} />}
+                  icon={<Icon icon={LucideChevronDown}/>}
                   type={'primary'}
                 />
               </Dropdown>

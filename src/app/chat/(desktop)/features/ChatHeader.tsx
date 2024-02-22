@@ -1,28 +1,17 @@
-import { ActionIcon, Avatar, ChatHeader, ChatHeaderTitle } from '@lobehub/ui';
-import { Skeleton } from 'antd';
-import { PanelRightClose, PanelRightOpen } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Flexbox } from 'react-layout-kit';
-
-import ModelTag from '@/components/ModelTag';
-import { DESKTOP_HEADER_ICON_SIZE } from '@/const/layoutTokens';
-import { useGlobalStore } from '@/store/global';
-import { modelProviderSelectors } from '@/store/global/slices/settings/selectors';
-import { useSessionStore } from '@/store/session';
-import { agentSelectors, sessionSelectors } from '@/store/session/selectors';
-import { pathString } from '@/utils/url';
-
-import PluginTag from '../../features/ChatHeader/PluginTag';
-import SettingButton from '../../features/ChatHeader/SettingButton';
-import ShareButton from '../../features/ChatHeader/ShareButton';
+import {ChatHeader, ChatHeaderTitle} from '@lobehub/ui';
+import {Skeleton} from 'antd';
+import {useRouter} from 'next/navigation';
+import {memo} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Flexbox} from 'react-layout-kit';
+import {useGlobalStore} from '@/store/global';
+import {modelProviderSelectors} from '@/store/global/slices/settings/selectors';
+import {useSessionStore} from '@/store/session';
+import {agentSelectors, sessionSelectors} from '@/store/session/selectors';
 import AvatarWithUpload from "@/features/AvatarWithUpload";
 
 const Left = memo(() => {
-  const { t } = useTranslation('chat');
-
-  const router = useRouter();
+  const {t} = useTranslation('chat');
 
   const [init, isInbox, title, description, avatar, backgroundColor, model, plugins] =
     useSessionStore((s) => [
@@ -36,23 +25,19 @@ const Left = memo(() => {
       agentSelectors.currentAgentPlugins(s),
     ]);
 
-  const showPlugin = useGlobalStore(modelProviderSelectors.modelEnabledFunctionCall(model));
   const displayTitle = isInbox ? t('inbox.title') : title;
-  const displayDesc = isInbox ? t('inbox.desc') : description;
 
-  console.log(displayTitle)
-  console.log(displayTitle.toString())
   return !init ? (
     <Flexbox horizontal>
       <Skeleton
         active
-        avatar={{ shape: 'circle', size: 'default' }}
+        avatar={{shape: 'circle', size: 'default'}}
         paragraph={false}
-        title={{ style: { margin: 0, marginTop: 8 }, width: 200 }}
+        title={{style: {margin: 0, marginTop: 8}, width: 200}}
       />
     </Flexbox>
   ) : (
-    <Flexbox align={'flex-center'} gap={12} horizontal>
+    <Flexbox align='flex-start' gap={12} horizontal>
       <AvatarWithUpload
         id={displayTitle}
         size={40}
@@ -72,28 +57,10 @@ const Left = memo(() => {
   );
 });
 
-const Right = memo(() => {
-  const { t } = useTranslation('chat');
-
-  const [showAgentSettings, toggleConfig] = useGlobalStore((s) => [
-    s.preference.showChatSideBar,
-    s.toggleChatSideBar,
-  ]);
-
-  return (
-    <>
-      {/*<ShareButton />*/}
-      {/*<ActionIcon*/}
-      {/*  icon={showAgentSettings ? PanelRightClose : PanelRightOpen}*/}
-      {/*  onClick={() => toggleConfig()}*/}
-      {/*  size={DESKTOP_HEADER_ICON_SIZE}*/}
-      {/*  title={t('roleAndArchive')}*/}
-      {/*/>*/}
-      {/*<SettingButton />*/}
-    </>
-  );
-});
-
-const Header = memo(() => <ChatHeader style={{backgroundColor:"white",background:"linear-gradient(to bottom,white,rgba(255, 255, 255,0.9)",color:"rgb(84,84,84)"}} left={<Left />} right={<Right />} />);
+const Header = memo(() => <ChatHeader style={{
+  backgroundColor: "white",
+  background: "linear-gradient(to bottom,white,rgba(255, 255, 255,0.9)",
+  color: "rgb(84,84,84)"
+}} left={<Left/>}/>);
 
 export default Header;
