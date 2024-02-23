@@ -111,6 +111,10 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
           color: rgb(60,60,60);
         }
 
+        #left .acss-scylrs{
+          color: rgb(60,60,60);
+        }
+
         #right p{
           color: white;
         }
