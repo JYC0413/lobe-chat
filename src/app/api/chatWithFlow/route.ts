@@ -2,12 +2,11 @@ export const runtime = "edge";
 
 export const POST = async (req: Request): Promise<Response> => {
   try {
-    const {messages, conversationName} = await req.json();
+    const {messages} = await req.json();
 
+    let conversationName = messages.at(0).content;
     let messageToSend = messages.at([messages.length - 1]).content;
 
-    console.log("conversationName", conversationName)
-    console.log("messageToSend", messageToSend)
     const res = await fetch("https://code.flows.network/webhook/E6Wh8hGaVwaFoI1nI9Lg", {
       headers: {
         'Content-Type': 'plain/text',

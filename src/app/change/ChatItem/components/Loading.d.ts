@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import {ChatItemProps} from "..";
+import {ChatItemProps} from "../index";
 
 export interface LoadingProps {
     loading?: ChatItemProps['loading'];

@@ -77,6 +77,7 @@ class ChatService {
     );
 
     console.log("res",res)
+    console.log("payload",payload)
     console.log("provider",provider)
     const headers = await createHeaderWithAuth({
       headers: { 'Content-Type': 'application/json' },

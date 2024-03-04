@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import {ChatItemProps} from "..";
+import {ChatItemProps} from "../index";
 
 export interface ErrorContentProps {
     error?: ChatItemProps['error'];

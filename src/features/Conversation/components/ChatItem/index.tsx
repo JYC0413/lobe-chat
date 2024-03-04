@@ -1,5 +1,5 @@
 import {AlertProps} from '@lobehub/ui';
-import ChatItem from '/change/ChatItem/index';
+import ChatItem from '../../../../app/change/ChatItem/index';
 import {createStyles} from 'antd-style';
 import isEqual from 'fast-deep-equal';
 import {memo, ReactNode, useCallback, useMemo, useState} from 'react';
@@ -17,7 +17,7 @@ import {renderMessages, useAvatarsClick} from '../../Messages';
 import ActionsBar from './ActionsBar';
 import HistoryDivider from './HistoryDivider';
 
-const useStyles = createStyles(({ css, prefixCls }) => ({
+const useStyles = createStyles(({css, prefixCls}) => ({
   message: css`
     // prevent the textarea too long
     .${prefixCls}-input {
@@ -31,9 +31,9 @@ export interface ChatListItemProps {
   index: number;
 }
 
-const Item = memo<ChatListItemProps>(({ index, id }) => {
-  const { t } = useTranslation('common');
-  const { styles } = useStyles();
+const Item = memo<ChatListItemProps>(({index, id}) => {
+  const {t} = useTranslation('common');
+  const {styles} = useStyles();
   const [editing, setEditing] = useState(false);
   const [type = 'chat'] = useSessionStore((s) => {
     const config = agentSelectors.currentAgentConfig(s);
@@ -59,19 +59,19 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
   const onAvatarsClick = useAvatarsClick();
 
   const RenderMessage = useCallback(
-    ({ editableContent, data }: { data: ChatMessage; editableContent: ReactNode }) => {
+    ({editableContent, data}: { data: ChatMessage; editableContent: ReactNode }) => {
       if (!item?.role) return;
       const RenderFunction = renderMessages[item.role] ?? renderMessages['default'];
 
       if (!RenderFunction) return;
 
-      return <RenderFunction {...data} editableContent={editableContent} />;
+      return <RenderFunction {...data} editableContent={editableContent}/>;
     },
     [item?.role],
   );
 
   const MessageExtra = useCallback(
-    ({ data }: { data: ChatMessage }) => {
+    ({data}: { data: ChatMessage }) => {
       if (!renderMessagesExtra || !item?.role) return;
       let RenderFunction;
       if (renderMessagesExtra?.[item.role]) RenderFunction = renderMessagesExtra[item.role];
@@ -88,7 +88,7 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
 
     const alertConfig = getErrorAlertConfig(messageError.type);
 
-    return { message: t(`response.${messageError.type}` as any, { ns: 'error' }), ...alertConfig };
+    return {message: t(`response.${messageError.type}` as any, {ns: 'error'}), ...alertConfig};
   }, [item?.error]);
 
   const enableHistoryDivider = useSessionStore((s) => {
@@ -108,6 +108,7 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
         <style>
           {`
           #left p{
+          line-height:1.5rem;
           color: rgb(60,60,60);
         }
 
@@ -116,24 +117,25 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
         }
 
         #right p{
+          line-height:1.5rem;
           color: white;
         }
         `}
         </style>
-        <HistoryDivider enable={enableHistoryDivider} />
+        <HistoryDivider enable={enableHistoryDivider}/>
         <ChatItem
-          actions={<ActionsBar index={index} setEditing={setEditing} />}
+          actions={<ActionsBar index={index} setEditing={setEditing}/>}
           avatar={item.meta}
           className={styles.message}
           editing={editing}
           error={error}
-          errorMessage={<ErrorMessageExtra data={item} />}
+          errorMessage={<ErrorMessageExtra data={item}/>}
           loading={loading}
           message={item.content}
-          messageExtra={<MessageExtra data={item} />}
+          messageExtra={<MessageExtra data={item}/>}
           onAvatarClick={onAvatarsClick?.(item.role)}
           onChange={(value) => onMessageChange(item.id, value)}
-          onDoubleClick={(e) => {
+          onDoubleClick={(e: React.MouseEvent) => {
             if (item.id === 'default' || item.error) return;
             if (item.role && ['assistant', 'user'].includes(item.role) && e.altKey) {
               setEditing(true);
@@ -143,7 +145,7 @@ const Item = memo<ChatListItemProps>(({ index, id }) => {
           placement={placement}
           primary={item.role === 'user'}
           renderMessage={(editableContent) => (
-            <RenderMessage data={item} editableContent={editableContent} />
+            <RenderMessage data={item} editableContent={editableContent}/>
           )}
           text={{
             cancel: t('cancel'),

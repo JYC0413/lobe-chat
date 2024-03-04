@@ -430,7 +430,7 @@ export const chatMessage: StateCreator<ChatStore,
               idList.push(id)
               createSmoothMessage(id);
             }
-            if (isFunctionMessageAtStart(texts[index])) {
+            if (isFunctionMessageAtStart(texts[index]) && id !== undefined) {
               stopAnimation();
               dispatchMessage({
                 id: id,

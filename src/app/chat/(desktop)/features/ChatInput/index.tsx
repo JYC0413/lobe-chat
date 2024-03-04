@@ -30,18 +30,18 @@ const ChatInput = memo(() => {
         });
       }}
       placement="bottom"
-      size={{ height: inputHeight, width: '100%' }}
-      style={{ zIndex: 10 }}
+      size={{height: inputHeight, width: '100%'}}
+      style={{zIndex: 10}}
     >
       <Flexbox
         gap={8}
         height={'100%'}
         padding={'12px 0 16px'}
-        style={{ minHeight: CHAT_TEXTAREA_HEIGHT, position: 'relative' }}
+        style={{minHeight: CHAT_TEXTAREA_HEIGHT, position: 'relative'}}
       >
         {/*<Head expand={expand} setExpand={setExpand} />*/}
-        <TextArea setExpand={setExpand} />
-        <Footer setExpand={setExpand} />
+        <TextArea setExpand={setExpand}/>
+        <Footer setExpand={setExpand}/>
       </Flexbox>
     </DraggablePanel>
   );

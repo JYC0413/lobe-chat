@@ -36,13 +36,10 @@ const ListItem = memo<ListItemProps & { avatar: string; avatarBackground?: strin
     const avatarRender = useMemo(
       () => (
         <AvatarWithUpload
-          animation={isHovering}
-          background={avatarBackground}
-          shape="circle"
           size={46}
         />
       ),
-      [isHovering, avatar, avatarBackground],
+      [avatar, avatarBackground],
     );
 
     return (

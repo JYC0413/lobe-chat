@@ -77,6 +77,7 @@ var ChatItem = /*#__PURE__*/memo(function (_ref) {
     styles = _useStyles.styles;
   return /*#__PURE__*/_jsxs(Flexbox, _objectSpread(_objectSpread({
     id:placement,
+    style:{paddingTop:"0.5rem",paddingBottom:"0.5rem"},
     className: cx(styles.container, className),
     direction: placement === 'left' ? 'horizontal' : 'horizontal-reverse',
     gap: mobile ? 6 : 12
