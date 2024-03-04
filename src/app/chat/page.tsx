@@ -1,7 +1,7 @@
 import {isMobileDevice} from '@/utils/responsive';
 
 import DesktopPage from './(desktop)';
-import MobilePage from './(mobile)/page';
+import MobilePage from './(mobile)';
 import SessionHydration from './components/SessionHydration';
 import Migration from './features/Migration';
 
