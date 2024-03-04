@@ -3,6 +3,7 @@ import {useHover} from 'ahooks';
 import {createStyles, useResponsive} from 'antd-style';
 import {memo, useMemo, useRef} from 'react';
 import AvatarWithUpload from "@/features/AvatarWithUpload";
+import {DEFAULT_INBOX_AVATAR} from "@/const/meta";
 
 const {Item} = List;
 
@@ -36,10 +37,11 @@ const ListItem = memo<ListItemProps & { avatar: string; avatarBackground?: strin
     const avatarRender = useMemo(
       () => (
         <AvatarWithUpload
+          passAvatar={DEFAULT_INBOX_AVATAR}
           size={46}
         />
       ),
-      [avatar, avatarBackground],
+      [avatar],
     );
 
     return (

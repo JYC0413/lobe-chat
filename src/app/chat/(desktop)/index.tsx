@@ -11,7 +11,7 @@ import ChatHeader from './features/ChatHeader';
 import Conversation from './features/Conversation';
 import Layout from './layout.desktop';
 
-const Mobile: FC = dynamic(() => import('../(mobile)'), { ssr: false }) as FC;
+const Mobile: FC = dynamic(() => import('../(mobile)/page'), { ssr: false }) as FC;
 
 const DesktopPage = memo(() => (
   <ResponsiveIndex Mobile={Mobile}>

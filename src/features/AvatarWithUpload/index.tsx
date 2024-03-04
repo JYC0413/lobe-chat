@@ -48,13 +48,18 @@ const AvatarWithUpload = memo<AvatarWithUploadProps>(
       const img = new Image();
       img.src = avatar;
       img.addEventListener('load', () => {
-        const webpBase64 = imageToBase64({img, size: compressSize});
+        const webpBase64 = imageToBase64({img, size: compressSize || 256,type:"image/jpeg"});
         updateAvatar(webpBase64);
       });
     });
 
     if (!avatar && passAvatar) {
-      handleUploadAvatar(DEFAULT_INBOX_AVATAR)
+      const img = new Image();
+      img.src = passAvatar;
+      img.addEventListener('load', () => {
+        const webpBase64 = imageToBase64({img, size: compressSize || 256,type:"image/jpeg"});
+        updateAvatar(webpBase64);
+      });
     }
 
     return (

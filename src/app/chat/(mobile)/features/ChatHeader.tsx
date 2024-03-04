@@ -24,7 +24,7 @@ const MobileHeader = memo(() => {
   return (
     <MobileNavBar
       center={<ChatHeaderTitle/>}
-      onBackClick={() => router.push('/chat')}
+      // onBackClick={() => router.push('/chat')}
       // right={
       //   <>
       //     <ShareButton mobile open={open} setOpen={setOpen} />
@@ -39,7 +39,7 @@ const MobileHeader = memo(() => {
       //     {/*</Dropdown>*/}
       //   </>
       // }
-      showBackButton
+      // showBackButton
     />
   );
 });

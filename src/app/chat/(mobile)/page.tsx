@@ -9,9 +9,9 @@ import Conversation from '@/features/Conversation';
 import AppLayoutMobile from '@/layout/AppLayout.mobile';
 import {useSessionStore} from '@/store/session';
 
-import ChatInput from '../features/ChatInput';
+import ChatInput from './features/ChatInput';
 
-const TopicList = dynamic(() => import('../features/TopicList'));
+const TopicList = dynamic(() => import('./features/TopicList'));
 
 const Chat = memo(() => {
   // due to mobile side don't have sessionList, so we need to fetch sessions here

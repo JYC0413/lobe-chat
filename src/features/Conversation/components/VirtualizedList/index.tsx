@@ -40,7 +40,7 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
     if (virtuosoRef.current) {
       virtuosoRef.current.scrollToIndex({ align: 'end', behavior: 'auto', index: 'LAST' });
     }
-  }, [id]);
+  }, []);
 
   // overscan should be 1.5 times the height of the window
   const overscan = typeof window !== 'undefined' ? window.innerHeight * 1.5 : 0;
@@ -52,7 +52,7 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
         atBottomThreshold={60 * (mobile ? 2 : 1)}
         computeItemKey={(_, item) => item}
         data={data}
-        followOutput={'auto'}
+        // followOutput={'auto'}
         initialTopMostItemIndex={data?.length - 1}
         itemContent={itemContent}
         overscan={overscan}
@@ -63,10 +63,10 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
         onScrollToBottom={(type) => {
           const virtuoso = virtuosoRef.current;
           switch (type) {
-            case 'auto': {
-              virtuoso?.scrollToIndex({ align: 'end', behavior: 'auto', index: 'LAST' });
-              break;
-            }
+            // case 'auto': {
+            //   virtuoso?.scrollToIndex({ align: 'end', behavior: 'auto', index: 'LAST' });
+            //   break;
+            // }
             case 'click': {
               virtuoso?.scrollToIndex({ align: 'end', behavior: 'smooth', index: 'LAST' });
               break;

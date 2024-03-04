@@ -8,7 +8,6 @@ import {useStyles} from "./style";
 import {jsx as _jsx, jsxs as _jsxs} from "react/jsx-runtime";
 
 var MobileNavBar = /*#__PURE__*/memo(function (_ref) {
-  console.log("abc")
   var className = _ref.className,
     _ref$safeArea = _ref.safeArea,
     safeArea = _ref$safeArea === void 0 ? true : _ref$safeArea,

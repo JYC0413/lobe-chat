@@ -413,7 +413,6 @@ export const chatMessage: StateCreator<ChatStore,
         }
         const texts = content.split(/\n{2,}/);
         for (let index = 0; index < texts.length; index++) {
-          console.log(texts[index])
           await updateMessageContent(idList[index], texts[index]);
         }
       },
@@ -422,7 +421,6 @@ export const chatMessage: StateCreator<ChatStore,
         // outputQueue.push(...text.split(''));
         if (text) {
           const texts = text.split(/\n{2,}/);
-          console.log(texts)
           let id
           for (let index = 0; index < texts.length; index++) {
             if (index !== 0) {
