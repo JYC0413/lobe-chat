@@ -4,7 +4,8 @@ export const POST = async (req: Request): Promise<Response> => {
   try {
     const {messages} = await req.json();
 
-    let conversationName = messages.at(0).content;
+    const now = new Date().getTime();
+    let conversationName = messages.at(0).content + now;
     let messageToSend = messages.at([messages.length - 1]).content;
 
     const res = await fetch("https://code.flows.network/webhook/E6Wh8hGaVwaFoI1nI9Lg", {
